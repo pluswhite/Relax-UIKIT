@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable no-undef */
 const path = require('path');
 
 module.exports = {
@@ -19,8 +17,16 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
-      }
+        loader: "babel-loader",
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader", // Create `style` nodes from JS strings
+          "css-loader", // Translates CSS into CommonJJS
+          "sass-loader", // Complies Sass to CSS
+        ],
+      },
     ]
   }
 }
