@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: "../src/app.tsx",
+    main: "./src/app.tsx",
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']
@@ -19,6 +19,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
+        loader: "babel-loader"
       }
     ]
   }
