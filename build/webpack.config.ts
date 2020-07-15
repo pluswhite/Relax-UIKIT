@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
   module: {
     rules: [
       {
-        test: /\.ts(x)$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: "babel-loader",
       },
@@ -26,6 +26,14 @@ const config: webpack.Configuration = {
           "style-loader", // Create `style` nodes from JS strings
           "css-loader", // Translates CSS into CommonJJS
           "sass-loader", // Complies Sass to CSS
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
         ],
       },
     ]

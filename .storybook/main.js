@@ -7,7 +7,7 @@ module.exports = {
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
-      test: /\.ts(x)$/,
+      test: /\.tsx?$/,
       use: [
         {
           loader: require.resolve('babel-loader'),
