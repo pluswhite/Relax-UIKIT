@@ -1,6 +1,7 @@
-const path = require('path');
+import * as path from 'path'
+import * as webpack from 'webpack'
 
-module.exports = {
+const config: webpack.Configuration = {
   entry: {
     main: "./src/app.tsx",
   },
@@ -30,3 +31,5 @@ module.exports = {
     ]
   }
 }
+
+export default config

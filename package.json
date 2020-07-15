@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.config.js",
-    "commit": "npx git-cz",
+    "build": "webpack --config build/webpack.config.ts",
     "test": "jest",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "commit": "npx git-cz"
   },
   "husky": {
     "hooks": {
@@ -63,6 +63,7 @@
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.5",
+    "@types/webpack": "^4.41.21",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
     "@typescript-eslint/parser": "^3.6.1",
     "babel-jest": "^26.1.0",
