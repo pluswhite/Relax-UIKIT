@@ -1,0 +1,134 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import Button, { ButtonGroup } from './button';
+
+<Meta title="02 - Button" component={Button} />
+
+# Button
+
+## Basic usage
+
+<Preview>
+  <Button>Default</Button>
+  <Button btnType="primary">Primary</Button>
+  <Button btnType="success">Success</Button>
+  <Button btnType="warning">Warning</Button>
+  <Button btnType="info">Info</Button>
+  <Button btnType="danger">Danger</Button>
+</Preview>
+
+<Preview>
+  <Button plain>Default</Button>
+  <Button btnType="primary" plain>
+    Primary
+  </Button>
+  <Button btnType="success" plain>
+    Success
+  </Button>
+  <Button btnType="warning" plain>
+    Warning
+  </Button>
+  <Button btnType="info" plain>
+    Info
+  </Button>
+  <Button btnType="danger" plain>
+    Danger
+  </Button>
+</Preview>
+
+<Preview>
+  <Button round>Default</Button>
+  <Button btnType="primary" round>
+    Primary
+  </Button>
+  <Button btnType="success" round>
+    Success
+  </Button>
+  <Button btnType="warning" round>
+    Warning
+  </Button>
+  <Button btnType="info" round>
+    Info
+  </Button>
+  <Button btnType="danger" round>
+    Danger
+  </Button>
+</Preview>
+
+<Preview>
+  <Button circle>DB</Button>
+  <Button btnType="primary" circle>
+    PB
+  </Button>
+  <Button btnType="success" circle>
+    SB
+  </Button>
+  <Button btnType="warning" circle>
+    WB
+  </Button>
+  <Button btnType="info" circle>
+    IB
+  </Button>
+  <Button btnType="danger" circle>
+    DB
+  </Button>
+</Preview>
+
+## Link
+
+<Preview>
+  <Button btnType="link">Link</Button>
+  <Button btnType="link" disabled>
+    Disabled
+  </Button>
+</Preview>
+
+## Disabled button
+
+<Preview>
+  <Button disabled>Default</Button>
+  <Button btnType="primary" disabled>
+    Primary
+  </Button>
+  <Button btnType="success" disabled>
+    Success
+  </Button>
+  <Button btnType="warning" disabled>
+    Warning
+  </Button>
+  <Button btnType="info" disabled>
+    Info
+  </Button>
+  <Button btnType="danger" disabled>
+    Danger
+  </Button>
+</Preview>
+
+## Sizes
+
+<Preview>
+  <Button btnType="primary">Default</Button>
+  <Button btnType="primary" size="xs">
+    Extra Small
+  </Button>
+  <Button btnType="primary" size="sm">
+    Small
+  </Button>
+  <Button btnType="primary" size="md">
+    Medium
+  </Button>
+  <Button btnType="primary" size="lg">
+    Large
+  </Button>
+</Preview>
+
+## Button Group
+
+<Preview>
+  <ButtonGroup>
+    <Button btnType="primary">Left</Button>
+    <Button btnType="primary">Medium</Button>
+    <Button btnType="primary">Right</Button>
+  </ButtonGroup>
+</Preview>
