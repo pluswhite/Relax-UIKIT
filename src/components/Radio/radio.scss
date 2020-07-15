@@ -1,0 +1,110 @@
+/**
+ * Radio component
+ **/
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(radio) {
+  position: relative;
+  display: inline-block;
+  color: $dns-radio-font-color;
+  font-weight: $dns-radio-font-weight;
+  font-size: $dns-radio-font-size;
+  cursor: pointer;
+  outline: none;
+
+  & + & {
+    margin-left: 15px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // @include elm(input) {
+  &__input {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+
+    @include when(disabled) {
+      .dns-radio__inner {
+        cursor: not-allowed;
+      }
+
+      & + .dns-radio__label {
+        color: $dns-radio-disabled-checked-icon-color;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // @include elm(inner) {
+  &__inner {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: $dns-radio-input-width;
+    height: $dns-radio-input-height;
+    cursor: pointer;
+    border: $dns-radio-input-border;
+    border-radius: $dns-radio-input-border-radius;
+    background-color: $dns-radio-input-background-color;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      border-radius: $dns-radio-input-border-radius;
+      content: '';
+      transform: translate(-50%, -50%) scale(0);
+    }
+  }
+
+  &__radiobox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    margin: 0;
+    outline: none;
+
+    // when checked
+    &:checked {
+      & + .dns-radio__inner {
+        border-color: $dns-radio-checked-input-border-color;
+
+        &::after {
+          background-color: $dns-radio-checked-icon-color;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+
+    // when disabled
+    &:disabled {
+      & + .dns-radio__inner {
+        border-color: $dns-radio-disabled-input-border-color;
+        background-color: $dns-radio-disabled-input-fill;
+        cursor: not-allowed;
+
+        &::after {
+          background-color: $dns-radio-disabled-checked-icon-color;
+        }
+      }
+    }
+  }
+
+  // @include elm(label) {
+  &__label {
+    font-size: $dns-radio-font-size;
+    padding-left: 8px;
+  }
+}

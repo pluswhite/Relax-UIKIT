@@ -1,0 +1,38 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import Radio from './radio';
+
+<Meta title="03 - Radio" component={Radio} />
+
+# Radio
+
+## Basic usage
+
+<Preview>
+  <div>
+    <Radio name="dns-radio-demo1" className="dns-radio-demo1" checked>
+      Radio 1
+    </Radio>
+    <Radio name="dns-radio-demo1" className="dns-radio-demo1">
+      Radio 2
+    </Radio>
+  </div>
+  <div>
+    <Radio name="dns-radio-demo2" className="dns-radio-demo2" checked></Radio>
+    <Radio name="dns-radio-demo2" className="dns-radio-demo2"></Radio>
+  </div>
+</Preview>
+
+## Disabled status
+
+<Preview>
+  <div>
+    <Radio name="dns-radio-demo3" className="dns-radio-demo3" disabled>
+      Disabled
+    </Radio>
+    <Radio name="dns-radio-demo3" className="dns-radio-demo3" disabled checked>
+      Disabled
+    </Radio>
+  </div>
+</Preview>

@@ -20,7 +20,12 @@
   $currentSelector: '';
 
   @each $unit in $element {
-    $currentSelector: #{$currentSelector + '.' + $element-name + $element-separator + $unit + ','};
+    $currentSelector: #{$currentSelector +
+      '.' +
+      $element-name +
+      $element-separator +
+      $unit +
+      ','};
   }
 
   @if hitAllSpecialNestRule($selector) {
@@ -46,7 +51,11 @@
   $currentSelector: '';
 
   @each $unit in $modifier {
-    $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ','};
+    $currentSelector: #{$currentSelector +
+      & +
+      $modifier-separator +
+      $unit +
+      ','};
   }
 
   @at-root {

@@ -1,0 +1,50 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import Checkbox from './checkbox';
+
+<Meta title="04 - Checkbox" component={Checkbox} />
+
+# Checkbox
+
+## Basic usage
+
+<Preview>
+  <div>
+    <Checkbox name="dns-checkbox-demo1" className="dns-checkbox-demo1" checked>
+      Checkbox 1
+    </Checkbox>
+    <Checkbox name="dns-checkbox-demo1" className="dns-checkbox-demo1">
+      Checkbox 2
+    </Checkbox>
+  </div>
+  <div>
+    <Checkbox
+      name="dns-checkbox-demo3"
+      className="dns-checkbox-demo2"
+      checked
+    ></Checkbox>
+    <Checkbox
+      name="dns-checkbox-demo3"
+      className="dns-checkbox-demo2"
+    ></Checkbox>
+  </div>
+</Preview>
+
+## Disabled status
+
+<Preview>
+  <div>
+    <Checkbox name="dns-checkbox-demo2" className="dns-checkbox-demo3" disabled>
+      Disabled
+    </Checkbox>
+    <Checkbox
+      name="dns-checkbox-demo2"
+      className="dns-checkbox-demo4"
+      disabled
+      checked
+    >
+      Disabled
+    </Checkbox>
+  </div>
+</Preview>

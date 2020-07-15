@@ -1,0 +1,114 @@
+/**
+ * Checkbox component
+ **/
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(checkbox) {
+  position: relative;
+  display: inline-block;
+  color: $dns-checkbox-font-color;
+  font-weight: $dns-checkbox-font-weight;
+  font-size: $dns-checkbox-font-size;
+  cursor: pointer;
+  outline: none;
+
+  & + & {
+    margin-left: 15px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // @include elm(input) {
+  &__input {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    vertical-align: middle;
+
+    @include when(disabled) {
+      .dns-checkbox__inner {
+        cursor: not-allowed;
+      }
+
+      & + .dns-checkbox__label {
+        color: $dns-checkbox-disabled-checked-icon-color;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // @include elm(inner) {
+  &__inner {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: $dns-checkbox-input-width;
+    height: $dns-checkbox-input-height;
+    cursor: pointer;
+    border: $dns-checkbox-input-border;
+    border-radius: $dns-checkbox-input-border-radius;
+    background-color: $dns-checkbox-input-background-color;
+
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 4px;
+      width: 3px;
+      height: 7px;
+      content: '';
+      border: 2px solid $dns-checkbox-icon-color;
+      border-left: 0;
+      border-top: 0;
+      transform: rotate(45deg) scaleY(0);
+      transform-origin: center;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    margin: 0;
+    outline: none;
+
+    // when checked
+    &:checked {
+      & + .dns-checkbox__inner {
+        border-color: $dns-checkbox-checked-input-border-color;
+        background-color: $dns-checkbox-checked-input-background-color;
+
+        &::after {
+          border-color: $dns-checkbox-checked-input-border-color;
+          transform: rotate(45deg) scale(1);
+        }
+      }
+    }
+
+    // when disabled
+    &:disabled {
+      & + .dns-checkbox__inner {
+        border-color: $dns-checkbox-disabled-input-border-color;
+        background-color: $dns-checkbox-disabled-input-fill;
+        cursor: not-allowed;
+
+        &::after {
+          border-color: $dns-checkbox-disabled-checked-icon-color;
+        }
+      }
+    }
+  }
+
+  // @include elm(label) {
+  &__label {
+    font-size: $dns-checkbox-font-size;
+    padding-left: 8px;
+  }
+}

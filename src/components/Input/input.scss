@@ -1,0 +1,105 @@
+/**
+ * InputText component
+ **/
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(input) {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: $dns-input-font-size;
+
+  &__elm {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: $dns-input-height;
+    line-height: $dns-input-height;
+    font-size: inherit;
+    color: $dns-input-font-color;
+    padding: $dns-input-padding;
+    border: $dns-input-border;
+    border-radius: $dns-input-border-radius;
+    background-color: $dns-input-background-color;
+    background-image: none;
+    outline: none;
+
+    &::placeholder {
+      color: $dns-input-placeholder-color;
+    }
+
+    &:hover {
+      border-color: $dns-input-hover-border;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $dns-input-focus-border;
+      outline: none;
+    }
+
+    // disable default clear on IE
+    &::-ms-clear {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  textarea {
+    height: auto;
+  }
+
+  @include mod(lg) {
+    .dns-input__elm {
+      height: $dns-input-large-height;
+      font-size: $dns-input-large-font-size;
+      padding: $dns-input-large-padding;
+    }
+  }
+
+  @include mod(md) {
+    .dns-input__elm {
+      height: $dns-input-medium-height;
+      font-size: $dns-input-medium-font-size;
+      padding: $dns-input-medium-padding;
+    }
+  }
+
+  @include mod(sm) {
+    .dns-input__elm {
+      height: $dns-input-small-height;
+      font-size: $dns-input-small-font-size;
+      padding: $dns-input-small-padding;
+    }
+  }
+
+  @include mod(xs) {
+    .dns-input__elm {
+      height: $dns-input-extra-small-height;
+      font-size: $dns-input-extra-small-font-size;
+      padding: $dns-input-extra-small-padding;
+    }
+  }
+
+  @include when(active) {
+    .dns-input__elm {
+      border-color: $dns-input-focus-border;
+      outline: none;
+    }
+  }
+
+  @include when(disabled) {
+    .dns-input__elm {
+      color: $dns-input-disabled-color;
+      border-color: $dns-input-disabled-border;
+      background-color: $dns-input-disabled-fill;
+      cursor: not-allowed;
+
+      &::placeholder {
+        color: $dns-input-disabled-placeholder-color;
+      }
+    }
+  }
+}
