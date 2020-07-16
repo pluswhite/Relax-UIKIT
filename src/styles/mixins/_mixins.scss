@@ -17,10 +17,10 @@
 @mixin elm($element) {
   $element-name: $element !global;
   $selector: &;
-  $currentSelector: '';
+  $current-selector: '';
 
   @each $unit in $element {
-    $currentSelector: #{$currentSelector +
+    $current-selector: #{$current-selector +
       '.' +
       $element-name +
       $element-separator +
@@ -28,17 +28,17 @@
       ','};
   }
 
-  @if hitAllSpecialNestRule($selector) {
+  @if hit-all-special-nest-rule($selector) {
     @at-root {
       #{$selector} {
-        #{$currentSelector} {
+        #{$current-selector} {
           @content;
         }
       }
     }
   } @else {
     @at-root {
-      #{$currentSelector} {
+      #{$current-selector} {
         @content;
       }
     }
@@ -48,18 +48,14 @@
 // BEM - modifier
 @mixin mod($modifier) {
   $selector: &;
-  $currentSelector: '';
+  $current-selector: '';
 
   @each $unit in $modifier {
-    $currentSelector: #{$currentSelector +
-      & +
-      $modifier-separator +
-      $unit +
-      ','};
+    $current-selector: #{$current-selector + & + $modifier-separator + $unit + ','};
   }
 
   @at-root {
-    #{$currentSelector} {
+    #{$current-selector} {
       @content;
     }
   }

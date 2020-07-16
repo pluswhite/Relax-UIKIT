@@ -22,9 +22,7 @@ const disabledProps: CheckboxProps = {
 
 describe('Checkbox component test', () => {
   it('should render the default checkbox correctly', () => {
-    const { getByText, getByTestId, container } = render(
-      <Checkbox {...defaultProps} />,
-    );
+    const { getByText, getByTestId, container } = render(<Checkbox {...defaultProps} />);
     const checkboxElm = getByTestId('test-checkbox');
 
     expect(getByText(defaultProps.children as string)).toBeInTheDocument();

@@ -17,8 +17,7 @@ interface IBaseRadioProps {
 
 // TODO: Radio Group
 
-export type RadioProps = IBaseRadioProps &
-  InputHTMLAttributes<HTMLInputElement>;
+export type RadioProps = IBaseRadioProps & InputHTMLAttributes<HTMLInputElement>;
 
 export const Radio: FC<RadioProps> = (props: RadioProps) => {
   const {

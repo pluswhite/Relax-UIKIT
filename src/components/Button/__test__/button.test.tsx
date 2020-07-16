@@ -35,9 +35,7 @@ describe('Button component test', () => {
     const elm = wrapper.getByText('Button');
 
     expect(elm).toBeInTheDocument();
-    expect(elm).toHaveClass(
-      'dns-button dns-button--primary dns-button--lg test-btn',
-    );
+    expect(elm).toHaveClass('dns-button dns-button--primary dns-button--lg test-btn');
   });
 
   it('should render disabled button correctly when disabled prop set to be true', () => {

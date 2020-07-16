@@ -2,14 +2,14 @@
 
 /* BEM support Func
  -------------------------- */
-@function selectorToString($selector) {
+@function selector-to-string($selector) {
   $selector: inspect($selector);
   $selector: str-slice($selector, 2, -2);
   @return $selector;
 }
 
-@function containsModifier($selector) {
-  $selector: selectortostring($selector);
+@function contains-modifier($selector) {
+  $selector: selector-to-string($selector);
 
   @if str-index($selector, $modifier-separator) {
     @return true;
@@ -18,8 +18,8 @@
   }
 }
 
-@function containWhenFlag($selector) {
-  $selector: selectortostring($selector);
+@function contain-when-flag($selector) {
+  $selector: selector-to-string($selector);
 
   @if str-index($selector, '.' + $state-prefix) {
     @return true;
@@ -28,8 +28,8 @@
   }
 }
 
-@function containPseudoClass($selector) {
-  $selector: selectortostring($selector);
+@function contain-pseudo-class($selector) {
+  $selector: selector-to-string($selector);
 
   @if str-index($selector, ':') {
     @return true;
@@ -38,7 +38,7 @@
   }
 }
 
-@function hitAllSpecialNestRule($selector) {
-  @return containsModifier($selector) or containWhenFlag($selector) or
-    containPseudoClass($selector);
+@function hit-all-special-nest-rule($selector) {
+  @return contains-modifier($selector) or contain-when-flag($selector) or
+    contain-pseudo-class($selector);
 }

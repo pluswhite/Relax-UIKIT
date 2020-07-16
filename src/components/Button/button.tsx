@@ -21,9 +21,7 @@ interface IBaseButtonProps {
   circle?: boolean;
   href?: string;
   children?: React.ReactNode;
-  onClick?: (
-    e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>,
-  ) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => void;
 }
 
 type NativeButtonProps = IBaseButtonProps & ButtonHTMLAttributes<HTMLElement>;
@@ -61,32 +59,20 @@ export const Button: FC<ButtonProps> = (props: ButtonProps) => {
     className,
   );
 
-  const handleClick = (
-    evt: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>,
-  ) => {
+  const handleClick = (evt: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => {
     onClick && onClick(evt);
   };
 
   if (isLink) {
     return (
-      <a
-        className={classes}
-        href={href || '#'}
-        {...restProps}
-        onClick={handleClick}
-      >
+      <a className={classes} href={href || '#'} {...restProps} onClick={handleClick}>
         {children}
       </a>
     );
   }
 
   return (
-    <button
-      className={classes}
-      disabled={disabled}
-      {...restProps}
-      onClick={handleClick}
-    >
+    <button className={classes} disabled={disabled} {...restProps} onClick={handleClick}>
       {children}
     </button>
   );
@@ -96,9 +82,7 @@ interface ButtonGroupProps {
   children: React.ReactChild;
 }
 
-export const ButtonGroup: FC<ButtonGroupProps> = ({
-  children,
-}: ButtonGroupProps) => {
+export const ButtonGroup: FC<ButtonGroupProps> = ({ children }: ButtonGroupProps) => {
   return <div className="dns-button-group">{children}</div>;
 };
 

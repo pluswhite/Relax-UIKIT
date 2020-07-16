@@ -107,8 +107,7 @@ $dns-border-color-extra-light: $dns-color-gray-100 !default;
 $dns-border-width-base: 1px !default;
 $dns-border-style-base: solid !default;
 $dns-border-color-hover: $dns-text-color-placeholder !default;
-$dns-border-base: $dns-border-width-base $dns-border-style-base
-  $dns-border-color-base !default;
+$dns-border-base: $dns-border-width-base $dns-border-style-base $dns-border-color-base !default;
 
 // border radius
 $dns-border-radius-base: 4px !default;
@@ -158,8 +157,7 @@ $dns-font-line-height-secondary: 1.3 !default;
  */
 // box shadow
 $dns-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
-$dns-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0, 0,
-  6px rgba(0, 0, 0, 0.12) !default;
+$dns-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0, 0, 6px rgba(0, 0, 0, 0.12) !default;
 $dns-box-shadow-light: 0 2px 12px rgba(0, 0, 0, 0.1) !default;
 
 /**

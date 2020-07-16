@@ -22,9 +22,7 @@ const disabledProps: RadioProps = {
 
 describe('Radio component test', () => {
   it('should render the default radio correctly', () => {
-    const { getByText, getByTestId, container } = render(
-      <Radio {...defaultProps} />,
-    );
+    const { getByText, getByTestId, container } = render(<Radio {...defaultProps} />);
     const radioElm = getByTestId('test-radio');
 
     expect(getByText(defaultProps.children as string)).toBeInTheDocument();

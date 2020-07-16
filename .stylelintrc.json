@@ -2,6 +2,9 @@
   "extends": ["stylelint-config-twbs-bootstrap/scss"],
   "rules": {
     "declaration-colon-newline-after": null,
-    "number-leading-zero": null
+    "number-leading-zero": null,
+    "string-quotes": "single",
+    "scss/operator-no-newline-after": null,
+    "scss/operator-no-newline-before": null
   }
 }

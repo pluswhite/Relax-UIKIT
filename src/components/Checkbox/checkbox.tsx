@@ -13,8 +13,7 @@ interface IBaseCheckboxProps {
   onChange?: (value: boolean, e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export type CheckboxProps = IBaseCheckboxProps &
-  InputHTMLAttributes<HTMLInputElement>;
+export type CheckboxProps = IBaseCheckboxProps & InputHTMLAttributes<HTMLInputElement>;
 
 const Checkbox: FC<CheckboxProps> = (props: CheckboxProps) => {
   const {

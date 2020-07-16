@@ -4,12 +4,7 @@
 @import '../../styles/common/variables';
 @import '../../styles/mixins/mixins';
 
-@mixin button-size(
-  $padding-vertical,
-  $padding-horizontal,
-  $font-size,
-  $border-radius
-) {
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
   padding: $padding-vertical $padding-horizontal;
   font-size: $font-size;
   border-radius: $border-radius;
@@ -57,46 +52,22 @@
   &:hover,
   &:focus {
     color: $color;
-    background: mix(
-      $dns-white,
-      $background-color,
-      $dns-button-hover-tint-percent
-    );
+    background: mix($dns-white, $background-color, $dns-button-hover-tint-percent);
 
-    border-color: mix(
-      $dns-white,
-      $border-color,
-      $dns-button-hover-tint-percent
-    );
+    border-color: mix($dns-white, $border-color, $dns-button-hover-tint-percent);
   }
 
   &:active {
     color: $color;
-    background: mix(
-      $dns-color-black,
-      $background-color,
-      $dns-button-active-shade-percent
-    );
-    border-color: mix(
-      $dns-color-black,
-      $border-color,
-      $dns-button-active-shade-percent
-    );
+    background: mix($dns-color-black, $background-color, $dns-button-active-shade-percent);
+    border-color: mix($dns-color-black, $border-color, $dns-button-active-shade-percent);
     outline: none;
   }
 
   &.is-active {
     color: $color;
-    background: mix(
-      $dns-color-black,
-      $background-color,
-      $dns-button-active-shade-percent
-    );
-    border-color: mix(
-      $dns-color-black,
-      $border-color,
-      $dns-button-active-shade-percent
-    );
+    background: mix($dns-color-black, $background-color, $dns-button-active-shade-percent);
+    border-color: mix($dns-color-black, $border-color, $dns-button-active-shade-percent);
   }
 
   &.is-disabled {
@@ -154,11 +125,7 @@
 
   &:active {
     color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
-    border-color: mix(
-      $dns-black,
-      $dns-primary,
-      $dns-button-active-shade-percent
-    );
+    border-color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
     outline: none;
   }
 
@@ -173,22 +140,14 @@
     &:active {
       color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
       background: $dns-white;
-      border-color: mix(
-        $dns-black,
-        $dns-primary,
-        $dns-button-active-shade-percent
-      );
+      border-color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
       outline: none;
     }
   }
 
   @include when(active) {
     color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
-    border-color: mix(
-      $dns-black,
-      $dns-primary,
-      $dns-button-active-shade-percent
-    );
+    border-color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
   }
 
   @include when(disabled) {
