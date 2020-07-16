@@ -57,6 +57,7 @@ export const Radio: FC<RadioProps> = (props: RadioProps) => {
           disabled={disabled}
           onChange={handleChange}
           data-testid="test-radio"
+          value={value}
           {...restProps}
         />
         <span className="dns-radio__inner" />
