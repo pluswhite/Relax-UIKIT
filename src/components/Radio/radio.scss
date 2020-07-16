@@ -1,8 +1,8 @@
 /**
  * Radio component
  **/
-@import "../../styles/common/variables";
-@import "../../styles/mixins/mixins";
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
 
 @include bem(radio) {
   position: relative;
@@ -59,7 +59,7 @@
       left: 50%;
       width: 6px;
       height: 6px;
-      content: "";
+      content: '';
       border-radius: $dns-radio-input-border-radius;
       transform: translate(-50%, -50%) scale(0);
     }

@@ -75,14 +75,14 @@ $dns-danger-lighter: mix($dns-color-white, $dns-danger, 90%) !default;
 $dns-colors: (primary, success, warning, danger, info, light, dark);
 
 $dns-theme-colors: (
-  "primary": $dns-primary,
-  "secondary": $dns-secondary,
-  "success": $dns-success,
-  "info": $dns-info,
-  "warning": $dns-warning,
-  "danger": $dns-danger,
-  "light": $dns-light,
-  "dark": $dns-dark,
+  'primary': $dns-primary,
+  'secondary': $dns-secondary,
+  'success': $dns-success,
+  'info': $dns-info,
+  'warning': $dns-warning,
+  'danger': $dns-danger,
+  'light': $dns-light,
+  'dark': $dns-dark,
 );
 
 /**

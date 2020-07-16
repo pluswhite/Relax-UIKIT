@@ -1,8 +1,8 @@
 /**
  * Checkbox component
  **/
-@import "../../styles/common/variables";
-@import "../../styles/mixins/mixins";
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
 
 @include bem(checkbox) {
   position: relative;
@@ -59,7 +59,7 @@
       left: 4px;
       width: 3px;
       height: 7px;
-      content: "";
+      content: '';
       border: 2px solid $dns-checkbox-icon-color;
       border-top: 0;
       border-left: 0;

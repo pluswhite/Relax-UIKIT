@@ -2,11 +2,11 @@
  * mixins
  */
 
-@import "functions";
+@import 'functions';
 
 // CSS BEM naming
 @mixin bem($block) {
-  $block-name: $namespace + "-" + $block !global;
+  $block-name: $namespace + '-' + $block !global;
 
   .#{$block-name} {
     @content;
@@ -17,15 +17,15 @@
 @mixin elm($element) {
   $element-name: $element !global;
   $selector: &;
-  $currentSelector: "";
+  $currentSelector: '';
 
   @each $unit in $element {
     $currentSelector: #{$currentSelector +
-      "." +
+      '.' +
       $element-name +
       $element-separator +
       $unit +
-      ","};
+      ','};
   }
 
   @if hitAllSpecialNestRule($selector) {
@@ -48,14 +48,14 @@
 // BEM - modifier
 @mixin mod($modifier) {
   $selector: &;
-  $currentSelector: "";
+  $currentSelector: '';
 
   @each $unit in $modifier {
     $currentSelector: #{$currentSelector +
       & +
       $modifier-separator +
       $unit +
-      ","};
+      ','};
   }
 
   @at-root {

@@ -1,8 +1,8 @@
 /**
  * InputText component
  **/
-@import "../../styles/common/variables";
-@import "../../styles/mixins/mixins";
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
 
 @include bem(input) {
   position: relative;
