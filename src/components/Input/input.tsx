@@ -7,7 +7,6 @@ import React, {
 import classnames from 'classnames';
 
 import './input.scss';
-import { InputValue } from '../../types';
 
 interface IBaseInputProps {
   className?: string;

@@ -2,7 +2,6 @@ import React, { FC, ReactChild, InputHTMLAttributes, useState } from 'react';
 import classnames from 'classnames';
 
 import './checkbox.scss';
-import { InputValue } from '../../types';
 
 interface IBaseCheckboxProps {
   className?: string;

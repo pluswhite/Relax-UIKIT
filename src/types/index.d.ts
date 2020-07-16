@@ -1,1 +1,1 @@
-export type InputValue = string | number | boolean | undefined;
+declare type InputValue = string | number | boolean | undefined;

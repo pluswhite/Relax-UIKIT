@@ -2,7 +2,6 @@ import React, { FC, InputHTMLAttributes, useState } from 'react';
 import classnames from 'classnames';
 
 import './radio.scss';
-import { InputValue } from '../../types';
 
 interface IBaseRadioProps {
   className?: string;

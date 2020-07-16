@@ -1,3 +1,3 @@
-# Study-Project-Boilerplate
+# Relax UIKIT
 
-A boilerplate for React with Typescript, Jest, Webpack, Babel, .etc.
+A UI Component based on React with Typescript, Jest, Webpack, Babel .etc.
