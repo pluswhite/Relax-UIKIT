@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.config.ts",
-    "test": "jest",
+    "build": "webpack --mode production --config build/webpack.config.ts",
+    "lint": "npm run lint:code && npm run lint:style",
+    "lint:code": "eslint src/**/*.{ts,tsx} --quiet",
+    "lint:style": "stylelint src/**/*.scss",
+    "test": "jest --config=jest.config.js",
+    "test:watch": "jest --config=jest.config.js --watch",
+    "test:coverage": "jest --config=jest.config.js --coverage",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "storybook:build": "build-storybook -s public",
     "commit": "npx git-cz"
   },
   "husky": {
