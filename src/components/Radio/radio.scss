@@ -1,15 +1,15 @@
 /**
  * Radio component
  **/
-@import '../../styles/common/variables';
-@import '../../styles/mixins/mixins';
+@import "../../styles/common/variables";
+@import "../../styles/mixins/mixins";
 
 @include bem(radio) {
   position: relative;
   display: inline-block;
-  color: $dns-radio-font-color;
-  font-weight: $dns-radio-font-weight;
   font-size: $dns-radio-font-size;
+  font-weight: $dns-radio-font-weight;
+  color: $dns-radio-font-color;
   cursor: pointer;
   outline: none;
 
@@ -25,9 +25,9 @@
   &__input {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     cursor: pointer;
     outline: none;
-    vertical-align: middle;
 
     @include when(disabled) {
       .dns-radio__inner {
@@ -44,14 +44,14 @@
   // @include elm(inner) {
   &__inner {
     position: relative;
-    display: inline-block;
     box-sizing: border-box;
+    display: inline-block;
     width: $dns-radio-input-width;
     height: $dns-radio-input-height;
     cursor: pointer;
+    background-color: $dns-radio-input-background-color;
     border: $dns-radio-input-border;
     border-radius: $dns-radio-input-border-radius;
-    background-color: $dns-radio-input-background-color;
 
     &::after {
       position: absolute;
@@ -59,8 +59,8 @@
       left: 50%;
       width: 6px;
       height: 6px;
+      content: "";
       border-radius: $dns-radio-input-border-radius;
-      content: '';
       transform: translate(-50%, -50%) scale(0);
     }
   }
@@ -72,9 +72,9 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    opacity: 0;
     margin: 0;
     outline: none;
+    opacity: 0;
 
     // when checked
     &:checked {
@@ -91,9 +91,9 @@
     // when disabled
     &:disabled {
       & + .dns-radio__inner {
-        border-color: $dns-radio-disabled-input-border-color;
-        background-color: $dns-radio-disabled-input-fill;
         cursor: not-allowed;
+        background-color: $dns-radio-disabled-input-fill;
+        border-color: $dns-radio-disabled-input-border-color;
 
         &::after {
           background-color: $dns-radio-disabled-checked-icon-color;
@@ -104,7 +104,7 @@
 
   // @include elm(label) {
   &__label {
-    font-size: $dns-radio-font-size;
     padding-left: 8px;
+    font-size: $dns-radio-font-size;
   }
 }

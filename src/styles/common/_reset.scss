@@ -1,11 +1,12 @@
 /**
  * Reset.scss
  **/
-@import './variables';
+@import "./variables";
 
 body {
-  font-family: Monaco, Menlo, 'Courier New', monospace;
+  font-family: Monaco, Menlo, "Courier New", monospace;
   font-size: $dns-font-size-base;
   color: $dns-color-black;
+
   --webkit-font-smoothing: antialiased;
 }

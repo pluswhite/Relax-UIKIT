@@ -26,14 +26,14 @@
   &:hover,
   &:focus {
     color: $dns-white;
-    border-color: $color;
     background: $color;
+    border-color: $color;
   }
 
   &:active {
     color: $dns-white;
-    border-color: mix($dns-black, $color, $dns-button-active-shade-percent);
     background: mix($dns-black, $color, $dns-button-active-shade-percent);
+    border-color: mix($dns-black, $color, $dns-button-active-shade-percent);
     outline: none;
   }
 
@@ -43,8 +43,8 @@
     &:focus,
     &:active {
       color: mix($dns-white, $color, 40%);
-      border-color: mix($dns-white, $color, 80%);
       background: mix($dns-white, $color, 90%);
+      border-color: mix($dns-white, $color, 80%);
     }
   }
 }
@@ -56,20 +56,22 @@
 
   &:hover,
   &:focus {
+    color: $color;
     background: mix(
       $dns-white,
       $background-color,
       $dns-button-hover-tint-percent
     );
+
     border-color: mix(
       $dns-white,
       $border-color,
       $dns-button-hover-tint-percent
     );
-    color: $color;
   }
 
   &:active {
+    color: $color;
     background: mix(
       $dns-color-black,
       $background-color,
@@ -80,11 +82,11 @@
       $border-color,
       $dns-button-active-shade-percent
     );
-    color: $color;
     outline: none;
   }
 
   &.is-active {
+    color: $color;
     background: mix(
       $dns-color-black,
       $background-color,
@@ -95,7 +97,6 @@
       $border-color,
       $dns-button-active-shade-percent
     );
-    color: $color;
   }
 
   &.is-disabled {
@@ -115,24 +116,23 @@
 }
 
 @include bem(button) {
-  display: inline-block;
   box-sizing: border-box;
+  display: inline-block;
 
-  margin: 0;
   padding: $dns-button-padding-horizontal $dns-button-padding-vertical;
+  margin: 0;
 
-  color: $dns-button-default-font-color;
   line-height: 1;
+  color: $dns-button-default-font-color;
   text-align: center;
   cursor: pointer;
 
   background: $dns-button-default-background-color;
   border: $dns-border-base;
-
   outline: none;
-  -webkit-appearance: none;
-
   transition: 0.1s;
+
+  --webkit-appearance: none;
 
   @include button-size(
     $dns-button-padding-vertical,
@@ -148,8 +148,8 @@
   &:hover,
   &:focus {
     color: $dns-primary;
-    border-color: $dns-primary;
     background-color: $dns-primary-light-90;
+    border-color: $dns-primary;
   }
 
   &:active {
@@ -166,18 +166,18 @@
     &:hover,
     &:focus {
       color: $dns-primary;
-      border-color: $dns-primary;
       background: $dns-white;
+      border-color: $dns-primary;
     }
 
     &:active {
       color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
+      background: $dns-white;
       border-color: mix(
         $dns-black,
         $dns-primary,
         $dns-button-active-shade-percent
       );
-      background: $dns-white;
       outline: none;
     }
   }
@@ -196,10 +196,10 @@
     &:hover,
     &:focus {
       color: $dns-button-disabled-font-color;
-      background-image: none;
-      background-color: $dns-button-disabled-background-color;
-      border-color: $dns-button-disabled-border-color;
       cursor: not-allowed;
+      background-color: $dns-button-disabled-background-color;
+      background-image: none;
+      border-color: $dns-button-disabled-border-color;
     }
 
     &.is-plain {
@@ -267,8 +267,8 @@
 
   @include mod(link) {
     color: $dns-primary;
-    border: none;
     text-decoration: none;
+    border: none;
 
     &:hover,
     &:focus {
@@ -351,10 +351,10 @@
     }
 
     &:first-child:last-child {
+      border-top-left-radius: $dns-button-border-radius;
       border-top-right-radius: $dns-button-border-radius;
       border-bottom-right-radius: $dns-button-border-radius;
       border-bottom-left-radius: $dns-button-border-radius;
-      border-top-left-radius: $dns-button-border-radius;
 
       &.is-round {
         border-radius: 20px;
@@ -396,8 +396,8 @@
       }
 
       &:not(:first-child):not(:last-child) {
-        border-left-color: rgba($dns-white, 0.5);
         border-right-color: rgba($dns-white, 0.5);
+        border-left-color: rgba($dns-white, 0.5);
       }
     }
   }

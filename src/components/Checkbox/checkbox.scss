@@ -1,15 +1,15 @@
 /**
  * Checkbox component
  **/
-@import '../../styles/common/variables';
-@import '../../styles/mixins/mixins';
+@import "../../styles/common/variables";
+@import "../../styles/mixins/mixins";
 
 @include bem(checkbox) {
   position: relative;
   display: inline-block;
-  color: $dns-checkbox-font-color;
-  font-weight: $dns-checkbox-font-weight;
   font-size: $dns-checkbox-font-size;
+  font-weight: $dns-checkbox-font-weight;
+  color: $dns-checkbox-font-color;
   cursor: pointer;
   outline: none;
 
@@ -25,9 +25,9 @@
   &__input {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     cursor: pointer;
     outline: none;
-    vertical-align: middle;
 
     @include when(disabled) {
       .dns-checkbox__inner {
@@ -44,25 +44,25 @@
   // @include elm(inner) {
   &__inner {
     position: relative;
-    display: inline-block;
     box-sizing: border-box;
+    display: inline-block;
     width: $dns-checkbox-input-width;
     height: $dns-checkbox-input-height;
     cursor: pointer;
+    background-color: $dns-checkbox-input-background-color;
     border: $dns-checkbox-input-border;
     border-radius: $dns-checkbox-input-border-radius;
-    background-color: $dns-checkbox-input-background-color;
 
     &::after {
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 4px;
       width: 3px;
       height: 7px;
-      content: '';
+      content: "";
       border: 2px solid $dns-checkbox-icon-color;
-      border-left: 0;
       border-top: 0;
+      border-left: 0;
       transform: rotate(45deg) scaleY(0);
       transform-origin: center;
     }
@@ -75,15 +75,15 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    opacity: 0;
     margin: 0;
     outline: none;
+    opacity: 0;
 
     // when checked
     &:checked {
       & + .dns-checkbox__inner {
-        border-color: $dns-checkbox-checked-input-border-color;
         background-color: $dns-checkbox-checked-input-background-color;
+        border-color: $dns-checkbox-checked-input-border-color;
 
         &::after {
           border-color: $dns-checkbox-checked-input-border-color;
@@ -95,9 +95,9 @@
     // when disabled
     &:disabled {
       & + .dns-checkbox__inner {
-        border-color: $dns-checkbox-disabled-input-border-color;
-        background-color: $dns-checkbox-disabled-input-fill;
         cursor: not-allowed;
+        background-color: $dns-checkbox-disabled-input-fill;
+        border-color: $dns-checkbox-disabled-input-border-color;
 
         &::after {
           border-color: $dns-checkbox-disabled-checked-icon-color;
@@ -108,7 +108,7 @@
 
   // @include elm(label) {
   &__label {
-    font-size: $dns-checkbox-font-size;
     padding-left: 8px;
+    font-size: $dns-checkbox-font-size;
   }
 }
