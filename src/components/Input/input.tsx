@@ -3,6 +3,7 @@ import React, {
   ReactChild,
   InputHTMLAttributes,
   TextareaHTMLAttributes,
+  useState,
 } from 'react';
 import classnames from 'classnames';
 
@@ -16,14 +17,10 @@ interface IBaseInputProps {
   value?: InputValue;
   disabled?: boolean;
   children?: React.ReactChild;
-  onChange?: (
-    value: InputValue,
-    e: React.ChangeEvent<HTMLInputElement>,
-  ) => void;
+  onChange?: (value: InputValue, e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export type InputProps = IBaseInputProps &
-  InputHTMLAttributes<HTMLInputElement>;
+export type InputProps = IBaseInputProps & InputHTMLAttributes<HTMLInputElement>;
 
 export const Input: FC<InputProps> = (props: InputProps) => {
   const {
@@ -71,21 +68,31 @@ export const Input: FC<InputProps> = (props: InputProps) => {
 interface ITextAreaBaseProps {
   className?: string;
   name?: string;
-  // eslint-disable-next-line @typescript-eslint/ban-types
-  autoSize?: boolean | Object; // TODO: handle `autoSize` prop
-  children?: ReactChild;
+  value?: InputValue | ReactChild;
+  // autoSize?: boolean | Object; // TODO: handle `autoSize` prop
+  onChange?: (value: boolean, e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
-export type TextAreaProps = ITextAreaBaseProps &
-  TextareaHTMLAttributes<HTMLTextAreaElement>;
+
+export type TextAreaProps = ITextAreaBaseProps & TextareaHTMLAttributes<HTMLTextAreaElement>;
+
 export const TextArea: FC<TextAreaProps> = (props: TextAreaProps) => {
-  const { className, children, ...restProps } = props;
+  const { className, name, value, onChange, ...restProps } = props;
   const classes = classnames('dns-input', className);
+  const [text, setText] = useState(value);
+  const handleChange = (evt: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setText(evt.target.value);
+    onChange && onChange(evt);
+  };
 
   return (
     <div className={classes}>
-      <textarea className="dns-input__elm" {...restProps}>
-        {children}
-      </textarea>
+      <textarea
+        name={name}
+        className="dns-input__elm"
+        value={text}
+        onChange={handleChange}
+        {...restProps}
+      ></textarea>
     </div>
   );
 };

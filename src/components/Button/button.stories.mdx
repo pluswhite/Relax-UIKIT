@@ -1,4 +1,4 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import Button, { ButtonGroup } from './button';
@@ -108,13 +108,13 @@ import Button, { ButtonGroup } from './button';
 ## Sizes
 
 <Preview>
-  <Button btnType="primary">Default</Button>
   <Button btnType="primary" size="xs">
     Extra Small
   </Button>
   <Button btnType="primary" size="sm">
     Small
   </Button>
+  <Button btnType="primary">Default</Button>
   <Button btnType="primary" size="md">
     Medium
   </Button>
@@ -135,8 +135,10 @@ import Button, { ButtonGroup } from './button';
 
 ## API
 
+<Props />
+
 | Attributes 属性 | Type 类型 | Accepted values 可选值 | Default 默认值 |
 | --------------- | --------- | ---------------------- | -------------- |
-| btnType         | td        | td                     |                |
+| btnType         | td        | td                     | Default        |
 | size            | td        | td                     |                |
 | disabled        | td        | td                     |                |
