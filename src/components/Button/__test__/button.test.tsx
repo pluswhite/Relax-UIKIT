@@ -24,7 +24,7 @@ describe('Button component test', () => {
 
     expect(elm).toBeInTheDocument();
     expect(elm.tagName).toEqual('BUTTON');
-    expect(elm).toHaveClass('dns-button dns-button--default');
+    expect(elm).toHaveClass('rx-button rx-button--default');
 
     fireEvent.click(elm);
     expect(defaultProps.onClick).toHaveBeenCalled();
@@ -35,7 +35,7 @@ describe('Button component test', () => {
     const elm = wrapper.getByText('Button');
 
     expect(elm).toBeInTheDocument();
-    expect(elm).toHaveClass('dns-button dns-button--primary dns-button--lg test-btn');
+    expect(elm).toHaveClass('rx-button rx-button--primary rx-button--lg test-btn');
   });
 
   it('should render disabled button correctly when disabled prop set to be true', () => {
@@ -43,7 +43,7 @@ describe('Button component test', () => {
     const elm = wrapper.getByText('Disabled') as HTMLButtonElement;
 
     expect(elm).toBeInTheDocument();
-    expect(elm).toHaveClass('dns-button dns-button--default');
+    expect(elm).toHaveClass('rx-button rx-button--default');
     expect(elm).toHaveProperty('disabled');
     expect(elm.disabled).toBeTruthy();
 

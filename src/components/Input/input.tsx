@@ -35,9 +35,9 @@ export const Input: FC<InputProps> = (props: InputProps) => {
   } = props;
 
   const classes = classnames(
-    'dns-input',
+    'rx-input',
     {
-      [`dns-input--${size}`]: size,
+      [`rx-input--${size}`]: size,
       'is-disabled': disabled,
     },
     className,
@@ -49,9 +49,9 @@ export const Input: FC<InputProps> = (props: InputProps) => {
 
   return (
     <div className={classes}>
-      <span className="dns-input__prefix" />
+      <span className="rx-input__prefix" />
       <input
-        className="dns-input__elm"
+        className="rx-input__elm"
         type="text"
         name={name}
         disabled={disabled}
@@ -60,7 +60,7 @@ export const Input: FC<InputProps> = (props: InputProps) => {
         data-testid="test-input"
         {...restProps}
       />
-      <span className="dns-input__suffix">{children}</span>
+      <span className="rx-input__suffix">{children}</span>
     </div>
   );
 };
@@ -77,7 +77,7 @@ export type TextAreaProps = ITextAreaBaseProps & TextareaHTMLAttributes<HTMLText
 
 export const TextArea: FC<TextAreaProps> = (props: TextAreaProps) => {
   const { className, name, value, onChange, ...restProps } = props;
-  const classes = classnames('dns-input', className);
+  const classes = classnames('rx-input', className);
   const [text, setText] = useState(value);
   const handleChange = (evt: React.ChangeEvent<HTMLTextAreaElement>) => {
     setText(evt.target.value);
@@ -88,7 +88,7 @@ export const TextArea: FC<TextAreaProps> = (props: TextAreaProps) => {
     <div className={classes}>
       <textarea
         name={name}
-        className="dns-input__elm"
+        className="rx-input__elm"
         value={text}
         onChange={handleChange}
         {...restProps}

@@ -33,8 +33,8 @@ export const Radio: FC<RadioProps> = (props: RadioProps) => {
 
   const [checkedState, setCheckedState] = useState(checked);
 
-  const wrapperClasses = classnames('dns-radio', className);
-  const radioClasses = classnames('dns-radio__input', {
+  const wrapperClasses = classnames('rx-radio', className);
+  const radioClasses = classnames('rx-radio__input', {
     'is-checked': checkedState,
     'is-disabled': disabled,
   });
@@ -48,7 +48,7 @@ export const Radio: FC<RadioProps> = (props: RadioProps) => {
     <label className={wrapperClasses}>
       <span className={radioClasses}>
         <input
-          className="dns-radio__radiobox"
+          className="rx-radio__radiobox"
           type="radio"
           name={name}
           checked={checkedState}
@@ -58,9 +58,9 @@ export const Radio: FC<RadioProps> = (props: RadioProps) => {
           value={value}
           {...restProps}
         />
-        <span className="dns-radio__inner" />
+        <span className="rx-radio__inner" />
       </span>
-      <span className="dns-radio__label">{children}</span>
+      <span className="rx-radio__label">{children}</span>
     </label>
   );
 };

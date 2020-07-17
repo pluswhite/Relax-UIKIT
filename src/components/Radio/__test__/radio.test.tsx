@@ -26,7 +26,7 @@ describe('Radio component test', () => {
     const radioElm = getByTestId('test-radio');
 
     expect(getByText(defaultProps.children as string)).toBeInTheDocument();
-    expect(container.firstChild).toHaveClass('dns-radio');
+    expect(container.firstChild).toHaveClass('rx-radio');
     expect(radioElm).not.toBeChecked();
   });
 

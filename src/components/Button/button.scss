@@ -15,20 +15,20 @@
 
 @mixin button-plain($color) {
   color: $color;
-  background: mix($dns-white, $color, 90%);
-  border-color: mix($dns-white, $color, 60%);
+  background: mix($rx-white, $color, 90%);
+  border-color: mix($rx-white, $color, 60%);
 
   &:hover,
   &:focus {
-    color: $dns-white;
+    color: $rx-white;
     background: $color;
     border-color: $color;
   }
 
   &:active {
-    color: $dns-white;
-    background: mix($dns-black, $color, $dns-button-active-shade-percent);
-    border-color: mix($dns-black, $color, $dns-button-active-shade-percent);
+    color: $rx-white;
+    background: mix($rx-black, $color, $rx-button-active-shade-percent);
+    border-color: mix($rx-black, $color, $rx-button-active-shade-percent);
     outline: none;
   }
 
@@ -37,9 +37,9 @@
     &:hover,
     &:focus,
     &:active {
-      color: mix($dns-white, $color, 40%);
-      background: mix($dns-white, $color, 90%);
-      border-color: mix($dns-white, $color, 80%);
+      color: mix($rx-white, $color, 40%);
+      background: mix($rx-white, $color, 90%);
+      border-color: mix($rx-white, $color, 80%);
     }
   }
 }
@@ -52,22 +52,22 @@
   &:hover,
   &:focus {
     color: $color;
-    background: mix($dns-white, $background-color, $dns-button-hover-tint-percent);
+    background: mix($rx-white, $background-color, $rx-button-hover-tint-percent);
 
-    border-color: mix($dns-white, $border-color, $dns-button-hover-tint-percent);
+    border-color: mix($rx-white, $border-color, $rx-button-hover-tint-percent);
   }
 
   &:active {
     color: $color;
-    background: mix($dns-color-black, $background-color, $dns-button-active-shade-percent);
-    border-color: mix($dns-color-black, $border-color, $dns-button-active-shade-percent);
+    background: mix($rx-color-black, $background-color, $rx-button-active-shade-percent);
+    border-color: mix($rx-color-black, $border-color, $rx-button-active-shade-percent);
     outline: none;
   }
 
   &.is-active {
     color: $color;
-    background: mix($dns-color-black, $background-color, $dns-button-active-shade-percent);
-    border-color: mix($dns-color-black, $border-color, $dns-button-active-shade-percent);
+    background: mix($rx-color-black, $background-color, $rx-button-active-shade-percent);
+    border-color: mix($rx-color-black, $border-color, $rx-button-active-shade-percent);
   }
 
   &.is-disabled {
@@ -75,9 +75,9 @@
     &:hover,
     &:focus,
     &:active {
-      color: $dns-white;
-      background-color: mix($background-color, $dns-white);
-      border-color: mix($border-color, $dns-white);
+      color: $rx-white;
+      background-color: mix($background-color, $rx-white);
+      border-color: mix($border-color, $rx-white);
     }
   }
 
@@ -90,26 +90,26 @@
   box-sizing: border-box;
   display: inline-block;
 
-  padding: $dns-button-padding-horizontal $dns-button-padding-vertical;
+  padding: $rx-button-padding-horizontal $rx-button-padding-vertical;
   margin: 0;
 
   line-height: 1;
-  color: $dns-button-default-font-color;
+  color: $rx-button-default-font-color;
   text-align: center;
   cursor: pointer;
 
-  background: $dns-button-default-background-color;
-  border: $dns-border-base;
+  background: $rx-button-default-background-color;
+  border: $rx-border-base;
   outline: none;
   transition: 0.1s;
 
   --webkit-appearance: none;
 
   @include button-size(
-    $dns-button-padding-vertical,
-    $dns-button-padding-horizontal,
-    $dns-button-font-size,
-    $dns-button-border-radius
+    $rx-button-padding-vertical,
+    $rx-button-padding-horizontal,
+    $rx-button-font-size,
+    $rx-button-border-radius
   );
 
   & + & {
@@ -118,62 +118,62 @@
 
   &:hover,
   &:focus {
-    color: $dns-primary;
-    background-color: $dns-primary-light-90;
-    border-color: $dns-primary;
+    color: $rx-primary;
+    background-color: $rx-primary-light-90;
+    border-color: $rx-primary;
   }
 
   &:active {
-    color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
-    border-color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
+    color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
+    border-color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
     outline: none;
   }
 
   @include when(plain) {
     &:hover,
     &:focus {
-      color: $dns-primary;
-      background: $dns-white;
-      border-color: $dns-primary;
+      color: $rx-primary;
+      background: $rx-white;
+      border-color: $rx-primary;
     }
 
     &:active {
-      color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
-      background: $dns-white;
-      border-color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
+      color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
+      background: $rx-white;
+      border-color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
       outline: none;
     }
   }
 
   @include when(active) {
-    color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
-    border-color: mix($dns-black, $dns-primary, $dns-button-active-shade-percent);
+    color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
+    border-color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
   }
 
   @include when(disabled) {
     &,
     &:hover,
     &:focus {
-      color: $dns-button-disabled-font-color;
+      color: $rx-button-disabled-font-color;
       cursor: not-allowed;
-      background-color: $dns-button-disabled-background-color;
+      background-color: $rx-button-disabled-background-color;
       background-image: none;
-      border-color: $dns-button-disabled-border-color;
+      border-color: $rx-button-disabled-border-color;
     }
 
     &.is-plain {
       &,
       &:hover,
       &:focus {
-        color: $dns-button-disabled-font-color;
-        background-color: $dns-button-disabled-background-color;
-        border-color: $dns-button-disabled-border-color;
+        color: $rx-button-disabled-font-color;
+        background-color: $rx-button-disabled-background-color;
+        border-color: $rx-button-disabled-border-color;
       }
     }
   }
 
   @include when(circle) {
-    padding: $dns-button-padding-vertical;
+    padding: $rx-button-padding-vertical;
     border-radius: 50%;
   }
 
@@ -186,99 +186,99 @@
 
   @include mod(primary) {
     @include button-variant(
-      $dns-button-primary-font-color,
-      $dns-button-primary-background-color,
-      $dns-button-primary-border-color
+      $rx-button-primary-font-color,
+      $rx-button-primary-background-color,
+      $rx-button-primary-border-color
     );
   }
 
   @include mod(success) {
     @include button-variant(
-      $dns-button-success-font-color,
-      $dns-button-success-background-color,
-      $dns-button-success-border-color
+      $rx-button-success-font-color,
+      $rx-button-success-background-color,
+      $rx-button-success-border-color
     );
   }
 
   @include mod(warning) {
     @include button-variant(
-      $dns-button-warning-font-color,
-      $dns-button-warning-background-color,
-      $dns-button-warning-border-color
+      $rx-button-warning-font-color,
+      $rx-button-warning-background-color,
+      $rx-button-warning-border-color
     );
   }
 
   @include mod(danger) {
     @include button-variant(
-      $dns-button-danger-font-color,
-      $dns-button-danger-background-color,
-      $dns-button-danger-border-color
+      $rx-button-danger-font-color,
+      $rx-button-danger-background-color,
+      $rx-button-danger-border-color
     );
   }
 
   @include mod(info) {
     @include button-variant(
-      $dns-button-info-font-color,
-      $dns-button-info-background-color,
-      $dns-button-info-border-color
+      $rx-button-info-font-color,
+      $rx-button-info-background-color,
+      $rx-button-info-border-color
     );
   }
 
   @include mod(link) {
-    color: $dns-primary;
+    color: $rx-primary;
     text-decoration: none;
     border: none;
 
     &:hover,
     &:focus {
-      color: mix($dns-white, $dns-primary, $dns-button-hover-tint-percent);
+      color: mix($rx-white, $rx-primary, $rx-button-hover-tint-percent);
       background-color: transparent;
     }
 
     &:active {
-      color: mix($dns-white, $dns-primary, $dns-button-active-shade-percent);
+      color: mix($rx-white, $rx-primary, $rx-button-active-shade-percent);
       text-decoration: underline;
     }
 
     &.is-disabled {
-      color: $dns-button-disabled-font-color;
+      color: $rx-button-disabled-font-color;
       cursor: not-allowed;
     }
   }
 
   @include mod(xs) {
     @include button-size(
-      $dns-button-extra-small-padding-vertical,
-      $dns-button-extra-small-padding-horizontal,
-      $dns-button-extra-small-font-size,
-      $dns-button-extra-small-border-radius
+      $rx-button-extra-small-padding-vertical,
+      $rx-button-extra-small-padding-horizontal,
+      $rx-button-extra-small-font-size,
+      $rx-button-extra-small-border-radius
     );
   }
 
   @include mod(sm) {
     @include button-size(
-      $dns-button-small-padding-vertical,
-      $dns-button-small-padding-horizontal,
-      $dns-button-small-font-size,
-      $dns-button-small-border-radius
+      $rx-button-small-padding-vertical,
+      $rx-button-small-padding-horizontal,
+      $rx-button-small-font-size,
+      $rx-button-small-border-radius
     );
   }
 
   @include mod(md) {
     @include button-size(
-      $dns-button-medium-padding-vertical,
-      $dns-button-medium-padding-horizontal,
-      $dns-button-medium-font-size,
-      $dns-button-medium-border-radius
+      $rx-button-medium-padding-vertical,
+      $rx-button-medium-padding-horizontal,
+      $rx-button-medium-font-size,
+      $rx-button-medium-border-radius
     );
   }
 
   @include mod(lg) {
     @include button-size(
-      $dns-button-large-padding-vertical,
-      $dns-button-large-padding-horizontal,
-      $dns-button-large-font-size,
-      $dns-button-large-border-radius
+      $rx-button-large-padding-vertical,
+      $rx-button-large-padding-horizontal,
+      $rx-button-large-font-size,
+      $rx-button-large-border-radius
     );
   }
 }
@@ -287,11 +287,11 @@
   display: inline-block;
   vertical-align: middle;
 
-  & > .dns-button {
+  & > .rx-button {
     position: relative;
     float: left;
 
-    & + .dns-button {
+    & + .rx-button {
       margin-left: 0;
     }
 
@@ -310,10 +310,10 @@
     }
 
     &:first-child:last-child {
-      border-top-left-radius: $dns-button-border-radius;
-      border-top-right-radius: $dns-button-border-radius;
-      border-bottom-right-radius: $dns-button-border-radius;
-      border-bottom-left-radius: $dns-button-border-radius;
+      border-top-left-radius: $rx-button-border-radius;
+      border-top-right-radius: $rx-button-border-radius;
+      border-bottom-right-radius: $rx-button-border-radius;
+      border-bottom-left-radius: $rx-button-border-radius;
 
       &.is-round {
         border-radius: 20px;
@@ -344,19 +344,19 @@
     }
   }
 
-  @each $name in $dns-colors {
-    .dns-button--#{$name} {
+  @each $name in $rx-colors {
+    .rx-button--#{$name} {
       &:first-child {
-        border-right-color: rgba($dns-white, 0.5);
+        border-right-color: rgba($rx-white, 0.5);
       }
 
       &:last-child {
-        border-left-color: rgba($dns-white, 0.5);
+        border-left-color: rgba($rx-white, 0.5);
       }
 
       &:not(:first-child):not(:last-child) {
-        border-right-color: rgba($dns-white, 0.5);
-        border-left-color: rgba($dns-white, 0.5);
+        border-right-color: rgba($rx-white, 0.5);
+        border-left-color: rgba($rx-white, 0.5);
       }
     }
   }

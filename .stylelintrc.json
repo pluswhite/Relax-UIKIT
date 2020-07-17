@@ -5,6 +5,7 @@
     "number-leading-zero": null,
     "string-quotes": "single",
     "scss/operator-no-newline-after": null,
-    "scss/operator-no-newline-before": null
+    "scss/operator-no-newline-before": null,
+    "selector-class-pattern": null
   }
 }

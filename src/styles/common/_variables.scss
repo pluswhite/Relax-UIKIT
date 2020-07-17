@@ -7,82 +7,82 @@
  */
 
 // base color
-$dns-color-white: #fff !default;
-$dns-color-blue: #36c5f0 !default;
-$dns-color-indigo: #6209f1 !default;
-$dns-color-purple: #6437b6 !default;
-$dns-color-pink: #e01e5a !default;
-$dns-color-red: #e24f4f !default;
-$dns-color-orange: #ecb22e !default;
-$dns-color-yellow: #eab73d !default;
-$dns-color-green: #2eb67d !default;
-$dns-color-teal: #16a9a1 !default;
-$dns-color-cyan: #18d6f3 !default;
-$dns-color-black: #1264a3 !default;
-$dns-color-gray: #646464 !default;
+$rx-color-white: #fff !default;
+$rx-color-blue: #36c5f0 !default;
+$rx-color-indigo: #6209f1 !default;
+$rx-color-purple: #6437b6 !default;
+$rx-color-pink: #e01e5a !default;
+$rx-color-red: #e24f4f !default;
+$rx-color-orange: #ecb22e !default;
+$rx-color-yellow: #eab73d !default;
+$rx-color-green: #2eb67d !default;
+$rx-color-teal: #16a9a1 !default;
+$rx-color-cyan: #18d6f3 !default;
+$rx-color-black: #1264a3 !default;
+$rx-color-gray: #646464 !default;
 
 // gray color
-$dns-color-gray-900: mix($dns-color-white, $dns-color-gray, 10%) !default;
-$dns-color-gray-800: mix($dns-color-white, $dns-color-gray, 20%) !default;
-$dns-color-gray-700: mix($dns-color-white, $dns-color-gray, 30%) !default;
-$dns-color-gray-600: mix($dns-color-white, $dns-color-gray, 40%) !default;
-$dns-color-gray-500: mix($dns-color-white, $dns-color-gray, 50%) !default;
-$dns-color-gray-400: mix($dns-color-white, $dns-color-gray, 60%) !default;
-$dns-color-gray-300: mix($dns-color-white, $dns-color-gray, 70%) !default;
-$dns-color-gray-200: mix($dns-color-white, $dns-color-gray, 80%) !default;
-$dns-color-gray-100: mix($dns-color-white, $dns-color-gray, 90%) !default;
-$dns-color-gray-base: mix($dns-color-white, $dns-color-gray, 95%) !default;
+$rx-color-gray-900: mix($rx-color-white, $rx-color-gray, 10%) !default;
+$rx-color-gray-800: mix($rx-color-white, $rx-color-gray, 20%) !default;
+$rx-color-gray-700: mix($rx-color-white, $rx-color-gray, 30%) !default;
+$rx-color-gray-600: mix($rx-color-white, $rx-color-gray, 40%) !default;
+$rx-color-gray-500: mix($rx-color-white, $rx-color-gray, 50%) !default;
+$rx-color-gray-400: mix($rx-color-white, $rx-color-gray, 60%) !default;
+$rx-color-gray-300: mix($rx-color-white, $rx-color-gray, 70%) !default;
+$rx-color-gray-200: mix($rx-color-white, $rx-color-gray, 80%) !default;
+$rx-color-gray-100: mix($rx-color-white, $rx-color-gray, 90%) !default;
+$rx-color-gray-base: mix($rx-color-white, $rx-color-gray, 95%) !default;
 
 // system color
-$dns-primary: $dns-color-blue !default;
-$dns-secondary: $dns-color-gray-600 !default;
-$dns-success: $dns-color-green !default;
-$dns-info: $dns-color-cyan !default;
-$dns-warning: $dns-color-orange !default;
-$dns-danger: $dns-color-red !default;
-$dns-light: $dns-color-gray-100 !default;
-$dns-dark: $dns-color-gray-800 !default;
-$dns-black: $dns-color-black !default;
-$dns-white: $dns-color-white !default;
+$rx-primary: $rx-color-blue !default;
+$rx-secondary: $rx-color-gray-600 !default;
+$rx-success: $rx-color-green !default;
+$rx-info: $rx-color-cyan !default;
+$rx-warning: $rx-color-orange !default;
+$rx-danger: $rx-color-red !default;
+$rx-light: $rx-color-gray-100 !default;
+$rx-dark: $rx-color-gray-800 !default;
+$rx-black: $rx-color-black !default;
+$rx-white: $rx-color-white !default;
 
 // primary gradient
-$dns-primary-light-10: mix($dns-color-white, $dns-primary, 10%) !default;
-$dns-primary-light-20: mix($dns-color-white, $dns-primary, 20%) !default;
-$dns-primary-light-30: mix($dns-color-white, $dns-primary, 30%) !default;
-$dns-primary-light-40: mix($dns-color-white, $dns-primary, 40%) !default;
-$dns-primary-light-50: mix($dns-color-white, $dns-primary, 50%) !default;
-$dns-primary-light-60: mix($dns-color-white, $dns-primary, 60%) !default;
-$dns-primary-light-70: mix($dns-color-white, $dns-primary, 70%) !default;
-$dns-primary-light-80: mix($dns-color-white, $dns-primary, 80%) !default;
-$dns-primary-light-90: mix($dns-color-white, $dns-primary, 90%) !default;
+$rx-primary-light-10: mix($rx-color-white, $rx-primary, 10%) !default;
+$rx-primary-light-20: mix($rx-color-white, $rx-primary, 20%) !default;
+$rx-primary-light-30: mix($rx-color-white, $rx-primary, 30%) !default;
+$rx-primary-light-40: mix($rx-color-white, $rx-primary, 40%) !default;
+$rx-primary-light-50: mix($rx-color-white, $rx-primary, 50%) !default;
+$rx-primary-light-60: mix($rx-color-white, $rx-primary, 60%) !default;
+$rx-primary-light-70: mix($rx-color-white, $rx-primary, 70%) !default;
+$rx-primary-light-80: mix($rx-color-white, $rx-primary, 80%) !default;
+$rx-primary-light-90: mix($rx-color-white, $rx-primary, 90%) !default;
 
 // success gradient
-$dns-success-light: mix($dns-color-white, $dns-success, 80%) !default;
-$dns-success-lighter: mix($dns-color-white, $dns-success, 90%) !default;
+$rx-success-light: mix($rx-color-white, $rx-success, 80%) !default;
+$rx-success-lighter: mix($rx-color-white, $rx-success, 90%) !default;
 
 // info gradient
-$dns-info-light: mix($dns-color-white, $dns-info, 80%) !default;
-$dns-info-lighter: mix($dns-color-white, $dns-info, 90%) !default;
+$rx-info-light: mix($rx-color-white, $rx-info, 80%) !default;
+$rx-info-lighter: mix($rx-color-white, $rx-info, 90%) !default;
 
 // warning gradient
-$dns-warning-light: mix($dns-color-white, $dns-warning, 80%) !default;
-$dns-warning-lighter: mix($dns-color-white, $dns-warning, 90%) !default;
+$rx-warning-light: mix($rx-color-white, $rx-warning, 80%) !default;
+$rx-warning-lighter: mix($rx-color-white, $rx-warning, 90%) !default;
 
 // danger gradient
-$dns-danger-light: mix($dns-color-white, $dns-danger, 80%) !default;
-$dns-danger-lighter: mix($dns-color-white, $dns-danger, 90%) !default;
+$rx-danger-light: mix($rx-color-white, $rx-danger, 80%) !default;
+$rx-danger-lighter: mix($rx-color-white, $rx-danger, 90%) !default;
 
-$dns-colors: (primary, success, warning, danger, info, light, dark);
+$rx-colors: (primary, success, warning, danger, info, light, dark);
 
-$dns-theme-colors: (
-  'primary': $dns-primary,
-  'secondary': $dns-secondary,
-  'success': $dns-success,
-  'info': $dns-info,
-  'warning': $dns-warning,
-  'danger': $dns-danger,
-  'light': $dns-light,
-  'dark': $dns-dark,
+$rx-theme-colors: (
+  'primary': $rx-primary,
+  'secondary': $rx-secondary,
+  'success': $rx-success,
+  'info': $rx-info,
+  'warning': $rx-warning,
+  'danger': $rx-danger,
+  'light': $rx-light,
+  'dark': $rx-dark,
 );
 
 /**
@@ -90,294 +90,294 @@ $dns-theme-colors: (
  */
 
 // text color
-$dns-text-color-primary: $dns-color-gray-900 !default;
-$dns-text-color-regular: $dns-color-gray-800 !default;
-$dns-text-color-secondary: $dns-color-gray-700 !default;
-$dns-text-color-placeholder: $dns-color-gray-400 !default;
+$rx-text-color-primary: $rx-color-gray-900 !default;
+$rx-text-color-regular: $rx-color-gray-800 !default;
+$rx-text-color-secondary: $rx-color-gray-700 !default;
+$rx-text-color-placeholder: $rx-color-gray-400 !default;
 
 /**
  * Border
  */
 // border color
-$dns-border-color-base: $dns-color-gray-400 !default;
-$dns-border-color-light: $dns-color-gray-300 !default;
-$dns-border-color-lighter: $dns-color-gray-200 !default;
-$dns-border-color-extra-light: $dns-color-gray-100 !default;
+$rx-border-color-base: $rx-color-gray-400 !default;
+$rx-border-color-light: $rx-color-gray-300 !default;
+$rx-border-color-lighter: $rx-color-gray-200 !default;
+$rx-border-color-extra-light: $rx-color-gray-100 !default;
 
-$dns-border-width-base: 1px !default;
-$dns-border-style-base: solid !default;
-$dns-border-color-hover: $dns-text-color-placeholder !default;
-$dns-border-base: $dns-border-width-base $dns-border-style-base $dns-border-color-base !default;
+$rx-border-width-base: 1px !default;
+$rx-border-style-base: solid !default;
+$rx-border-color-hover: $rx-text-color-placeholder !default;
+$rx-border-base: $rx-border-width-base $rx-border-style-base $rx-border-color-base !default;
 
 // border radius
-$dns-border-radius-base: 4px !default;
-$dns-border-radius-small: 2px !default;
-$dns-border-radius-circle: 100% !default;
-$dns-border-radius-zero: 0 !default;
+$rx-border-radius-base: 4px !default;
+$rx-border-radius-small: 2px !default;
+$rx-border-radius-circle: 100% !default;
+$rx-border-radius-zero: 0 !default;
 
 /**
  * Background
  */
 // background color
-$dns-background-color-base: $dns-color-gray-base;
-$dns-background-color-dark: $dns-color-black !default;
-$dns-background-color-light: $dns-color-white !default;
+$rx-background-color-base: $rx-color-gray-base;
+$rx-background-color-dark: $rx-color-black !default;
+$rx-background-color-light: $rx-color-white !default;
 
 /**
  * Typography
  */
-$dns-font-size-extra-small: 12px !default;
-$dns-font-size-small: 13px !default;
-$dns-font-size-base: 14px !default;
-$dns-font-size-medium: 16px !default;
-$dns-font-size-large: 18px !default;
-$dns-font-size-extra-large: 20px !default;
-$dns-font-weight-primary: 500 !default;
-$dns-font-weight-secondary: 100 !default;
-$dns-font-color-disabled-base: $dns-color-gray-500 !default;
+$rx-font-size-extra-small: 12px !default;
+$rx-font-size-small: 13px !default;
+$rx-font-size-base: 14px !default;
+$rx-font-size-medium: 16px !default;
+$rx-font-size-large: 18px !default;
+$rx-font-size-extra-large: 20px !default;
+$rx-font-weight-primary: 500 !default;
+$rx-font-weight-secondary: 100 !default;
+$rx-font-color-disabled-base: $rx-color-gray-500 !default;
 
-$dns-font-color-disabled-base: $dns-color-gray-400 !default;
+$rx-font-color-disabled-base: $rx-color-gray-400 !default;
 
 /**
  * Disabled base
  */
-$dns-disabled-fill-base: $dns-background-color-base !default;
-$dns-disabled-color-base: $dns-text-color-placeholder !default;
-$dns-disabled-border-base: $dns-border-color-light !default;
+$rx-disabled-fill-base: $rx-background-color-base !default;
+$rx-disabled-color-base: $rx-text-color-placeholder !default;
+$rx-disabled-border-base: $rx-border-color-light !default;
 
 /**
  * Line height
  */
 // line height
-$dns-font-line-height-primary: 1.5 !default;
-$dns-font-line-height-secondary: 1.3 !default;
+$rx-font-line-height-primary: 1.5 !default;
+$rx-font-line-height-secondary: 1.3 !default;
 
 /**
  * Box shadow
  */
 // box shadow
-$dns-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
-$dns-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0, 0, 6px rgba(0, 0, 0, 0.12) !default;
-$dns-box-shadow-light: 0 2px 12px rgba(0, 0, 0, 0.1) !default;
+$rx-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
+$rx-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0, 0, 6px rgba(0, 0, 0, 0.12) !default;
+$rx-box-shadow-light: 0 2px 12px rgba(0, 0, 0, 0.1) !default;
 
 /**
  * Spacing
  */
 // spacing
-$dns-spacing-extra-small: 1.2rem !default;
-$dns-spacing-small: 1.6 !default;
-$dns-spacing-medium: 2rem !default;
-$dns-spacing-large: 2.4rem !default;
-$dns-spacing-extra-large: 3.2rem !default;
-$dns-spacing-base: 2.4rem !default;
-$dns-spacing-clear: 0 !default;
+$rx-spacing-extra-small: 1.2rem !default;
+$rx-spacing-small: 1.6 !default;
+$rx-spacing-medium: 2rem !default;
+$rx-spacing-large: 2.4rem !default;
+$rx-spacing-extra-large: 3.2rem !default;
+$rx-spacing-base: 2.4rem !default;
+$rx-spacing-clear: 0 !default;
 
 /**
  * Button
  */
-$dns-button-font-size: $dns-font-size-base !default;
-$dns-button-font-weight: $dns-font-weight-primary !default;
-$dns-button-border-radius: $dns-border-radius-base !default;
-$dns-button-padding-vertical: 12px !default;
-$dns-button-padding-horizontal: 12px !default;
+$rx-button-font-size: $rx-font-size-base !default;
+$rx-button-font-weight: $rx-font-weight-primary !default;
+$rx-button-border-radius: $rx-border-radius-base !default;
+$rx-button-padding-vertical: 12px !default;
+$rx-button-padding-horizontal: 12px !default;
 
 // large size
-$dns-button-large-font-size: $dns-font-size-base !default;
-$dns-button-large-border-radius: $dns-border-radius-base !default;
-$dns-button-large-padding-vertical: 15px !default;
-$dns-button-large-padding-horizontal: 25px !default;
+$rx-button-large-font-size: $rx-font-size-base !default;
+$rx-button-large-border-radius: $rx-border-radius-base !default;
+$rx-button-large-padding-vertical: 15px !default;
+$rx-button-large-padding-horizontal: 25px !default;
 // medium size
-$dns-button-medium-font-size: $dns-font-size-base !default;
-$dns-button-medium-border-radius: $dns-border-radius-base !default;
-$dns-button-medium-padding-vertical: 10px !default;
-$dns-button-medium-padding-horizontal: 20px !default;
+$rx-button-medium-font-size: $rx-font-size-base !default;
+$rx-button-medium-border-radius: $rx-border-radius-base !default;
+$rx-button-medium-padding-vertical: 10px !default;
+$rx-button-medium-padding-horizontal: 20px !default;
 
 // small size
-$dns-button-small-font-size: 12px !default;
-$dns-button-small-border-radius: #{$dns-border-radius-base - 1} !default;
-$dns-button-small-padding-vertical: 9px !default;
-$dns-button-small-padding-horizontal: 15px !default;
+$rx-button-small-font-size: 12px !default;
+$rx-button-small-border-radius: #{$rx-border-radius-base - 1} !default;
+$rx-button-small-padding-vertical: 9px !default;
+$rx-button-small-padding-horizontal: 15px !default;
 
 // extra small size
-$dns-button-extra-small-font-size: 12px !default;
-$dns-button-extra-small-border-radius: #{$dns-border-radius-base - 1} !default;
-$dns-button-extra-small-padding-vertical: 7px !default;
-$dns-button-extra-small-padding-horizontal: 15px !default;
+$rx-button-extra-small-font-size: 12px !default;
+$rx-button-extra-small-border-radius: #{$rx-border-radius-base - 1} !default;
+$rx-button-extra-small-padding-vertical: 7px !default;
+$rx-button-extra-small-padding-horizontal: 15px !default;
 
 // default
-$dns-button-default-font-color: $dns-text-color-regular !default;
-$dns-button-default-background-color: $dns-background-color-light !default;
-$dns-button-default-border-color: $dns-border-color-lighter !default;
+$rx-button-default-font-color: $rx-text-color-regular !default;
+$rx-button-default-background-color: $rx-background-color-light !default;
+$rx-button-default-border-color: $rx-border-color-lighter !default;
 
-$dns-button-disabled-font-color: $dns-text-color-placeholder !default;
-$dns-button-disabled-background-color: $dns-color-white !default;
-$dns-button-disabled-border-color: $dns-border-color-lighter !default;
+$rx-button-disabled-font-color: $rx-text-color-placeholder !default;
+$rx-button-disabled-background-color: $rx-color-white !default;
+$rx-button-disabled-border-color: $rx-border-color-lighter !default;
 
-$dns-button-primary-border-color: $dns-primary !default;
-$dns-button-primary-font-color: $dns-color-white !default;
-$dns-button-primary-background-color: $dns-primary !default;
+$rx-button-primary-border-color: $rx-primary !default;
+$rx-button-primary-font-color: $rx-color-white !default;
+$rx-button-primary-background-color: $rx-primary !default;
 
-$dns-button-success-border-color: $dns-success !default;
-$dns-button-success-font-color: $dns-color-white !default;
-$dns-button-success-background-color: $dns-success !default;
+$rx-button-success-border-color: $rx-success !default;
+$rx-button-success-font-color: $rx-color-white !default;
+$rx-button-success-background-color: $rx-success !default;
 
-$dns-button-warning-border-color: $dns-warning !default;
-$dns-button-warning-font-color: $dns-color-white !default;
-$dns-button-warning-background-color: $dns-warning !default;
+$rx-button-warning-border-color: $rx-warning !default;
+$rx-button-warning-font-color: $rx-color-white !default;
+$rx-button-warning-background-color: $rx-warning !default;
 
-$dns-button-danger-border-color: $dns-danger !default;
-$dns-button-danger-font-color: $dns-color-white !default;
-$dns-button-danger-background-color: $dns-danger !default;
+$rx-button-danger-border-color: $rx-danger !default;
+$rx-button-danger-font-color: $rx-color-white !default;
+$rx-button-danger-background-color: $rx-danger !default;
 
-$dns-button-info-border-color: $dns-info !default;
-$dns-button-info-font-color: $dns-color-white !default;
-$dns-button-info-background-color: $dns-info !default;
+$rx-button-info-border-color: $rx-info !default;
+$rx-button-info-font-color: $rx-color-white !default;
+$rx-button-info-background-color: $rx-info !default;
 
-$dns-button-hover-tint-percent: 20% !default;
-$dns-button-active-shade-percent: 10% !default;
+$rx-button-hover-tint-percent: 20% !default;
+$rx-button-active-shade-percent: 10% !default;
 
 /**
  * Radio
  */
-$dns-radio-font-size: $dns-font-size-base !default;
-$dns-radio-font-weight: $dns-font-weight-primary !default;
-$dns-radio-font-color: $dns-text-color-regular !default;
-$dns-radio-input-height: 14px !default;
-$dns-radio-input-width: 14px !default;
+$rx-radio-font-size: $rx-font-size-base !default;
+$rx-radio-font-weight: $rx-font-weight-primary !default;
+$rx-radio-font-color: $rx-text-color-regular !default;
+$rx-radio-input-height: 14px !default;
+$rx-radio-input-width: 14px !default;
 
-$dns-radio-input-border-radius: $dns-border-radius-circle !default;
-$dns-radio-input-background-color: $dns-white !default;
-$dns-radio-input-border: $dns-border-base !default;
-$dns-radio-input-border-color: $dns-border-color-base !default;
-$dns-radio-icon-color: $dns-white !default;
+$rx-radio-input-border-radius: $rx-border-radius-circle !default;
+$rx-radio-input-background-color: $rx-white !default;
+$rx-radio-input-border: $rx-border-base !default;
+$rx-radio-input-border-color: $rx-border-color-base !default;
+$rx-radio-icon-color: $rx-white !default;
 
-$dns-radio-disabled-input-border-color: $dns-disabled-border-base !default;
-$dns-radio-disabled-input-fill: $dns-disabled-fill-base !default;
-$dns-radio-disabled-icon-color: $dns-disabled-fill-base !default;
+$rx-radio-disabled-input-border-color: $rx-disabled-border-base !default;
+$rx-radio-disabled-input-fill: $rx-disabled-fill-base !default;
+$rx-radio-disabled-icon-color: $rx-disabled-fill-base !default;
 
-$dns-radio-disabled-checked-input-border-color: $dns-disabled-border-base !default;
-$dns-radio-disabled-checked-input-fill: $dns-disabled-fill-base !default;
-$dns-radio-disabled-checked-icon-color: $dns-text-color-placeholder !default;
+$rx-radio-disabled-checked-input-border-color: $rx-disabled-border-base !default;
+$rx-radio-disabled-checked-input-fill: $rx-disabled-fill-base !default;
+$rx-radio-disabled-checked-icon-color: $rx-text-color-placeholder !default;
 
-$dns-radio-checked-font-color: $dns-primary !default;
-$dns-radio-checked-input-border-color: $dns-primary !default;
-$dns-radio-checked-input-background-color: $dns-white !default;
-$dns-radio-checked-icon-color: $dns-primary !default;
+$rx-radio-checked-font-color: $rx-primary !default;
+$rx-radio-checked-input-border-color: $rx-primary !default;
+$rx-radio-checked-input-background-color: $rx-white !default;
+$rx-radio-checked-icon-color: $rx-primary !default;
 
-$dns-radio-input-border-color-hover: $dns-primary !default;
+$rx-radio-input-border-color-hover: $rx-primary !default;
 
-$dns-radio-bordered-height: 40px !default;
-$dns-radio-bordered-padding: 12px 20px 0 10px !default;
-$dns-radio-bordered-medium-padding: 10px 20px 0 10px !default;
-$dns-radio-bordered-small-padding: 8px 15px 0 10px !default;
-$dns-radio-bordered-mini-padding: 6px 15px 0 10px !default;
-$dns-radio-bordered-medium-input-height: 14px !default;
-$dns-radio-bordered-medium-input-width: 14px !default;
-$dns-radio-bordered-medium-height: 36px !default;
-$dns-radio-bordered-small-input-height: 12px !default;
-$dns-radio-bordered-small-input-width: 12px !default;
-$dns-radio-bordered-small-height: 32px !default;
-$dns-radio-bordered-mini-input-height: 12px !default;
-$dns-radio-bordered-mini-input-width: 12px !default;
-$dns-radio-bordered-mini-height: 28px !default;
+$rx-radio-bordered-height: 40px !default;
+$rx-radio-bordered-padding: 12px 20px 0 10px !default;
+$rx-radio-bordered-medium-padding: 10px 20px 0 10px !default;
+$rx-radio-bordered-small-padding: 8px 15px 0 10px !default;
+$rx-radio-bordered-mini-padding: 6px 15px 0 10px !default;
+$rx-radio-bordered-medium-input-height: 14px !default;
+$rx-radio-bordered-medium-input-width: 14px !default;
+$rx-radio-bordered-medium-height: 36px !default;
+$rx-radio-bordered-small-input-height: 12px !default;
+$rx-radio-bordered-small-input-width: 12px !default;
+$rx-radio-bordered-small-height: 32px !default;
+$rx-radio-bordered-mini-input-height: 12px !default;
+$rx-radio-bordered-mini-input-width: 12px !default;
+$rx-radio-bordered-mini-height: 28px !default;
 
-$dns-radio-button-font-size: $dns-font-size-base !default;
-$dns-radio-button-checked-background-color: $dns-primary !default;
-$dns-radio-button-checked-font-color: $dns-white !default;
-$dns-radio-button-checked-border-color: $dns-primary !default;
-$dns-radio-button-disabled-checked-fill: $dns-border-color-extra-light !default;
+$rx-radio-button-font-size: $rx-font-size-base !default;
+$rx-radio-button-checked-background-color: $rx-primary !default;
+$rx-radio-button-checked-font-color: $rx-white !default;
+$rx-radio-button-checked-border-color: $rx-primary !default;
+$rx-radio-button-disabled-checked-fill: $rx-border-color-extra-light !default;
 
 /**
  * Checkbox
  */
-$dns-checkbox-font-size: $dns-font-size-base !default;
-$dns-checkbox-font-weight: $dns-font-weight-primary !default;
-$dns-checkbox-font-color: $dns-text-color-regular !default;
-$dns-checkbox-input-height: 14px !default;
-$dns-checkbox-input-width: 14px !default;
+$rx-checkbox-font-size: $rx-font-size-base !default;
+$rx-checkbox-font-weight: $rx-font-weight-primary !default;
+$rx-checkbox-font-color: $rx-text-color-regular !default;
+$rx-checkbox-input-height: 14px !default;
+$rx-checkbox-input-width: 14px !default;
 
-$dns-checkbox-input-border-radius: $dns-border-radius-small !default;
-$dns-checkbox-input-background-color: $dns-white !default;
-$dns-checkbox-input-border: $dns-border-base !default;
-$dns-checkbox-input-border-color: $dns-border-color-base !default;
-$dns-checkbox-icon-color: $dns-white !default;
+$rx-checkbox-input-border-radius: $rx-border-radius-small !default;
+$rx-checkbox-input-background-color: $rx-white !default;
+$rx-checkbox-input-border: $rx-border-base !default;
+$rx-checkbox-input-border-color: $rx-border-color-base !default;
+$rx-checkbox-icon-color: $rx-white !default;
 
-$dns-checkbox-disabled-input-border-color: $dns-disabled-border-base !default;
-$dns-checkbox-disabled-input-fill: $dns-disabled-fill-base !default;
-$dns-checkbox-disabled-icon-color: $dns-disabled-fill-base !default;
+$rx-checkbox-disabled-input-border-color: $rx-disabled-border-base !default;
+$rx-checkbox-disabled-input-fill: $rx-disabled-fill-base !default;
+$rx-checkbox-disabled-icon-color: $rx-disabled-fill-base !default;
 
-$dns-checkbox-disabled-checked-input-border-color: $dns-disabled-border-base !default;
-$dns-checkbox-disabled-checked-input-fill: $dns-disabled-fill-base !default;
-$dns-checkbox-disabled-checked-icon-color: $dns-text-color-placeholder !default;
+$rx-checkbox-disabled-checked-input-border-color: $rx-disabled-border-base !default;
+$rx-checkbox-disabled-checked-input-fill: $rx-disabled-fill-base !default;
+$rx-checkbox-disabled-checked-icon-color: $rx-text-color-placeholder !default;
 
-$dns-checkbox-checked-font-color: $dns-primary !default;
-$dns-checkbox-checked-input-border-color: $dns-primary !default;
-$dns-checkbox-checked-input-background-color: $dns-white !default;
-$dns-checkbox-checked-icon-color: $dns-primary !default;
+$rx-checkbox-checked-font-color: $rx-primary !default;
+$rx-checkbox-checked-input-border-color: $rx-primary !default;
+$rx-checkbox-checked-input-background-color: $rx-white !default;
+$rx-checkbox-checked-icon-color: $rx-primary !default;
 
-$dns-checkbox-input-border-color-hover: $dns-primary !default;
+$rx-checkbox-input-border-color-hover: $rx-primary !default;
 
-$dns-checkbox-bordered-height: 40px !default;
-$dns-checkbox-bordered-padding: 12px 20px 0 10px !default;
-$dns-checkbox-bordered-medium-padding: 10px 20px 0 10px !default;
-$dns-checkbox-bordered-small-padding: 8px 15px 0 10px !default;
-$dns-checkbox-bordered-mini-padding: 6px 15px 0 10px !default;
-$dns-checkbox-bordered-medium-input-height: 14px !default;
-$dns-checkbox-bordered-medium-input-width: 14px !default;
-$dns-checkbox-bordered-medium-height: 36px !default;
-$dns-checkbox-bordered-small-input-height: 12px !default;
-$dns-checkbox-bordered-small-input-width: 12px !default;
-$dns-checkbox-bordered-small-height: 32px !default;
-$dns-checkbox-bordered-mini-input-height: 12px !default;
-$dns-checkbox-bordered-mini-input-width: 12px !default;
-$dns-checkbox-bordered-mini-height: 28px !default;
+$rx-checkbox-bordered-height: 40px !default;
+$rx-checkbox-bordered-padding: 12px 20px 0 10px !default;
+$rx-checkbox-bordered-medium-padding: 10px 20px 0 10px !default;
+$rx-checkbox-bordered-small-padding: 8px 15px 0 10px !default;
+$rx-checkbox-bordered-mini-padding: 6px 15px 0 10px !default;
+$rx-checkbox-bordered-medium-input-height: 14px !default;
+$rx-checkbox-bordered-medium-input-width: 14px !default;
+$rx-checkbox-bordered-medium-height: 36px !default;
+$rx-checkbox-bordered-small-input-height: 12px !default;
+$rx-checkbox-bordered-small-input-width: 12px !default;
+$rx-checkbox-bordered-small-height: 32px !default;
+$rx-checkbox-bordered-mini-input-height: 12px !default;
+$rx-checkbox-bordered-mini-input-width: 12px !default;
+$rx-checkbox-bordered-mini-height: 28px !default;
 
-$dns-checkbox-button-font-size: $dns-font-size-base !default;
-$dns-checkbox-button-checked-background-color: $dns-primary !default;
-$dns-checkbox-button-checked-font-color: $dns-white !default;
-$dns-checkbox-button-checked-border-color: $dns-primary !default;
-$dns-checkbox-button-disabled-checked-fill: $dns-border-color-extra-light !default;
+$rx-checkbox-button-font-size: $rx-font-size-base !default;
+$rx-checkbox-button-checked-background-color: $rx-primary !default;
+$rx-checkbox-button-checked-font-color: $rx-white !default;
+$rx-checkbox-button-checked-border-color: $rx-primary !default;
+$rx-checkbox-button-disabled-checked-fill: $rx-border-color-extra-light !default;
 
 /**
  * Input
  */
-$dns-input-font-size: $dns-font-size-base !default;
-$dns-input-font-color: $dns-text-color-regular !default;
-$dns-input-width: 140px !default;
-$dns-input-height: 32px !default;
-$dns-input-max-width: 315px !default;
-$dns-input-padding: 4px 11px;
+$rx-input-font-size: $rx-font-size-base !default;
+$rx-input-font-color: $rx-text-color-regular !default;
+$rx-input-width: 140px !default;
+$rx-input-height: 32px !default;
+$rx-input-max-width: 315px !default;
+$rx-input-padding: 4px 11px;
 
-$dns-input-border: $dns-border-base !default;
-$dns-input-border-color: $dns-border-color-base !default;
-$dns-input-border-radius: $dns-border-radius-base !default;
-$dns-input-border-color-hover: $dns-border-color-hover !default;
+$rx-input-border: $rx-border-base !default;
+$rx-input-border-color: $rx-border-color-base !default;
+$rx-input-border-radius: $rx-border-radius-base !default;
+$rx-input-border-color-hover: $rx-border-color-hover !default;
 
-$dns-input-background-color: $dns-white !default;
-$dns-input-fill-disabled: $dns-disabled-fill-base !default;
-$dns-input-color-disabled: $dns-font-color-disabled-base !default;
-$dns-input-icon-color: $dns-text-color-placeholder !default;
-$dns-input-placeholder-color: $dns-text-color-placeholder !default;
+$rx-input-background-color: $rx-white !default;
+$rx-input-fill-disabled: $rx-disabled-fill-base !default;
+$rx-input-color-disabled: $rx-font-color-disabled-base !default;
+$rx-input-icon-color: $rx-text-color-placeholder !default;
+$rx-input-placeholder-color: $rx-text-color-placeholder !default;
 
-$dns-input-hover-border: $dns-border-color-hover !default;
-$dns-input-clear-hover-color: $dns-text-color-secondary !default;
-$dns-input-focus-border: $dns-primary !default;
-$dns-input-focus-fill: $dns-white !default;
+$rx-input-hover-border: $rx-border-color-hover !default;
+$rx-input-clear-hover-color: $rx-text-color-secondary !default;
+$rx-input-focus-border: $rx-primary !default;
+$rx-input-focus-fill: $rx-white !default;
 
-$dns-input-disabled-fill: $dns-disabled-fill-base !default;
-$dns-input-disabled-border: $dns-disabled-border-base !default;
-$dns-input-disabled-color: $dns-disabled-color-base !default;
-$dns-input-disabled-placeholder-color: $dns-text-color-placeholder !default;
+$rx-input-disabled-fill: $rx-disabled-fill-base !default;
+$rx-input-disabled-border: $rx-disabled-border-base !default;
+$rx-input-disabled-color: $rx-disabled-color-base !default;
+$rx-input-disabled-placeholder-color: $rx-text-color-placeholder !default;
 
-$dns-input-large-font-size: 16px !default;
-$dns-input-large-height: 46px !default;
-$dns-input-large-padding: 10px 14px;
-$dns-input-medium-font-size: 14px !default;
-$dns-input-medium-height: 38px !default;
-$dns-input-medium-padding: 6px 12px;
-$dns-input-small-font-size: 13px !default;
-$dns-input-small-height: 26px !default;
-$dns-input-small-padding: 2px 9px;
-$dns-input-extra-small-font-size: 12px !default;
-$dns-input-extra-small-height: 22px !default;
-$dns-input-extra-small-padding: 0 7px;
+$rx-input-large-font-size: 16px !default;
+$rx-input-large-height: 46px !default;
+$rx-input-large-padding: 10px 14px;
+$rx-input-medium-font-size: 14px !default;
+$rx-input-medium-height: 38px !default;
+$rx-input-medium-padding: 6px 12px;
+$rx-input-small-font-size: 13px !default;
+$rx-input-small-height: 26px !default;
+$rx-input-small-padding: 2px 9px;
+$rx-input-extra-small-font-size: 12px !default;
+$rx-input-extra-small-height: 22px !default;
+$rx-input-extra-small-padding: 0 7px;

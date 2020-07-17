@@ -26,7 +26,7 @@ describe('Checkbox component test', () => {
     const checkboxElm = getByTestId('test-checkbox');
 
     expect(getByText(defaultProps.children as string)).toBeInTheDocument();
-    expect(container.firstChild).toHaveClass('dns-checkbox');
+    expect(container.firstChild).toHaveClass('rx-checkbox');
     expect(checkboxElm).not.toBeChecked();
   });
 

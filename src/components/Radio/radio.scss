@@ -7,9 +7,9 @@
 @include bem(radio) {
   position: relative;
   display: inline-block;
-  font-size: $dns-radio-font-size;
-  font-weight: $dns-radio-font-weight;
-  color: $dns-radio-font-color;
+  font-size: $rx-radio-font-size;
+  font-weight: $rx-radio-font-weight;
+  color: $rx-radio-font-color;
   cursor: pointer;
   outline: none;
 
@@ -30,12 +30,12 @@
     outline: none;
 
     @include when(disabled) {
-      .dns-radio__inner {
+      .rx-radio__inner {
         cursor: not-allowed;
       }
 
-      & + .dns-radio__label {
-        color: $dns-radio-disabled-checked-icon-color;
+      & + .rx-radio__label {
+        color: $rx-radio-disabled-checked-icon-color;
         cursor: not-allowed;
       }
     }
@@ -46,12 +46,12 @@
     position: relative;
     box-sizing: border-box;
     display: inline-block;
-    width: $dns-radio-input-width;
-    height: $dns-radio-input-height;
+    width: $rx-radio-input-width;
+    height: $rx-radio-input-height;
     cursor: pointer;
-    background-color: $dns-radio-input-background-color;
-    border: $dns-radio-input-border;
-    border-radius: $dns-radio-input-border-radius;
+    background-color: $rx-radio-input-background-color;
+    border: $rx-radio-input-border;
+    border-radius: $rx-radio-input-border-radius;
 
     &::after {
       position: absolute;
@@ -60,7 +60,7 @@
       width: 6px;
       height: 6px;
       content: '';
-      border-radius: $dns-radio-input-border-radius;
+      border-radius: $rx-radio-input-border-radius;
       transform: translate(-50%, -50%) scale(0);
     }
   }
@@ -78,11 +78,11 @@
 
     // when checked
     &:checked {
-      & + .dns-radio__inner {
-        border-color: $dns-radio-checked-input-border-color;
+      & + .rx-radio__inner {
+        border-color: $rx-radio-checked-input-border-color;
 
         &::after {
-          background-color: $dns-radio-checked-icon-color;
+          background-color: $rx-radio-checked-icon-color;
           transform: translate(-50%, -50%) scale(1);
         }
       }
@@ -90,13 +90,13 @@
 
     // when disabled
     &:disabled {
-      & + .dns-radio__inner {
+      & + .rx-radio__inner {
         cursor: not-allowed;
-        background-color: $dns-radio-disabled-input-fill;
-        border-color: $dns-radio-disabled-input-border-color;
+        background-color: $rx-radio-disabled-input-fill;
+        border-color: $rx-radio-disabled-input-border-color;
 
         &::after {
-          background-color: $dns-radio-disabled-checked-icon-color;
+          background-color: $rx-radio-disabled-checked-icon-color;
         }
       }
     }
@@ -105,6 +105,6 @@
   // @include elm(label) {
   &__label {
     padding-left: 8px;
-    font-size: $dns-radio-font-size;
+    font-size: $rx-radio-font-size;
   }
 }

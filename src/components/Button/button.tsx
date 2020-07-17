@@ -47,10 +47,10 @@ export const Button: FC<ButtonProps> = (props: ButtonProps) => {
   const isLink = btnType === 'link';
 
   const classes = classnames(
-    'dns-button',
-    `dns-button--${btnType}`,
+    'rx-button',
+    `rx-button--${btnType}`,
     {
-      [`dns-button--${size}`]: size,
+      [`rx-button--${size}`]: size,
       'is-plain': plain,
       'is-disabled': disabled,
       'is-round': round,
@@ -83,7 +83,7 @@ interface ButtonGroupProps {
 }
 
 export const ButtonGroup: FC<ButtonGroupProps> = ({ children }: ButtonGroupProps) => {
-  return <div className="dns-button-group">{children}</div>;
+  return <div className="rx-button-group">{children}</div>;
 };
 
 export default Button;

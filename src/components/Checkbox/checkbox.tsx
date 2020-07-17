@@ -29,8 +29,8 @@ const Checkbox: FC<CheckboxProps> = (props: CheckboxProps) => {
 
   const [checkedState, setCheckedState] = useState(checked);
 
-  const wrapperClasses = classnames('dns-checkbox', className);
-  const checkboxClasses = classnames('dns-checkbox__input', {
+  const wrapperClasses = classnames('rx-checkbox', className);
+  const checkboxClasses = classnames('rx-checkbox__input', {
     'is-checked': checkedState,
     'is-disabled': disabled,
   });
@@ -44,7 +44,7 @@ const Checkbox: FC<CheckboxProps> = (props: CheckboxProps) => {
     <label className={wrapperClasses}>
       <span className={checkboxClasses}>
         <input
-          className="dns-checkbox__checkbox"
+          className="rx-checkbox__checkbox"
           type="checkbox"
           name={name}
           checked={checkedState}
@@ -54,9 +54,9 @@ const Checkbox: FC<CheckboxProps> = (props: CheckboxProps) => {
           value={value}
           {...restProps}
         />
-        <span className="dns-checkbox__inner" />
+        <span className="rx-checkbox__inner" />
       </span>
-      <span className="dns-checkbox__label">{children}</span>
+      <span className="rx-checkbox__label">{children}</span>
     </label>
   );
 };

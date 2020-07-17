@@ -8,34 +8,34 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  font-size: $dns-input-font-size;
+  font-size: $rx-input-font-size;
 
   &__elm {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
-    height: $dns-input-height;
-    padding: $dns-input-padding;
+    height: $rx-input-height;
+    padding: $rx-input-padding;
     font-size: inherit;
-    line-height: $dns-input-height;
-    color: $dns-input-font-color;
-    background-color: $dns-input-background-color;
+    line-height: $rx-input-height;
+    color: $rx-input-font-color;
+    background-color: $rx-input-background-color;
     background-image: none;
-    border: $dns-input-border;
-    border-radius: $dns-input-border-radius;
+    border: $rx-input-border;
+    border-radius: $rx-input-border-radius;
     outline: none;
 
     &::placeholder {
-      color: $dns-input-placeholder-color;
+      color: $rx-input-placeholder-color;
     }
 
     &:hover {
-      border-color: $dns-input-hover-border;
+      border-color: $rx-input-hover-border;
     }
 
     &:focus,
     &:active {
-      border-color: $dns-input-focus-border;
+      border-color: $rx-input-focus-border;
       outline: none;
     }
 
@@ -52,53 +52,53 @@
   }
 
   @include mod(lg) {
-    .dns-input__elm {
-      height: $dns-input-large-height;
-      padding: $dns-input-large-padding;
-      font-size: $dns-input-large-font-size;
+    .rx-input__elm {
+      height: $rx-input-large-height;
+      padding: $rx-input-large-padding;
+      font-size: $rx-input-large-font-size;
     }
   }
 
   @include mod(md) {
-    .dns-input__elm {
-      height: $dns-input-medium-height;
-      padding: $dns-input-medium-padding;
-      font-size: $dns-input-medium-font-size;
+    .rx-input__elm {
+      height: $rx-input-medium-height;
+      padding: $rx-input-medium-padding;
+      font-size: $rx-input-medium-font-size;
     }
   }
 
   @include mod(sm) {
-    .dns-input__elm {
-      height: $dns-input-small-height;
-      padding: $dns-input-small-padding;
-      font-size: $dns-input-small-font-size;
+    .rx-input__elm {
+      height: $rx-input-small-height;
+      padding: $rx-input-small-padding;
+      font-size: $rx-input-small-font-size;
     }
   }
 
   @include mod(xs) {
-    .dns-input__elm {
-      height: $dns-input-extra-small-height;
-      padding: $dns-input-extra-small-padding;
-      font-size: $dns-input-extra-small-font-size;
+    .rx-input__elm {
+      height: $rx-input-extra-small-height;
+      padding: $rx-input-extra-small-padding;
+      font-size: $rx-input-extra-small-font-size;
     }
   }
 
   @include when(active) {
-    .dns-input__elm {
-      border-color: $dns-input-focus-border;
+    .rx-input__elm {
+      border-color: $rx-input-focus-border;
       outline: none;
     }
   }
 
   @include when(disabled) {
-    .dns-input__elm {
-      color: $dns-input-disabled-color;
+    .rx-input__elm {
+      color: $rx-input-disabled-color;
       cursor: not-allowed;
-      background-color: $dns-input-disabled-fill;
-      border-color: $dns-input-disabled-border;
+      background-color: $rx-input-disabled-fill;
+      border-color: $rx-input-disabled-border;
 
       &::placeholder {
-        color: $dns-input-disabled-placeholder-color;
+        color: $rx-input-disabled-placeholder-color;
       }
     }
   }

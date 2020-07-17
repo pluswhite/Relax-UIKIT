@@ -7,9 +7,9 @@
 @include bem(checkbox) {
   position: relative;
   display: inline-block;
-  font-size: $dns-checkbox-font-size;
-  font-weight: $dns-checkbox-font-weight;
-  color: $dns-checkbox-font-color;
+  font-size: $rx-checkbox-font-size;
+  font-weight: $rx-checkbox-font-weight;
+  color: $rx-checkbox-font-color;
   cursor: pointer;
   outline: none;
 
@@ -30,12 +30,12 @@
     outline: none;
 
     @include when(disabled) {
-      .dns-checkbox__inner {
+      .rx-checkbox__inner {
         cursor: not-allowed;
       }
 
-      & + .dns-checkbox__label {
-        color: $dns-checkbox-disabled-checked-icon-color;
+      & + .rx-checkbox__label {
+        color: $rx-checkbox-disabled-checked-icon-color;
         cursor: not-allowed;
       }
     }
@@ -46,12 +46,12 @@
     position: relative;
     box-sizing: border-box;
     display: inline-block;
-    width: $dns-checkbox-input-width;
-    height: $dns-checkbox-input-height;
+    width: $rx-checkbox-input-width;
+    height: $rx-checkbox-input-height;
     cursor: pointer;
-    background-color: $dns-checkbox-input-background-color;
-    border: $dns-checkbox-input-border;
-    border-radius: $dns-checkbox-input-border-radius;
+    background-color: $rx-checkbox-input-background-color;
+    border: $rx-checkbox-input-border;
+    border-radius: $rx-checkbox-input-border-radius;
 
     &::after {
       position: absolute;
@@ -60,7 +60,7 @@
       width: 3px;
       height: 7px;
       content: '';
-      border: 2px solid $dns-checkbox-icon-color;
+      border: 2px solid $rx-checkbox-icon-color;
       border-top: 0;
       border-left: 0;
       transform: rotate(45deg) scaleY(0);
@@ -81,12 +81,12 @@
 
     // when checked
     &:checked {
-      & + .dns-checkbox__inner {
-        background-color: $dns-checkbox-checked-input-background-color;
-        border-color: $dns-checkbox-checked-input-border-color;
+      & + .rx-checkbox__inner {
+        background-color: $rx-checkbox-checked-input-background-color;
+        border-color: $rx-checkbox-checked-input-border-color;
 
         &::after {
-          border-color: $dns-checkbox-checked-input-border-color;
+          border-color: $rx-checkbox-checked-input-border-color;
           transform: rotate(45deg) scale(1);
         }
       }
@@ -94,13 +94,13 @@
 
     // when disabled
     &:disabled {
-      & + .dns-checkbox__inner {
+      & + .rx-checkbox__inner {
         cursor: not-allowed;
-        background-color: $dns-checkbox-disabled-input-fill;
-        border-color: $dns-checkbox-disabled-input-border-color;
+        background-color: $rx-checkbox-disabled-input-fill;
+        border-color: $rx-checkbox-disabled-input-border-color;
 
         &::after {
-          border-color: $dns-checkbox-disabled-checked-icon-color;
+          border-color: $rx-checkbox-disabled-checked-icon-color;
         }
       }
     }
@@ -109,6 +109,6 @@
   // @include elm(label) {
   &__label {
     padding-left: 8px;
-    font-size: $dns-checkbox-font-size;
+    font-size: $rx-checkbox-font-size;
   }
 }
