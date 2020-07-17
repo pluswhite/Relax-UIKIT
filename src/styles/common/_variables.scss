@@ -9,20 +9,23 @@
 // base color
 $rx-color-white: #fff !default;
 $rx-color-blue: #36c5f0 !default;
+$rx-color-dark-blue: #3a88fd !default;
 $rx-color-indigo: #6209f1 !default;
-$rx-color-purple: #6437b6 !default;
+$rx-color-purple: #3f0e40 !default;
 $rx-color-pink: #e01e5a !default;
 $rx-color-red: #e24f4f !default;
 $rx-color-orange: #ecb22e !default;
 $rx-color-yellow: #eab73d !default;
 $rx-color-green: #2eb67d !default;
 $rx-color-teal: #16a9a1 !default;
-$rx-color-cyan: #18d6f3 !default;
-$rx-color-black: #1264a3 !default;
+$rx-color-cyan: #36c5f0 !default;
+$rx-color-black: #000 !default;
+$rx-color-light-gray: #f6f6f6 !default;
 $rx-color-gray: #646464 !default;
+$rx-color-middle-gray: #a8a8a8 !default;
 
 // gray color
-$rx-color-gray-900: mix($rx-color-white, $rx-color-gray, 10%) !default;
+$rx-color-gray-900: mix($rx-color-white, $rx-color-gray, 0) !default;
 $rx-color-gray-800: mix($rx-color-white, $rx-color-gray, 20%) !default;
 $rx-color-gray-700: mix($rx-color-white, $rx-color-gray, 30%) !default;
 $rx-color-gray-600: mix($rx-color-white, $rx-color-gray, 40%) !default;
@@ -31,10 +34,10 @@ $rx-color-gray-400: mix($rx-color-white, $rx-color-gray, 60%) !default;
 $rx-color-gray-300: mix($rx-color-white, $rx-color-gray, 70%) !default;
 $rx-color-gray-200: mix($rx-color-white, $rx-color-gray, 80%) !default;
 $rx-color-gray-100: mix($rx-color-white, $rx-color-gray, 90%) !default;
-$rx-color-gray-base: mix($rx-color-white, $rx-color-gray, 95%) !default;
+$rx-color-gray-base: mix($rx-color-white, $rx-color-gray, 99%) !default;
 
 // system color
-$rx-primary: $rx-color-blue !default;
+$rx-primary: $rx-color-dark-blue !default;
 $rx-secondary: $rx-color-gray-600 !default;
 $rx-success: $rx-color-green !default;
 $rx-info: $rx-color-cyan !default;
