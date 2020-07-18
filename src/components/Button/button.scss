@@ -118,14 +118,16 @@
 
   &:hover,
   &:focus {
-    color: $rx-primary;
-    background-color: $rx-primary-light-90;
-    border-color: $rx-primary;
+    // color: $rx-primary;
+    background-color: $rx-button-hover-background-color;
+    box-shadow: $rx-button-box-shadow;
+    // border-color: $rx-primary;
   }
 
   &:active {
-    color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
-    border-color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
+    // color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
+    background-color: $rx-color-light-gray;
+    // border-color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
     outline: none;
   }
 
@@ -179,7 +181,7 @@
 
   @include when(round) {
     padding: 12px 23px;
-    border-radius: 20px;
+    border-radius: 18px;
   }
   // TODO
   // when loading
