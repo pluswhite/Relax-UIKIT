@@ -64,6 +64,13 @@ export const Button: FC<ButtonProps> = (props: ButtonProps) => {
   };
 
   if (isLink) {
+    if (disabled) {
+      return (
+        <a className={classes} {...restProps} onClick={handleClick}>
+          {children}
+        </a>
+      );
+    }
     return (
       <a className={classes} href={href || '#'} {...restProps} onClick={handleClick}>
         {children}

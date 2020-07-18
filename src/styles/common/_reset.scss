@@ -3,8 +3,10 @@
  **/
 @import './variables';
 
+html,
 body {
-  font-family: Roboto, Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  font-family: Roboto, Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑',
+    Arial, sans-serif;
   font-size: $rx-font-size-base;
   color: $rx-color-dark-black;
 
