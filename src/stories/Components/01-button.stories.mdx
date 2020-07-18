@@ -7,7 +7,35 @@ import Button, { ButtonGroup } from '../../components/Button/button';
 
 # Button
 
-## Basic usage
+## Basic usage 基础用法
+
+<Preview>
+  <Button>Default</Button>
+  <Button btnType="success">Primary</Button>
+</Preview>
+
+## Disabled button
+
+<Preview>
+  <Button disabled>Default</Button>
+  <Button btnType="primary" disabled>
+    Primary
+  </Button>
+  <Button btnType="success" disabled>
+    Success
+  </Button>
+  <Button btnType="warning" disabled>
+    Warning
+  </Button>
+  <Button btnType="info" disabled>
+    Info
+  </Button>
+  <Button btnType="danger" disabled>
+    Danger
+  </Button>
+</Preview>
+
+## Color Indication
 
 <Preview>
   <Button>Default</Button>
@@ -16,6 +44,27 @@ import Button, { ButtonGroup } from '../../components/Button/button';
   <Button btnType="warning">Warning</Button>
   <Button btnType="info">Info</Button>
   <Button btnType="danger">Danger</Button>
+</Preview>
+
+## Shape
+
+<Preview>
+  <Button round>Default</Button>
+  <Button btnType="primary" round>
+    Primary
+  </Button>
+  <Button btnType="success" round>
+    Success
+  </Button>
+  <Button btnType="warning" round>
+    Warning
+  </Button>
+  <Button btnType="info" round>
+    Info
+  </Button>
+  <Button btnType="danger" round>
+    Danger
+  </Button>
 </Preview>
 
 <Preview>
@@ -33,25 +82,6 @@ import Button, { ButtonGroup } from '../../components/Button/button';
     Info
   </Button>
   <Button btnType="danger" plain>
-    Danger
-  </Button>
-</Preview>
-
-<Preview>
-  <Button round>Default</Button>
-  <Button btnType="primary" round>
-    Primary
-  </Button>
-  <Button btnType="success" round>
-    Success
-  </Button>
-  <Button btnType="warning" round>
-    Warning
-  </Button>
-  <Button btnType="info" round>
-    Info
-  </Button>
-  <Button btnType="danger" round>
     Danger
   </Button>
 </Preview>
@@ -84,42 +114,21 @@ import Button, { ButtonGroup } from '../../components/Button/button';
   </Button>
 </Preview>
 
-## Disabled button
-
-<Preview>
-  <Button disabled>Default</Button>
-  <Button btnType="primary" disabled>
-    Primary
-  </Button>
-  <Button btnType="success" disabled>
-    Success
-  </Button>
-  <Button btnType="warning" disabled>
-    Warning
-  </Button>
-  <Button btnType="info" disabled>
-    Info
-  </Button>
-  <Button btnType="danger" disabled>
-    Danger
-  </Button>
-</Preview>
-
 ## Sizes
 
 <Preview>
   <Button btnType="primary" size="xs">
-    Extra Small
+    Mini Button
   </Button>
   <Button btnType="primary" size="sm">
-    Small
+    Small Button
   </Button>
-  <Button btnType="primary">Default</Button>
+  <Button btnType="primary">Default Button</Button>
   <Button btnType="primary" size="md">
-    Medium
+    Medium Button
   </Button>
   <Button btnType="primary" size="lg">
-    Large
+    Large Button
   </Button>
 </Preview>
 

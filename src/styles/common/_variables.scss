@@ -16,6 +16,7 @@ $rx-color-yellow: #eab73d !default;
 // green
 $rx-color-green: #2eb67d !default;
 $rx-color-teal: #16a9a1 !default;
+$rx-color-accessible-green: #007a5a !default;
 // cyan
 $rx-color-cyan: #36c5f0 !default;
 // blue
@@ -49,7 +50,7 @@ $rx-color-gray-base: $rx-color-light-gray !default;
 // system color
 $rx-primary: $rx-color-dark-blue !default;
 $rx-secondary: $rx-color-gray-600 !default;
-$rx-success: $rx-color-green !default;
+$rx-success: $rx-color-accessible-green !default;
 $rx-info: $rx-color-cyan !default;
 $rx-warning: $rx-color-orange !default;
 $rx-danger: $rx-color-red !default;
@@ -103,8 +104,8 @@ $rx-theme-colors: (
  */
 
 // text color
-$rx-text-color-primary: $rx-color-gray-900 !default;
-$rx-text-color-regular: $rx-color-gray-800 !default;
+$rx-text-color-primary: $rx-color-black !default;
+$rx-text-color-regular: $rx-color-black !default;
 $rx-text-color-secondary: $rx-color-gray-700 !default;
 $rx-text-color-placeholder: $rx-color-gray-400 !default;
 
@@ -112,7 +113,7 @@ $rx-text-color-placeholder: $rx-color-gray-400 !default;
  * Border
  */
 // border color
-$rx-border-color-base: $rx-color-gray-400 !default;
+$rx-border-color-base: $rx-color-black !default;
 $rx-border-color-light: $rx-color-gray-300 !default;
 $rx-border-color-lighter: $rx-color-gray-200 !default;
 $rx-border-color-extra-light: $rx-color-gray-100 !default;
@@ -196,30 +197,30 @@ $rx-button-padding-horizontal: 12px !default;
 // large size
 $rx-button-large-font-size: $rx-font-size-base !default;
 $rx-button-large-border-radius: $rx-border-radius-base !default;
-$rx-button-large-padding-vertical: 15px !default;
-$rx-button-large-padding-horizontal: 25px !default;
+$rx-button-large-padding-vertical: 18px !default;
+$rx-button-large-padding-horizontal: 36px !default;
 // medium size
 $rx-button-medium-font-size: $rx-font-size-base !default;
 $rx-button-medium-border-radius: $rx-border-radius-base !default;
-$rx-button-medium-padding-vertical: 10px !default;
-$rx-button-medium-padding-horizontal: 20px !default;
+$rx-button-medium-padding-vertical: 14px !default;
+$rx-button-medium-padding-horizontal: 24px !default;
 
 // small size
 $rx-button-small-font-size: 12px !default;
 $rx-button-small-border-radius: #{$rx-border-radius-base - 1} !default;
 $rx-button-small-padding-vertical: 9px !default;
-$rx-button-small-padding-horizontal: 15px !default;
+$rx-button-small-padding-horizontal: 18px !default;
 
 // extra small size
 $rx-button-extra-small-font-size: 12px !default;
 $rx-button-extra-small-border-radius: #{$rx-border-radius-base - 1} !default;
 $rx-button-extra-small-padding-vertical: 7px !default;
-$rx-button-extra-small-padding-horizontal: 15px !default;
+$rx-button-extra-small-padding-horizontal: 14px !default;
 
 // default
 $rx-button-default-font-color: $rx-text-color-regular !default;
 $rx-button-default-background-color: $rx-background-color-light !default;
-$rx-button-default-border-color: $rx-border-color-lighter !default;
+$rx-button-default-border-color: $rx-border-color-base !default;
 
 $rx-button-disabled-font-color: $rx-text-color-placeholder !default;
 $rx-button-disabled-background-color: $rx-color-white !default;
