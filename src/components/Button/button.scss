@@ -53,7 +53,6 @@
   &:focus {
     color: $color;
     background: mix($rx-white, $background-color, $rx-button-hover-tint-percent);
-
     border-color: mix($rx-white, $border-color, $rx-button-hover-tint-percent);
   }
 
@@ -227,20 +226,20 @@
   }
 
   @include mod(link) {
-    color: $rx-primary;
+    color: $rx-info;
     text-decoration: none;
     border: none;
     box-shadow: none;
 
     &:hover,
     &:focus {
-      color: mix($rx-white, $rx-primary, $rx-button-hover-tint-percent);
+      color: mix($rx-white, $rx-info, $rx-button-hover-tint-percent);
       background-color: transparent;
       box-shadow: none;
     }
 
     &:active {
-      color: mix($rx-white, $rx-primary, $rx-button-active-shade-percent);
+      color: mix($rx-white, $rx-info, $rx-button-active-shade-percent);
       text-decoration: underline;
     }
 
