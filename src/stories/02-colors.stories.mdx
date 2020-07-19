@@ -1,16 +1,93 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { linkTo } from '@storybook/addon-links';
+import ColorBlock from '../templates/ColorBlock';
 
-<Meta title="02 - Colors 色彩" />
+<Meta title="02 - Colors 色彩" component={ColorBlock} />
 
 # Colors 色彩
 
-<Preview>
-  <div>Colors</div>
-</Preview>
+## Primary Colors 主色
 
-## 主色
+<ColorBlock type="primary">
+  <h3>Aubergine</h3>
+  <p>#4A154B</p>
+</ColorBlock>
+<ColorBlock type="primary" degree="dark">
+  <h3>Hover Aubergine</h3>
+  <p>#300E34</p>
+</ColorBlock>
+<ColorBlock type="primary" degree="light">
+  <h3>Highlight Aubergine</h3>
+  <p>#674868</p>
+</ColorBlock>
 
-## 辅助色
+## Secondary Colors 辅助色
 
-## 中性色
+<div>
+  <ColorBlock type="secondary">
+    <h3>Green</h3>
+    <p>#007A5A</p>
+  </ColorBlock>
+  <ColorBlock type="secondary" degree="light">
+    <h3>Hover Green</h3>
+    <p>#3EA288</p>
+  </ColorBlock>
+</div>
+<div>
+  <ColorBlock type="secondary" degree="blue">
+    <h3>Blue</h3>
+    <p>#1264A3</p>
+  </ColorBlock>
+  <ColorBlock type="secondary" degree="dark-blue">
+    <h3>Hover Blue</h3>
+    <p>#0D4875</p>
+  </ColorBlock>
+</div>
+
+## Functional Color 功能色
+
+<div>
+  <ColorBlock type="functional" degree="danger">
+    <h3>Danger</h3>
+    <p>#E24F4F</p>
+  </ColorBlock>
+  <ColorBlock type="functional" degree="warning">
+    <h3>Warning</h3>
+    <p>#EAB73D</p>
+  </ColorBlock>
+  <ColorBlock type="functional" degree="success">
+    <h3>Success</h3>
+    <p>#16A9A1</p>
+  </ColorBlock>
+  <ColorBlock type="functional" degree="info">
+    <h3>Link</h3>
+    <p>#3A88FD</p>
+  </ColorBlock>
+</div>
+
+## Neutral Colors 中性色
+
+<div>
+  <ColorBlock type="neutral" degree="black">
+    <h3>Black</h3>
+    <p>#000000</p>
+  </ColorBlock>
+  <ColorBlock type="neutral" degree="white">
+    <h3>White</h3>
+    <p>#FFFFFF</p>
+  </ColorBlock>
+</div>
+<div>
+  <ColorBlock type="neutral" degree="dark-gray">
+    <h3>Grey3</h3>
+    <p>#646464</p>
+  </ColorBlock>
+  <ColorBlock type="neutral" degree="middle-gray">
+    <h3>Grey2</h3>
+    <p>#A8A8A8</p>
+  </ColorBlock>
+  <ColorBlock type="neutral" degree="light-gray">
+    <h3>Grey1</h3>
+    <p>#F6F6F6</p>
+  </ColorBlock>
+</div>

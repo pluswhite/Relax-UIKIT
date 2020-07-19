@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run storybook",
     "build": "webpack --mode production --config build/webpack.config.ts",
     "lint": "npm run lint:code && npm run lint:style",
     "lint:code": "eslint ./src/**/*.{ts,tsx} --quiet",
