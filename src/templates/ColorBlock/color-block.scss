@@ -74,6 +74,24 @@
     }
   }
 
+  &__brand {
+    &--blue {
+      background-color: $rx-color-light-blue;
+    }
+
+    &--yellow {
+      background-color: $rx-color-orange;
+    }
+
+    &--green {
+      background-color: $rx-color-green;
+    }
+
+    &--pink {
+      background-color: $rx-color-pink;
+    }
+  }
+
   &__neutral {
     &--black {
       background-color: $rx-color-black;
