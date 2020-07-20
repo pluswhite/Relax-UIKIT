@@ -1,0 +1,7 @@
+@import '../../styles/common/variables';
+
+@each $key, $val in $rx-theme-colors {
+  .rx-icon-#{$key} {
+    color: $val;
+  }
+}
