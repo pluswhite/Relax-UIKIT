@@ -2,6 +2,7 @@ import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import Button, { ButtonGroup } from '../../components/Button/button';
+import Icon from '../../components/Icon';
 
 <Meta title="Components 基础组件/01 - Button 按钮" component={Button} />
 
@@ -60,9 +61,20 @@ import Button, { ButtonGroup } from '../../components/Button/button';
 ### Circle Button
 
 <Preview>
-  <Button circle>DB</Button>
+  <Button circle>
+    <Icon icon="search" />
+  </Button>
   <Button btnType="primary" circle>
-    SB
+    <Icon icon="edit" />
+  </Button>
+  <Button btnType="info" circle>
+    <Icon icon="tag" />
+  </Button>
+  <Button btnType="warning" circle>
+    <Icon icon="th-large" />
+  </Button>
+  <Button btnType="danger" circle>
+    <Icon icon="trash" />
   </Button>
 </Preview>
 
