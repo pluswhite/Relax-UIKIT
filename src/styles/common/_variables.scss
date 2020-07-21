@@ -113,7 +113,7 @@ $rx-theme-colors: (
 $rx-text-color-primary: $rx-color-black !default;
 $rx-text-color-regular: $rx-color-black !default;
 $rx-text-color-secondary: $rx-color-gray-700 !default;
-$rx-text-color-placeholder: $rx-color-gray-400 !default;
+$rx-text-color-placeholder: $rx-color-gray !default;
 
 /**
  * Border
@@ -255,7 +255,7 @@ $rx-button-info-font-color: $rx-color-white !default;
 $rx-button-info-background-color: $rx-info !default;
 
 $rx-button-hover-background-color: $rx-background-color-base !default;
-$rx-button-hover-tint-percent: 31% !default;
+$rx-button-hover-tint-percent: 25% !default;
 $rx-button-active-shade-percent: 10% !default;
 
 /**
@@ -366,9 +366,9 @@ $rx-checkbox-button-disabled-checked-fill: $rx-border-color-extra-light !default
 $rx-input-font-size: $rx-font-size-base !default;
 $rx-input-font-color: $rx-text-color-regular !default;
 $rx-input-width: 140px !default;
-$rx-input-height: 32px !default;
+$rx-input-height: 36px !default;
 $rx-input-max-width: 315px !default;
-$rx-input-padding: 4px 11px;
+$rx-input-padding: 10px 14px;
 
 $rx-input-border: $rx-border-base !default;
 $rx-input-border-color: $rx-border-color-base !default;
@@ -383,7 +383,7 @@ $rx-input-placeholder-color: $rx-text-color-placeholder !default;
 
 $rx-input-hover-border: $rx-border-color-hover !default;
 $rx-input-clear-hover-color: $rx-text-color-secondary !default;
-$rx-input-focus-border: $rx-primary !default;
+$rx-input-focus-border: $rx-black !default;
 $rx-input-focus-fill: $rx-white !default;
 
 $rx-input-disabled-fill: $rx-disabled-fill-base !default;

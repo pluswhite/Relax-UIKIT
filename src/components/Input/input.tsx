@@ -13,6 +13,7 @@ interface IBaseInputProps {
   className?: string;
   name?: string;
   checked?: boolean;
+  wide?: boolean;
   size?: 'default' | 'xs' | 'sm' | 'md' | 'lg';
   value?: InputValue;
   disabled?: boolean;
@@ -29,6 +30,7 @@ export const Input: FC<InputProps> = (props: InputProps) => {
     size = 'default',
     value,
     disabled = false,
+    wide,
     children,
     onChange,
     ...restProps
@@ -39,6 +41,7 @@ export const Input: FC<InputProps> = (props: InputProps) => {
     {
       [`rx-input--${size}`]: size,
       'is-disabled': disabled,
+      'is-wide': wide,
     },
     className,
   );

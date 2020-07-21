@@ -13,8 +13,9 @@
   &__elm {
     box-sizing: border-box;
     display: inline-block;
-    width: 100%;
+    width: $rx-input-width;
     height: $rx-input-height;
+    min-height: $rx-input-height;
     padding: $rx-input-padding;
     font-size: inherit;
     line-height: $rx-input-height;
@@ -48,6 +49,7 @@
   }
 
   textarea {
+    width: 100%;
     height: auto;
   }
 
@@ -100,6 +102,12 @@
       &::placeholder {
         color: $rx-input-disabled-placeholder-color;
       }
+    }
+  }
+
+  @include when(wide) {
+    .rx-input__elm {
+      width: 100%;
     }
   }
 }
