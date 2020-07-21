@@ -264,8 +264,8 @@ $rx-button-active-shade-percent: 10% !default;
 $rx-radio-font-size: $rx-font-size-base !default;
 $rx-radio-font-weight: $rx-font-weight-primary !default;
 $rx-radio-font-color: $rx-text-color-regular !default;
-$rx-radio-input-height: 14px !default;
-$rx-radio-input-width: 14px !default;
+$rx-radio-input-height: 16px !default;
+$rx-radio-input-width: 16px !default;
 
 $rx-radio-input-border-radius: $rx-border-radius-circle !default;
 $rx-radio-input-background-color: $rx-white !default;
@@ -282,9 +282,9 @@ $rx-radio-disabled-checked-input-fill: $rx-disabled-fill-base !default;
 $rx-radio-disabled-checked-icon-color: $rx-text-color-placeholder !default;
 
 $rx-radio-checked-font-color: $rx-primary !default;
-$rx-radio-checked-input-border-color: $rx-primary !default;
+$rx-radio-checked-input-border-color: $rx-info !default;
 $rx-radio-checked-input-background-color: $rx-white !default;
-$rx-radio-checked-icon-color: $rx-primary !default;
+$rx-radio-checked-icon-color: $rx-info !default;
 
 $rx-radio-input-border-color-hover: $rx-primary !default;
 
@@ -315,8 +315,8 @@ $rx-radio-button-disabled-checked-fill: $rx-border-color-extra-light !default;
 $rx-checkbox-font-size: $rx-font-size-base !default;
 $rx-checkbox-font-weight: $rx-font-weight-primary !default;
 $rx-checkbox-font-color: $rx-text-color-regular !default;
-$rx-checkbox-input-height: 14px !default;
-$rx-checkbox-input-width: 14px !default;
+$rx-checkbox-input-height: 16px !default;
+$rx-checkbox-input-width: 16px !default;
 
 $rx-checkbox-input-border-radius: $rx-border-radius-small !default;
 $rx-checkbox-input-background-color: $rx-white !default;
@@ -333,9 +333,9 @@ $rx-checkbox-disabled-checked-input-fill: $rx-disabled-fill-base !default;
 $rx-checkbox-disabled-checked-icon-color: $rx-text-color-placeholder !default;
 
 $rx-checkbox-checked-font-color: $rx-primary !default;
-$rx-checkbox-checked-input-border-color: $rx-primary !default;
+$rx-checkbox-checked-input-border-color: $rx-info !default;
 $rx-checkbox-checked-input-background-color: $rx-white !default;
-$rx-checkbox-checked-icon-color: $rx-primary !default;
+$rx-checkbox-checked-icon-color: $rx-info !default;
 
 $rx-checkbox-input-border-color-hover: $rx-primary !default;
 
