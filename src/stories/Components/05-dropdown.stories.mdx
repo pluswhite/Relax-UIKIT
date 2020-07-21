@@ -1,0 +1,31 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import Dropdown from '../../components/Dropdown';
+import Button from '../../components/Button/button';
+import Icon from '../../components/Icon';
+
+<Meta title="Components 基础组件/05 - Dropdown 下拉框" component={Dropdown} />
+
+# Dropdown
+
+## Basic usage
+
+<Preview>
+  <Dropdown
+    menus={
+      <Dropdown.Menu>
+        <Dropdown.Item>Action 1</Dropdown.Item>
+        <Dropdown.Item>Action 2</Dropdown.Item>
+        <Dropdown.Item>Action 3</Dropdown.Item>
+        <Dropdown.Item disabled>Action 4</Dropdown.Item>
+        <Dropdown.Item divided>Action 5</Dropdown.Item>
+      </Dropdown.Menu>
+    }
+  >
+    <Button btnType="default" round>
+      Dropdown &nbsp;
+      <Icon icon="caret-down" />
+    </Button>
+  </Dropdown>
+</Preview>
