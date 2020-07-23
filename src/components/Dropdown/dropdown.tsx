@@ -1,4 +1,4 @@
-import React, { FC, ReactChildren, ReactElement, useState } from 'react';
+import React, { FC, ReactChildren, ReactElement, useState, useContext, createContext } from 'react';
 import classnames from 'classnames';
 
 // import Button from '../Button';
@@ -14,21 +14,35 @@ export interface IDropdownProps {
   children: ReactChildren | ReactElement;
   Menu: typeof DropdownMenu;
   Item: typeof DropdownItem;
+  visible?: boolean;
 }
 
+type DropdownContextType = {
+  setVisible: (visible: boolean) => void;
+};
+
+export const DropdownContext = createContext<DropdownContextType | undefined>(undefined);
+
 const Dropdown: FC<IDropdownProps> = (props: IDropdownProps) => {
-  const [visible, setVisible] = useState(false);
-  const { menus, className, children, ...restProps } = props;
+  const { menus, className, children, visible, ...restProps } = props;
   const classes = classnames('rx-dropdown', className);
+  const [isVisible, setVisible] = useState(visible);
+  const { Provider } = DropdownContext;
 
   const handleHover = (evt: React.MouseEvent) => {
-    setVisible(!visible);
+    setVisible(!isVisible);
   };
 
   return (
     <div className={classes} {...restProps} onMouseEnter={handleHover} onMouseLeave={handleHover}>
       <div className="rx-dropdown__trigger">{children}</div>
-      <div className="rx-dropdown__popover">{visible && menus}</div>
+      <Provider
+        value={{
+          setVisible,
+        }}
+      >
+        <div className="rx-dropdown__popover">{isVisible && menus}</div>
+      </Provider>
     </div>
   );
 };
