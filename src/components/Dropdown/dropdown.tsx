@@ -21,10 +21,14 @@ const Dropdown: FC<IDropdownProps> = (props: IDropdownProps) => {
   const { menus, className, children, ...restProps } = props;
   const classes = classnames('rx-dropdown', className);
 
+  const handleHover = (evt: React.MouseEvent) => {
+    setVisible(!visible);
+  };
+
   return (
-    <div className={classes} {...restProps}>
+    <div className={classes} {...restProps} onMouseEnter={handleHover} onMouseLeave={handleHover}>
       <div className="rx-dropdown__trigger">{children}</div>
-      <div className="rx-dropdown__popover">{menus}</div>
+      <div className="rx-dropdown__popover">{visible && menus}</div>
     </div>
   );
 };

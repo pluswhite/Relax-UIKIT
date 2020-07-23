@@ -60,6 +60,7 @@ $rx-success: $rx-color-teal !default;
 $rx-info: $rx-color-blue !default;
 $rx-warning: $rx-color-yellow !default;
 $rx-danger: $rx-color-red !default;
+$rx-link: $rx-color-blue !default;
 $rx-light: $rx-color-gray-100 !default;
 $rx-gray: $rx-color-gray !default;
 $rx-black: $rx-color-black !default;
@@ -403,3 +404,11 @@ $rx-input-small-padding: 2px 9px;
 $rx-input-extra-small-font-size: 12px !default;
 $rx-input-extra-small-height: 22px !default;
 $rx-input-extra-small-padding: 0 7px;
+
+/**
+ * Dropdown
+ */
+$rx-dropdown-menu-box-shadow: $rx-box-shadow-light !default;
+$rx-dropdown-menu-item-hover-fill: $rx-primary-light-90 !default;
+$rx-dropdown-menu-item-hover-color: $rx-white !default;
+$rx-dropdown-menu-item-hover-background-color: $rx-color-dark-blue !default;

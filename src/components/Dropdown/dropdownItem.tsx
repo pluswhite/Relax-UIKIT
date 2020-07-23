@@ -10,7 +10,7 @@ export interface IDropdownItemProps {
 
 const DropdownItem: FC<IDropdownItemProps> = (props: IDropdownItemProps) => {
   const { className, children, ...restProps } = props;
-  const classes = classnames('rx-dropdown-item', className);
+  const classes = classnames('rx-dropdown-menu__item', className);
 
   return (
     <li className={classes} {...restProps}>
