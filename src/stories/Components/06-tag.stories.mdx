@@ -1,0 +1,33 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import Tag from '../../components/Tag/tag';
+
+<Meta title="Components 基础组件/06 - Tag 标签" component={Tag} />
+
+# Tag
+
+## Basic Usage 基础用法
+
+<Preview>
+  <Tag>Default</Tag>
+  <Tag color="primary">Tag 1</Tag>
+  <Tag color="link">Tag 2</Tag>
+  <Tag color="link">Tag 3</Tag>
+  <Tag color="link">Tag 4</Tag>
+  <Tag color="link">Tag 5</Tag>
+  <Tag color="link">Tag 6</Tag>
+  <Tag color="link" closable>
+    Tag 7
+  </Tag>
+</Preview>
+
+## Color Indication
+
+<Preview>
+  <Tag>Default</Tag>
+  <Tag color="primary">Primary</Tag>
+  <Tag color="warning">Warning</Tag>
+  <Tag color="info">Information</Tag>
+  <Tag color="danger">Danger</Tag>
+</Preview>

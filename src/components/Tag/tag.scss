@@ -1,0 +1,25 @@
+/**
+ * Tag component
+ */
+
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(tag) {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: $rx-tag-padding;
+  font-size: $rx-tag-font-size;
+  line-height: 1.5;
+  color: $rx-color-dark-gray;
+  text-align: center;
+  white-space: nowrap;
+  border-color: $rx-color-gray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: $rx-tag-border-radius;
+
+  svg {
+    margin-left: 4px;
+  }
+}
