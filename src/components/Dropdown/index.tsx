@@ -1,8 +1,15 @@
-import Dropdown from './dropdown';
-import DropdownMenu from './dropdownMenu';
-import DropdownItem from './dropdownItem';
+import { FC } from 'react';
+import Dropdown, { IDropdownProps } from './dropdown';
+import DropdownMenu, { IDropdownMenuProps } from './dropdownMenu';
+import DropdownItem, { IDropdownItemProps } from './dropdownItem';
 
-Dropdown.Menu = DropdownMenu;
-Dropdown.Item = DropdownItem;
+export type IDropdown = FC<IDropdownProps> & {
+  Menu: FC<IDropdownMenuProps>;
+  Item: FC<IDropdownItemProps>;
+};
 
-export default Dropdown;
+const DropdownComponent = Dropdown as IDropdown;
+DropdownComponent.Menu = DropdownMenu;
+DropdownComponent.Item = DropdownItem;
+
+export default DropdownComponent;

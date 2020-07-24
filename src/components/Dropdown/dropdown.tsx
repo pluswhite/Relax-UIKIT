@@ -14,6 +14,7 @@ export interface IDropdownProps {
   children: ReactChildren | ReactElement;
   Menu: typeof DropdownMenu;
   Item: typeof DropdownItem;
+  trigger?: 'hover' | 'click'; // TODO: handle trigger mode.
   visible?: boolean;
 }
 
@@ -24,7 +25,7 @@ type DropdownContextType = {
 export const DropdownContext = createContext<DropdownContextType | undefined>(undefined);
 
 const Dropdown: FC<IDropdownProps> = (props: IDropdownProps) => {
-  const { menus, className, children, visible, ...restProps } = props;
+  const { menus, className, children, trigger = 'hover', visible, ...restProps } = props;
   const classes = classnames('rx-dropdown', className);
   const [isVisible, setVisible] = useState(visible);
   const { Provider } = DropdownContext;
