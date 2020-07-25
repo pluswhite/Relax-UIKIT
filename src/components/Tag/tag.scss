@@ -22,4 +22,34 @@
   svg {
     margin-left: 4px;
   }
+
+  &--primary {
+    color: $rx-white;
+    background-color: $rx-primary;
+  }
+
+  &--secondary {
+    color: $rx-white;
+    background-color: $rx-secondary;
+  }
+
+  &--success {
+    color: $rx-white;
+    background-color: $rx-success;
+  }
+
+  &--info {
+    color: $rx-white;
+    background-color: $rx-info;
+  }
+
+  &--warning {
+    color: $rx-white;
+    background-color: $rx-warning;
+  }
+
+  &--danger {
+    color: $rx-white;
+    background-color: $rx-danger;
+  }
 }

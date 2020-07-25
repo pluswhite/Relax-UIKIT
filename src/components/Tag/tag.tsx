@@ -17,6 +17,7 @@ const Tag: FC<ITagProps> = (props: ITagProps) => {
   const { color, closable, className, children, ...restProps } = props;
   const classes = classnames(
     'rx-tag',
+    `rx-tag--${color}`,
     {
       'is-closable': closable,
     },
