@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-twbs-bootstrap/scss"],
+  "extends": ["stylelint-config-sass-guidelines"],
   "rules": {
     "declaration-colon-newline-after": null,
     "number-leading-zero": null,
