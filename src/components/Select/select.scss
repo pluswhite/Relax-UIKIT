@@ -1,6 +1,82 @@
 /**
  * Select component
  */
-.demo {
-  width: 100%;
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(select) {
+  position: relative;
+  display: inline-block;
+  font-size: $rx-select-font-size;
+
+  &__trigger {
+    position: relative;
+    width: 100%;
+
+    &__selector {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
+      padding: 8px 25px 8px 15px;
+      font-size: $rx-select-input-font-size;
+      background-color: transparent;
+      border: $rx-select-border;
+      border-radius: $rx-select-border-radius;
+      outline: none;
+
+      &::placeholder {
+        color: $rx-select-input-placeholder-color;
+      }
+
+      &:hover,
+      &:focus {
+        border-color: $rx-select-border-color-hover;
+      }
+    }
+
+    &__close {
+      position: absolute;
+      top: 9px;
+      right: 15px;
+    }
+  }
+
+  &__popover {
+    padding: $rx-select-dropdown-padding;
+    margin-top: 1px;
+    border: $rx-select-dropdown-border;
+    box-shadow: $rx-select-dropdown-box-shadow;
+  }
+
+  &__option {
+    position: relative;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    overflow: hidden;
+    font-size: $rx-select-font-size;
+    color: $rx-select-option-color;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $rx-select-option-hover-background;
+    }
+
+    @include when(selected) {
+      font-weight: 500;
+      color: $rx-select-option-selected-font-color;
+    }
+
+    @include when(disabled) {
+      color: $rx-select-option-disabled-color;
+      cursor: not-allowed;
+
+      &:hover,
+      &:focus {
+        background-color: $rx-color-white;
+      }
+    }
+  }
 }

@@ -4,6 +4,7 @@ import React, {
   InputHTMLAttributes,
   TextareaHTMLAttributes,
   useState,
+  ReactNode,
 } from 'react';
 import classnames from 'classnames';
 
@@ -14,9 +15,11 @@ interface IBaseInputProps {
   name?: string;
   checked?: boolean;
   wide?: boolean;
-  size?: 'default' | 'xs' | 'sm' | 'md' | 'lg';
+  size?: 'xs' | 'sm' | 'md' | 'lg';
   value?: InputValue;
   disabled?: boolean;
+  prefix?: string | ReactNode;
+  suffix?: string | ReactNode;
   children?: React.ReactChild;
   onChange?: (value: InputValue, e: React.ChangeEvent<HTMLInputElement>) => void;
 }
@@ -31,6 +34,8 @@ export const Input: FC<InputProps> = (props: InputProps) => {
     value,
     disabled = false,
     wide,
+    prefix,
+    suffix,
     children,
     onChange,
     ...restProps
@@ -52,7 +57,7 @@ export const Input: FC<InputProps> = (props: InputProps) => {
 
   return (
     <div className={classes}>
-      <span className="rx-input__prefix" />
+      <span className="rx-input__prefix">{prefix}</span>
       <input
         className="rx-input__elm"
         type="text"
@@ -63,7 +68,7 @@ export const Input: FC<InputProps> = (props: InputProps) => {
         data-testid="test-input"
         {...restProps}
       />
-      <span className="rx-input__suffix">{children}</span>
+      <span className="rx-input__suffix">{suffix}</span>
     </div>
   );
 };

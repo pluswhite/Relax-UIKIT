@@ -127,7 +127,7 @@ $rx-border-color-extra-light: $rx-color-gray-100 !default;
 
 $rx-border-width-base: 1px !default;
 $rx-border-style-base: solid !default;
-$rx-border-color-hover: $rx-text-color-placeholder !default;
+$rx-border-color-hover: $rx-text-color-primary !default;
 $rx-border-base: $rx-border-width-base $rx-border-style-base $rx-border-color-base !default;
 
 // border radius
@@ -424,3 +424,41 @@ $rx-tag-info-color: $rx-info !default;
 $rx-tag-font-size: 12px !default;
 $rx-tag-border-radius: 4px !default;
 $rx-tag-padding: 1px 8px !default;
+
+/**
+ * Select
+ */
+$rx-select-border: $rx-border-base;
+$rx-select-border-radius: $rx-border-radius-base;
+$rx-select-border-color-hover: $rx-border-color-hover !default;
+$rx-select-disabled-border: $rx-disabled-border-base !default;
+
+$rx-select-font-size: $rx-font-size-base !default;
+$rx-select-close-hover-color: $rx-text-color-secondary !default;
+
+$rx-select-input-color: $rx-text-color-placeholder !default;
+$rx-select-multiple-input-color: $rx-text-color-secondary !default;
+$rx-select-input-focus-border-color: $rx-color-black !default;
+$rx-select-input-font-size: 14px !default;
+$rx-select-input-placeholder-color: $rx-text-color-placeholder;
+
+$rx-select-option-color: $rx-text-color-regular !default;
+$rx-select-option-disabled-color: $rx-text-color-placeholder !default;
+$rx-select-option-disabled-background: $rx-color-white !default;
+
+$rx-select-option-height: 34px !default;
+$rx-select-option-hover-background: $rx-background-color-base !default;
+$rx-select-option-selected-font-color: $rx-primary !default;
+$rx-select-option-selected-hover: $rx-background-color-base !default;
+
+$rx-select-group-color: $rx-info !default;
+$rx-select-group-height: 30px !default;
+$rx-select-group-font-size: 12px !default;
+
+$rx-select-dropdown-background: $rx-color-white !default;
+$rx-select-dropdown-box-shadow: $rx-box-shadow-light !default;
+$rx-select-dropdown-empty-color: $rx-color-gray !default;
+
+$rx-select-dropdown-padding: 6px 0 !default;
+$rx-select-dropdown-empty-padding: 10px 0 !default;
+$rx-select-dropdown-border: 1px solid $rx-border-color-light !default;
