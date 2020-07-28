@@ -7,6 +7,7 @@
 .control-state {
   box-sizing: border-box;
   display: inline-block;
+  min-width: 200px;
   margin: 15px;
   font-size: 14px;
   text-align: center;
@@ -19,6 +20,10 @@
     border-color: transparent;
     border-style: solid;
     border-width: 1px;
+  }
+
+  .is-bordered {
+    border-radius: 4px;
   }
 
   .is-round {
@@ -44,5 +49,58 @@
   .is-disabled {
     background-color: $rx-disabled-fill-base;
     border-color: $rx-disabled-border-base;
+  }
+
+  .is-gray {
+    border-color: $rx-color-gray;
+  }
+
+  .is-dark-gray {
+    border-color: $rx-color-dark-gray;
+  }
+
+  .is-black {
+    border-color: $rx-color-black;
+  }
+
+  .is-green {
+    border-color: $rx-color-green;
+  }
+
+  .is-dark-green {
+    border-color: $rx-color-dark-green;
+  }
+
+  .is-dark-blue {
+    border-color: $rx-color-dark-blue;
+  }
+
+  .is-white {
+    background-color: $rx-color-light-gray;
+    border-color: $rx-white;
+  }
+
+  .is-aubergine {
+    border-color: $rx-color-aubergine;
+  }
+
+  .is-yellow {
+    border-color: $rx-color-yellow;
+  }
+
+  .is-blue {
+    border-color: $rx-color-light-blue;
+  }
+
+  .is-light-blue {
+    border-color: $rx-color-light-blue;
+  }
+
+  .is-pink {
+    border-color: $rx-color-pink;
+  }
+
+  .is-active-aubergine {
+    border-color: #7c2085;
   }
 }
