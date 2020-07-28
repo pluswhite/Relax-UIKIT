@@ -1,0 +1,48 @@
+@import '../../styles/common/variables';
+
+/**
+ * Control State demos
+ */
+
+.control-state {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 15px;
+  font-size: 14px;
+  text-align: center;
+
+  &-block {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .is-round {
+    border-radius: 20px;
+  }
+
+  .is-hover {
+    background-color: $rx-color-light-gray;
+
+    &.is-gray {
+      background-color: $rx-color-gray;
+    }
+  }
+
+  .is-pressed {
+    background-color: #8db4d2;
+  }
+
+  .is-focused {
+    border-color: $rx-black;
+  }
+
+  .is-disabled {
+    background-color: $rx-disabled-fill-base;
+    border-color: $rx-disabled-border-base;
+  }
+}

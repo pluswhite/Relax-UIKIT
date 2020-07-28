@@ -1,0 +1,26 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { linkTo } from '@storybook/addon-links';
+
+import ControlState from '../templates/ControlState';
+
+<Meta title="05 - Control State 状态控制" component={ControlState} />
+
+# Control State 状态控制
+
+<ControlState type="hover">hover/grey</ControlState>
+<ControlState type="hover" degree="gray" round>
+  hover/grey round
+</ControlState>
+<ControlState type="hover" round>
+  hover/round
+</ControlState>
+
+<ControlState type="pressed" degree="blue">
+  pressed
+</ControlState>
+
+<ControlState type="focused">focused</ControlState>
+
+<ControlState type="disabled" degree="danger">
+  disabled
+</ControlState>
