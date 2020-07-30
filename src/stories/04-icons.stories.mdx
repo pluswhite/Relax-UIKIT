@@ -1,6 +1,8 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { linkTo } from '@storybook/addon-links';
 
+import Radio from '../components/Radio';
+import Checkbox from '../components/Checkbox';
 import Icon from '../components/Icon';
 
 <Meta title="04 - Icons 图标" />
@@ -9,69 +11,56 @@ import Icon from '../components/Icon';
 
 Icons not only provide aesthetic interest, but can act as visual cues for labels and actions. Icons should always come from the same set in order to appear cohesive.
 
-## Basic Usage
+## Controls
 
-<Preview>
-  <Icon icon="plus" />
-  <Icon icon="user-plus" />
-  <Icon icon="arrow-right" />
-  <Icon icon="paperclip" />
-  <Icon icon="phone" />
-  <Icon icon="times" />
-  <Icon icon="edit" />
-  <Icon icon="pen" />
-</Preview>
+<p>
+  <Checkbox name="checkbox-demo-1" />
+  <Checkbox name="checkbox-demo-1" checked />
+</p>
+<p>
+  <Radio name="checkbox-demo-2" />
+  <Radio name="checkbox-demo-2" checked />
+</p>
 
-## Colors Icons
+## Symobls
 
-<Preview>
-  <Icon icon={['fab', 'slack']} size="4x" theme="primary" />
-  <Icon icon={['fab', 'google']} size="4x" theme="warning" />
-  <Icon icon={['fab', 'chrome']} size="4x" theme="danger" />
-  <Icon icon={['fab', 'github']} size="4x" theme="info" />
-  <Icon icon={['fab', 'aws']} size="4x" theme="secondary" />
-  <Icon icon={['fab', 'react']} size="4x" theme="dark" />
-  <Icon icon={['fab', 'jira']} size="4x" theme="light" />
-  <Icon icon={['fab', 'microsoft']} size="4x" theme="warning" />
-  <Icon icon={['fab', 'trello']} size="4x" />
-  <Icon icon={['fab', 'sketch']} size="4x" />
-  <Icon icon={['fab', 'apple']} size="4x" />
-  <Icon icon={['fab', 'alipay']} size="4x" />
-  <Icon icon={['fab', 'zhihu']} size="4x" />
-</Preview>
+<Icon className="demo-icon" icon="plus" size="2x" />
+<Icon className="demo-icon" icon="user-plus" size="2x" />
+<Icon className="demo-icon" icon="arrow-right" size="2x" />
+<Icon className="demo-icon" icon="paperclip" size="2x" />
+<Icon className="demo-icon" icon="phone" size="2x" />
+<Icon className="demo-icon" icon="times" size="2x" />
+<Icon className="demo-icon" icon="edit" size="2x" />
+<Icon className="demo-icon" icon="pen" size="2x" />
+<Icon className="demo-icon" icon="glass-cheers" size="2x" />
+<Icon className="demo-icon" icon="clock" size="2x" />
+<Icon className="demo-icon" icon="bolt" size="2x" />
+<Icon className="demo-icon" icon="language" size="2x" />
+<Icon className="demo-icon" icon="search" size="2x" />
+<Icon className="demo-icon" icon="info-circle" size="2x" />
+<Icon className="demo-icon" icon="angle-right" size="2x" />
+<Icon className="demo-icon" icon="smile" size="2x" rotation={90} />
+<Icon className="demo-icon" icon="star" size="2x" rotation={180} />
+<Icon className="demo-icon" icon="question-circle" size="2x" rotation={270} />
+<Icon className="demo-icon" icon="bold" size="2x" />
+<Icon className="demo-icon" icon="microphone" size="2x" />
+<Icon className="demo-icon" icon="lock" size="2x" />
+<Icon className="demo-icon" icon="bell" size="2x" />
+<Icon className="demo-icon" icon="spinner" size="2x" spin />
+<Icon className="demo-icon" icon="spinner" size="2x" pulse />
 
-## Size Icons
+## Applications
 
-<Preview>
-  <Icon icon="glass-cheers" size="2x" />
-  <Icon icon="clock" size="3x" />
-  <Icon icon="bolt" size="4x" />
-  <Icon icon="language" size="5x" />
-  <Icon icon="search" size="6x" />
-  <Icon icon="info-circle" size="7x" />
-  <Icon icon="angle-right" size="8x" />
-</Preview>
-
-## Rotating Icons
-
-<Preview>
-  <Icon icon="smile" size="5x" rotation={90} />
-  <Icon icon="star" size="6x" rotation={180} />
-  <Icon icon="question-circle" size="7x" rotation={270} />
-</Preview>
-
-## Bordered Icons
-
-<Preview>
-  <Icon icon="bold" size="4x" border />
-  <Icon icon="microphone" size="6x" border />
-  <Icon icon="lock" size="8x" border />
-  <Icon icon="bell" size="10x" border />
-</Preview>
-
-## Animating Icons
-
-<Preview>
-  <Icon icon="spinner" size="4x" spin />
-  <Icon icon="spinner" size="6x" pulse />
-</Preview>
+<Icon className="demo-icon" icon={['fab', 'slack']} size="2x" theme="primary" />
+<Icon className="demo-icon" icon={['fab', 'google']} size="2x" theme="warning" />
+<Icon className="demo-icon" icon={['fab', 'chrome']} size="2x" theme="danger" />
+<Icon className="demo-icon" icon={['fab', 'github']} size="2x" theme="info" />
+<Icon className="demo-icon" icon={['fab', 'aws']} size="2x" theme="warning" />
+<Icon className="demo-icon" icon={['fab', 'react']} size="2x" theme="secondary" />
+<Icon className="demo-icon" icon={['fab', 'jira']} size="2x" theme="info" />
+<Icon className="demo-icon" icon={['fab', 'microsoft']} size="2x" theme="warning" />
+<Icon className="demo-icon" icon={['fab', 'trello']} size="2x" theme="info" />
+<Icon className="demo-icon" icon={['fab', 'sketch']} size="2x" theme="warning" />
+<Icon className="demo-icon" icon={['fab', 'apple']} size="2x" />
+<Icon className="demo-icon" icon={['fab', 'alipay']} size="2x" theme="info" />
+<Icon className="demo-icon" icon={['fab', 'zhihu']} size="2x" theme="info" />

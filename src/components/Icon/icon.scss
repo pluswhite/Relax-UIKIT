@@ -1,4 +1,5 @@
 @import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
 
 @each $key, $val in $rx-theme-colors {
   .rx-icon-#{$key} {
