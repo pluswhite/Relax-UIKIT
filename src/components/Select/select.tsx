@@ -25,7 +25,7 @@ const Select: FC<ISelectProps> = (props: ISelectProps) => {
           value={value}
           readOnly
         />
-        <Icon className="rx-select__trigger__close" icon="caret-down" />
+        <Icon className="rx-select__trigger__close" icon="chevron-down" />
       </div>
       <div className="rx-select__popover">{children}</div>
     </div>
