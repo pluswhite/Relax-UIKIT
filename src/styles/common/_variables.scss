@@ -8,63 +8,135 @@
 
 // base color
 // red
-$rx-color-red: #e24f4f !default;
-$rx-color-pink: #e01e5a !default;
+$rx-color-red-1: #fff0e6 !default;
+$rx-color-red-2: #fff0e6 !default;
+$rx-color-red-3: #ffa97a !default;
+$rx-color-red-4: #ff8952 !default;
+$rx-color-red-5: #fc6428 !default;
+$rx-color-red-6: #f03c00 !default;
+$rx-color-red-7: #c92c00 !default;
+$rx-color-red-8: #a31e00 !default;
+$rx-color-red-9: #7d1300 !default;
+$rx-color-red-10: #7d1300 !default;
+
 // yellow
-$rx-color-orange: #ecb22e !default;
-$rx-color-yellow: #eab73d !default;
+$rx-color-yellow-1: #fff7e6 !default;
+$rx-color-yellow-2: #ffe0a3 !default;
+$rx-color-yellow-3: #ffce7a !default;
+$rx-color-yellow-4: #ffba52 !default;
+$rx-color-yellow-5: #ffba52 !default;
+$rx-color-yellow-6: #ff8600 !default;
+$rx-color-yellow-7: #d96c00 !default;
+$rx-color-yellow-8: #d96c00 !default;
+$rx-color-yellow-9: #8c3d00 !default;
+$rx-color-yellow-10: #662900 !default;
+
 // green
+$rx-color-green-1: #e6ffeb !default;
+$rx-color-green-2: #9df5b3 !default;
+$rx-color-green-3: #9df5b3 !default;
+$rx-color-green-4: #46db75 !default;
+$rx-color-green-5: #21cf5e !default;
+$rx-color-green-6: #00c249 !default;
+$rx-color-green-7: #00c249 !default;
+$rx-color-green-8: #007535 !default;
+$rx-color-green-9: #004f26 !default;
+$rx-color-green-10: #002915 !default;
+
 $rx-color-light-green: #3ea288 !default;
-$rx-color-green: #2eb67d !default;
-$rx-color-dark-green: #007a5a !default;
+$rx-color-green: #00c249 !default;
+$rx-color-dark-green: #029967 !default;
 $rx-color-teal: #16a9a1 !default;
 // cyan
-$rx-color-cyan: #36c5f0 !default;
+$rx-color-cyan-1: #edfffd !default;
+$rx-color-cyan-2: #c4fff9 !default;
+$rx-color-cyan-3: #9afcf6 !default;
+$rx-color-cyan-4: #6cf0eb !default;
+$rx-color-cyan-5: #42e3e3 !default;
+$rx-color-cyan-6: #1dd1d7 !default;
+$rx-color-cyan-7: #0ea5b0 !default;
+$rx-color-cyan-8: #047c8a !default;
+$rx-color-cyan-9:  #005663 !default;
+$rx-color-cyan-10: #00333d !default;
 // blue
-$rx-color-light-blue: #36c5f0 !default;
-$rx-color-blue: #3a88fd !default;
-$rx-color-dark-blue: #1264a3 !default;
-$rx-color-black-blue: #0d4875 !default;
+$rx-color-blue-1: #e6f8ff !default;
+$rx-color-blue-2: #a8e5ff !default;
+$rx-color-blue-3: #7ccef7 !default;
+$rx-color-blue-4: #50b2eb !default;
+$rx-color-blue-5: #2895d1 !default;
+$rx-color-blue-6: #0479d2 !default;
+$rx-color-blue-7: #005bab !default;
+$rx-color-blue-8: #004285 !default;
+$rx-color-blue-9: #002c5e !default;
+$rx-color-blue-10: #001838 !default;
+
+$rx-color-light-blue: #0692fc !default;
+$rx-color-middle-blue: #0479d2 !default;
+$rx-color-dark-blue: #3b3697 !default;
+$rx-color-black-blue: #181773 !default;
 // purple
+$rx-color-purple-1: #f2dae6 !default;
+$rx-color-purple-2: #e695c0 !default;
+$rx-color-purple-3: #d96aa9 !default;
+$rx-color-purple-4: #cc4395 !default;
+$rx-color-purple-5: #bf2185 !default;
+$rx-color-purple-6: #b30177 !default;
+$rx-color-purple-7: #8c0062 !default;
+$rx-color-purple-8: #66004b !default;
+$rx-color-purple-9: #400031 !default;
+$rx-color-purple-10: #1a0014 !default;
+
 $rx-color-indigo: #6209f1 !default;
-$rx-color-purple: #3f0e40 !default;
+$rx-color-purple: #b30177 !default;
 $rx-color-light-aubergine: #674868 !default;
 $rx-color-aubergine: #4a154b !default;
 $rx-color-dark-aubergine: #300e34 !default;
-// gray
+// neutral color
+$rx-color-gray-0: #fff !default;
+$rx-color-gray-1: #fafafa !default;
+$rx-color-gray-2: #f5f5f5 !default;
+$rx-color-gray-3: #f0f0f0 !default;
+$rx-color-gray-4: #d9d9d9 !default;
+$rx-color-gray-5: #bfbfbf !default;
+$rx-color-gray-6: #8c8c8c !default;
+$rx-color-gray-7: #828282 !default;
+$rx-color-gray-8: #5c5c5c !default;
+$rx-color-gray-9: #595959 !default;
+$rx-color-gray-10: #262626 !default;
+$rx-color-gray-11: #1f1f1f !default;
+$rx-color-gray-12: #141414 !default;
+$rx-color-gray-13: #000 !default;
+
 $rx-color-light-gray: #f6f6f6 !default;
 $rx-color-gray: #a8a8a8 !default;
 $rx-color-dark-gray: #646464 !default;
-// black
-$rx-color-black: #000 !default;
 $rx-color-dark-black: #1c1d1c !default;
-$rx-color-white: #fff !default;
 
-// neutral color
-$rx-color-gray-900: mix($rx-color-gray, $rx-color-white, 95%) !default;
-$rx-color-gray-800: mix($rx-color-gray, $rx-color-white, 85%) !default;
-$rx-color-gray-700: mix($rx-color-gray, $rx-color-white, 75%) !default;
-$rx-color-gray-600: mix($rx-color-gray, $rx-color-white, 65%) !default;
-$rx-color-gray-500: mix($rx-color-gray, $rx-color-white, 55%) !default;
-$rx-color-gray-400: mix($rx-color-gray, $rx-color-white, 45%) !default;
-$rx-color-gray-300: mix($rx-color-gray, $rx-color-white, 35%) !default;
-$rx-color-gray-200: mix($rx-color-gray, $rx-color-white, 25%) !default;
-$rx-color-gray-100: mix($rx-color-gray, $rx-color-white, 15%) !default;
 
-$rx-color-gray-base: $rx-color-light-gray !default;
+$rx-color-red: $rx-color-red-6 !default;
+$rx-color-yellow: $rx-color-yellow-6 !default;
+$rx-color-orange: $rx-color-yellow-8 !default;
+$rx-color-green: $rx-color-green-6 !default;
+$rx-color-cyan: $rx-color-cyan-6 !default;
+$rx-color-blue: $rx-color-blue-6 !default;
+$rx-color-purple: $rx-color-purple-6 !default;
+$rx-color-pink: $rx-color-purple-3 !default;
+$rx-color-white: $rx-color-gray-0 !default;
+$rx-color-gray: $rx-color-gray-6 !default;
+$rx-color-black: $rx-color-gray-13 !default;
 
 // system color
-$rx-primary: $rx-color-dark-green !default;
-$rx-secondary: $rx-color-dark-blue !default;
-$rx-success: $rx-color-teal !default;
-$rx-info: $rx-color-blue !default;
-$rx-warning: $rx-color-yellow !default;
-$rx-danger: $rx-color-red !default;
-$rx-link: $rx-color-blue !default;
-$rx-light: $rx-color-gray-100 !default;
-$rx-gray: $rx-color-gray !default;
-$rx-black: $rx-color-black !default;
+$rx-primary: $rx-color-blue-6 !default;
+$rx-secondary: $rx-color-blue-4 !default;
+$rx-success: $rx-color-green-6 !default;
+$rx-info: $rx-color-cyan-6 !default;
+$rx-warning: $rx-color-yellow-6 !default;
+$rx-danger: $rx-color-red-6 !default;
+$rx-link: $rx-color-blue-6 !default;
+$rx-light: $rx-color-gray-1 !default;
+$rx-gray: $rx-color-gray-6 !default;
 $rx-white: $rx-color-white !default;
+$rx-black: $rx-color-black !default;
 
 // primary gradient
 $rx-primary-light-10: mix($rx-color-white, $rx-primary, 10%) !default;
@@ -112,8 +184,8 @@ $rx-theme-colors: (
 
 // text color
 $rx-text-color-primary: $rx-color-black !default;
-$rx-text-color-regular: $rx-color-black !default;
-$rx-text-color-secondary: $rx-color-gray-700 !default;
+$rx-text-color-regular: $rx-color-gray-10 !default;
+$rx-text-color-secondary: $rx-color-gray-7 !default;
 $rx-text-color-placeholder: $rx-color-gray !default;
 
 /**
@@ -121,9 +193,9 @@ $rx-text-color-placeholder: $rx-color-gray !default;
  */
 // border color
 $rx-border-color-base: $rx-color-gray !default;
-$rx-border-color-light: $rx-color-gray-300 !default;
-$rx-border-color-lighter: $rx-color-gray-200 !default;
-$rx-border-color-extra-light: $rx-color-gray-100 !default;
+$rx-border-color-light: $rx-color-gray-5 !default;
+$rx-border-color-lighter: $rx-color-gray-3 !default;
+$rx-border-color-extra-light: $rx-color-gray-1 !default;
 
 $rx-border-width-base: 1px !default;
 $rx-border-style-base: solid !default;
@@ -156,7 +228,7 @@ $rx-font-size-extra-large: 20px !default;
 $rx-font-weight-primary: 500 !default;
 $rx-font-weight-secondary: 100 !default;
 
-$rx-font-color-disabled-base: $rx-color-gray-400 !default;
+$rx-font-color-disabled-base: $rx-color-gray-4 !default;
 
 /**
  * Disabled base
