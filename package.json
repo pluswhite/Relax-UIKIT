@@ -1,7 +1,7 @@
 {
   "name": "relax-ui-kit",
   "version": "0.1.0",
-  "description": "",
+  "description": "A UI KIT based on React with Typescript, Jest, Webpack, Babel .etc.",
   "main": "index.js",
   "scripts": {
     "start": "npm run storybook",
