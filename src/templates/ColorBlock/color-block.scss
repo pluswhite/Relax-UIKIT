@@ -17,15 +17,15 @@
 
   &__primary {
     &--default {
-      background-color: $rx-color-aubergine;
+      background-color: $rx-color-blue;
     }
 
     &--light {
-      background-color: $rx-color-light-aubergine;
+      background-color: $rx-color-blue-4;
     }
 
     &--dark {
-      background-color: $rx-color-dark-aubergine;
+      background-color: $rx-color-blue-8;
     }
   }
 
@@ -49,29 +49,29 @@
 
   &__functional {
     &--danger {
-      background-color: $rx-color-red;
+      background-color: $rx-danger;
     }
 
     &--warning {
-      background-color: $rx-color-yellow;
+      background-color: $rx-warning;
     }
 
     &--success {
-      background-color: $rx-color-teal;
+      background-color: $rx-success;
     }
 
     &--info {
-      background-color: $rx-color-blue;
+      background-color: $rx-info;
     }
   }
 
   &__brand {
     &--blue {
-      background-color: $rx-color-light-blue;
+      background-color: $rx-secondary;
     }
 
     &--yellow {
-      background-color: $rx-color-orange;
+      background-color: $rx-color-yellow;
     }
 
     &--green {
@@ -89,7 +89,7 @@
     }
 
     &--dark-gray {
-      background-color: $rx-color-dark-gray;
+      background-color: $rx-color-gray-8;
     }
 
     &--middle-gray {
@@ -98,7 +98,7 @@
 
     &--light-gray {
       color: $rx-color-black;
-      background-color: $rx-color-light-gray;
+      background-color: $rx-color-gray-4;
     }
 
     &--white {
