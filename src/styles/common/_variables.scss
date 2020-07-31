@@ -355,9 +355,9 @@ $rx-radio-disabled-checked-input-fill: $rx-disabled-fill-base !default;
 $rx-radio-disabled-checked-icon-color: $rx-text-color-placeholder !default;
 
 $rx-radio-checked-font-color: $rx-primary !default;
-$rx-radio-checked-input-border-color: $rx-info !default;
+$rx-radio-checked-input-border-color: $rx-primary !default;
 $rx-radio-checked-input-background-color: $rx-white !default;
-$rx-radio-checked-icon-color: $rx-info !default;
+$rx-radio-checked-icon-color: $rx-primary !default;
 
 $rx-radio-input-border-color-hover: $rx-primary !default;
 
@@ -406,9 +406,9 @@ $rx-checkbox-disabled-checked-input-fill: $rx-disabled-fill-base !default;
 $rx-checkbox-disabled-checked-icon-color: $rx-text-color-placeholder !default;
 
 $rx-checkbox-checked-font-color: $rx-primary !default;
-$rx-checkbox-checked-input-border-color: $rx-info !default;
+$rx-checkbox-checked-input-border-color: $rx-primary !default;
 $rx-checkbox-checked-input-background-color: $rx-white !default;
-$rx-checkbox-checked-icon-color: $rx-info !default;
+$rx-checkbox-checked-icon-color: $rx-primary !default;
 
 $rx-checkbox-input-border-color-hover: $rx-primary !default;
 
@@ -456,7 +456,7 @@ $rx-input-placeholder-color: $rx-text-color-placeholder !default;
 
 $rx-input-hover-border: $rx-border-color-hover !default;
 $rx-input-clear-hover-color: $rx-text-color-secondary !default;
-$rx-input-focus-border: $rx-black !default;
+$rx-input-focus-border: $rx-primary !default;
 $rx-input-focus-fill: $rx-white !default;
 
 $rx-input-disabled-fill: $rx-disabled-fill-base !default;
@@ -483,7 +483,7 @@ $rx-input-extra-small-padding: 0 7px;
 $rx-dropdown-menu-box-shadow: $rx-box-shadow-light !default;
 $rx-dropdown-menu-item-hover-fill: $rx-primary-light-90 !default;
 $rx-dropdown-menu-item-hover-color: $rx-white !default;
-$rx-dropdown-menu-item-hover-background-color: $rx-color-dark-blue !default;
+$rx-dropdown-menu-item-hover-background-color: $rx-color-blue !default;
 
 /**
  * Tag

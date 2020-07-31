@@ -160,6 +160,7 @@
       background-color: $rx-button-disabled-background-color;
       background-image: none;
       border-color: $rx-button-disabled-border-color;
+      box-shadow: none;
     }
 
     &.is-plain {
@@ -226,20 +227,20 @@
   }
 
   @include mod(link) {
-    color: $rx-info;
+    color: $rx-link;
     text-decoration: none;
     border: none;
     box-shadow: none;
 
     &:hover,
     &:focus {
-      color: mix($rx-white, $rx-info, $rx-button-hover-tint-percent);
+      color: mix($rx-white, $rx-link, $rx-button-hover-tint-percent);
       background-color: transparent;
       box-shadow: none;
     }
 
     &:active {
-      color: mix($rx-white, $rx-info, $rx-button-active-shade-percent);
+      color: mix($rx-white, $rx-link, $rx-button-active-shade-percent);
       text-decoration: underline;
     }
 
