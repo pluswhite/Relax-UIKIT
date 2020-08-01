@@ -43,10 +43,6 @@ $rx-color-green-8: #007535 !default;
 $rx-color-green-9: #004f26 !default;
 $rx-color-green-10: #002915 !default;
 
-$rx-color-light-green: #3ea288 !default;
-$rx-color-green: #00c249 !default;
-$rx-color-dark-green: #029967 !default;
-$rx-color-teal: #16a9a1 !default;
 // cyan
 $rx-color-cyan-1: #edfffd !default;
 $rx-color-cyan-2: #c4fff9 !default;
@@ -56,7 +52,7 @@ $rx-color-cyan-5: #42e3e3 !default;
 $rx-color-cyan-6: #1dd1d7 !default;
 $rx-color-cyan-7: #0ea5b0 !default;
 $rx-color-cyan-8: #047c8a !default;
-$rx-color-cyan-9:  #005663 !default;
+$rx-color-cyan-9: #005663 !default;
 $rx-color-cyan-10: #00333d !default;
 // blue
 $rx-color-blue-1: #e6f8ff !default;
@@ -86,11 +82,6 @@ $rx-color-purple-8: #66004b !default;
 $rx-color-purple-9: #400031 !default;
 $rx-color-purple-10: #1a0014 !default;
 
-$rx-color-indigo: #6209f1 !default;
-$rx-color-purple: #b30177 !default;
-$rx-color-light-aubergine: #674868 !default;
-$rx-color-aubergine: #4a154b !default;
-$rx-color-dark-aubergine: #300e34 !default;
 // neutral color
 $rx-color-gray-0: #fff !default;
 $rx-color-gray-1: #fafafa !default;
@@ -107,12 +98,6 @@ $rx-color-gray-11: #1f1f1f !default;
 $rx-color-gray-12: #141414 !default;
 $rx-color-gray-13: #000 !default;
 
-$rx-color-light-gray: #f6f6f6 !default;
-$rx-color-gray: #a8a8a8 !default;
-$rx-color-dark-gray: #646464 !default;
-$rx-color-dark-black: #1c1d1c !default;
-
-
 $rx-color-red: $rx-color-red-6 !default;
 $rx-color-yellow: $rx-color-yellow-6 !default;
 $rx-color-orange: $rx-color-yellow-8 !default;
@@ -124,6 +109,7 @@ $rx-color-pink: $rx-color-purple-3 !default;
 $rx-color-white: $rx-color-gray-0 !default;
 $rx-color-gray: $rx-color-gray-6 !default;
 $rx-color-black: $rx-color-gray-13 !default;
+$rx-color-teal: #16a9a1 !default;
 
 // system color
 $rx-primary: $rx-color-blue-6 !default;
@@ -150,20 +136,20 @@ $rx-primary-light-80: mix($rx-color-white, $rx-primary, 80%) !default;
 $rx-primary-light-90: mix($rx-color-white, $rx-primary, 90%) !default;
 
 // success gradient
-$rx-success-light: mix($rx-color-white, $rx-success, 80%) !default;
-$rx-success-lighter: mix($rx-color-white, $rx-success, 90%) !default;
+$rx-success-light: $rx-color-green-4 !default;
+$rx-success-lighter: $rx-color-green-2 !default;
 
 // info gradient
-$rx-info-light: mix($rx-color-white, $rx-info, 80%) !default;
-$rx-info-lighter: mix($rx-color-white, $rx-info, 90%) !default;
+$rx-info-light: $rx-color-cyan-4 !default;
+$rx-info-lighter: $rx-color-cyan-2 !default;
 
 // warning gradient
-$rx-warning-light: mix($rx-color-white, $rx-warning, 80%) !default;
-$rx-warning-lighter: mix($rx-color-white, $rx-warning, 90%) !default;
+$rx-warning-light: $rx-color-yellow-4 !default;
+$rx-warning-lighter: $rx-color-yellow-2 !default;
 
 // danger gradient
-$rx-danger-light: mix($rx-color-white, $rx-danger, 80%) !default;
-$rx-danger-lighter: mix($rx-color-white, $rx-danger, 90%) !default;
+$rx-danger-light: $rx-color-red-4 !default;
+$rx-danger-lighter: $rx-color-red-2 !default;
 
 $rx-colors: (primary, success, warning, danger, info, light, dark);
 
@@ -183,9 +169,10 @@ $rx-theme-colors: (
  */
 
 // text color
+$rx-text-color-base: $rx-color-black !default;
 $rx-text-color-primary: $rx-color-black !default;
-$rx-text-color-regular: $rx-color-gray-10 !default;
-$rx-text-color-secondary: $rx-color-gray-7 !default;
+$rx-text-color-secondary: $rx-color-gray-11 !default;
+$rx-text-color-regular: $rx-color-gray-8 !default;
 $rx-text-color-placeholder: $rx-color-gray !default;
 
 /**
@@ -212,7 +199,7 @@ $rx-border-radius-zero: 0 !default;
  * Background
  */
 // background color
-$rx-background-color-base: $rx-color-light-gray;
+$rx-background-color-base: $rx-color-gray-4;
 $rx-background-color-dark: $rx-color-black !default;
 $rx-background-color-light: $rx-color-white !default;
 
@@ -225,6 +212,7 @@ $rx-font-size-base: 14px !default;
 $rx-font-size-medium: 16px !default;
 $rx-font-size-large: 18px !default;
 $rx-font-size-extra-large: 20px !default;
+
 $rx-font-weight-primary: 500 !default;
 $rx-font-weight-secondary: 100 !default;
 

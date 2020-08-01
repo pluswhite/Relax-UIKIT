@@ -31,7 +31,7 @@
   }
 
   .is-hover {
-    background-color: $rx-color-light-gray;
+    background-color: $rx-color-gray-4;
 
     &.is-gray {
       background-color: $rx-color-gray;
@@ -56,7 +56,7 @@
   }
 
   .is-dark-gray {
-    border-color: $rx-color-dark-gray;
+    border-color: $rx-color-gray-8;
   }
 
   .is-black {
@@ -68,20 +68,20 @@
   }
 
   .is-dark-green {
-    border-color: $rx-color-dark-green;
+    border-color: $rx-color-green-8;
   }
 
   .is-dark-blue {
-    border-color: $rx-color-dark-blue;
+    border-color: $rx-color-blue-8;
   }
 
   .is-white {
-    background-color: $rx-color-light-gray;
+    background-color: $rx-color-gray-4;
     border-color: $rx-white;
   }
 
   .is-aubergine {
-    border-color: $rx-color-aubergine;
+    border-color: $rx-color-purple;
   }
 
   .is-yellow {
@@ -89,11 +89,11 @@
   }
 
   .is-blue {
-    border-color: $rx-color-light-blue;
+    border-color: $rx-color-blue;
   }
 
   .is-light-blue {
-    border-color: $rx-color-light-blue;
+    border-color: $rx-color-blue-4;
   }
 
   .is-pink {

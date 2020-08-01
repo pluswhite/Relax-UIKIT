@@ -11,10 +11,10 @@
   padding: $rx-tag-padding;
   font-size: $rx-tag-font-size;
   line-height: 1.5;
-  color: $rx-color-dark-gray;
+  color: $rx-color-gray-8;
   text-align: center;
   white-space: nowrap;
-  background-color: $rx-color-light-gray;
+  background-color: $rx-color-gray-2;
   border-color: $rx-color-gray;
   border-style: solid;
   border-width: 1px;
@@ -31,7 +31,7 @@
   }
 
   &--default {
-    background-color: $rx-color-light-gray;
+    background-color: $rx-color-gray-2;
   }
 
   &--primary {

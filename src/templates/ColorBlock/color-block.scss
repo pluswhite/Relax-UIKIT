@@ -31,19 +31,19 @@
 
   &__secondary {
     &--default {
-      background-color: $rx-color-dark-green;
+      background-color: $rx-color-green;
     }
 
     &--light {
-      background-color: $rx-color-light-green;
+      background-color: $rx-color-green-4;
     }
 
     &--blue {
-      background-color: $rx-color-dark-blue;
+      background-color: $rx-color-blue;
     }
 
     &--dark-blue {
-      background-color: $rx-color-black-blue;
+      background-color: $rx-color-blue-8;
     }
   }
 
@@ -84,21 +84,56 @@
   }
 
   &__neutral {
-    &--black {
-      background-color: $rx-color-black;
+    &--gray-1 {
+      background-color: $rx-color-gray-1;
     }
 
-    &--dark-gray {
+    &--gray-2 {
+      background-color: $rx-color-gray-2;
+    }
+
+    &--gray-3 {
+      background-color: $rx-color-gray-3;
+    }
+
+    &--gray-4 {
+      background-color: $rx-color-gray-4;
+    }
+
+    &--gray-5 {
+      background-color: $rx-color-gray-5;
+    }
+
+    &--gray-6 {
+      background-color: $rx-color-gray-6;
+    }
+
+    &--gray-7 {
+      background-color: $rx-color-gray-7;
+    }
+
+    &--gray-8 {
       background-color: $rx-color-gray-8;
     }
 
-    &--middle-gray {
-      background-color: $rx-color-gray;
+    &--gray-9 {
+      background-color: $rx-color-gray-9;
     }
 
-    &--light-gray {
-      color: $rx-color-black;
-      background-color: $rx-color-gray-4;
+    &--gray-10 {
+      background-color: $rx-color-gray-10;
+    }
+
+    &--gray-11 {
+      background-color: $rx-color-gray-11;
+    }
+
+    &--gray-12 {
+      background-color: $rx-color-gray-12;
+    }
+
+    &--black {
+      background-color: $rx-color-gray-13;
     }
 
     &--white {
