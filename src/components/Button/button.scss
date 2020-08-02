@@ -117,16 +117,12 @@
 
   &:hover,
   &:focus {
-    // color: $rx-primary;
     background-color: $rx-button-hover-background-color;
     box-shadow: $rx-button-box-shadow;
-    // border-color: $rx-primary;
   }
 
   &:active {
-    // color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
     background-color: $rx-color-gray-4;
-    // border-color: mix($rx-black, $rx-primary, $rx-button-active-shade-percent);
     outline: none;
   }
 

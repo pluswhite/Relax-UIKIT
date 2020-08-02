@@ -38,7 +38,7 @@ $rx-color-green-3: #9df5b3 !default;
 $rx-color-green-4: #46db75 !default;
 $rx-color-green-5: #21cf5e !default;
 $rx-color-green-6: #00c249 !default;
-$rx-color-green-7: #00c249 !default;
+$rx-color-green-7: #009c41 !default;
 $rx-color-green-8: #007535 !default;
 $rx-color-green-9: #004f26 !default;
 $rx-color-green-10: #002915 !default;
@@ -132,20 +132,20 @@ $rx-primary-light-80: mix($rx-color-white, $rx-primary, 80%) !default;
 $rx-primary-light-90: mix($rx-color-white, $rx-primary, 90%) !default;
 
 // success gradient
-$rx-success-light: $rx-color-green-4 !default;
-$rx-success-lighter: $rx-color-green-2 !default;
+$rx-success-light: $rx-color-green-5 !default;
+$rx-success-lighter: $rx-color-green-3 !default;
 
 // info gradient
-$rx-info-light: $rx-color-cyan-4 !default;
-$rx-info-lighter: $rx-color-cyan-2 !default;
+$rx-info-light: $rx-color-cyan-5 !default;
+$rx-info-lighter: $rx-color-cyan-3 !default;
 
 // warning gradient
-$rx-warning-light: $rx-color-yellow-4 !default;
-$rx-warning-lighter: $rx-color-yellow-2 !default;
+$rx-warning-light: $rx-color-yellow-5 !default;
+$rx-warning-lighter: $rx-color-yellow-3 !default;
 
 // danger gradient
-$rx-danger-light: $rx-color-red-4 !default;
-$rx-danger-lighter: $rx-color-red-2 !default;
+$rx-danger-light: $rx-color-red-5 !default;
+$rx-danger-lighter: $rx-color-red-3 !default;
 
 $rx-colors: (primary, success, warning, danger, info, light, dark);
 
@@ -165,11 +165,11 @@ $rx-theme-colors: (
  */
 
 // text color
-$rx-text-color-base: $rx-color-black !default;
-$rx-text-color-primary: $rx-color-black !default;
-$rx-text-color-secondary: $rx-color-gray-11 !default;
+$rx-text-color-base: $rx-color-gray-12 !default;
+$rx-text-color-primary: $rx-color-gray-12 !default;
+$rx-text-color-secondary: $rx-color-gray-10 !default;
 $rx-text-color-regular: $rx-color-gray-8 !default;
-$rx-text-color-placeholder: $rx-color-gray !default;
+$rx-text-color-placeholder: $rx-color-gray-5 !default;
 
 /**
  * Border
@@ -195,9 +195,9 @@ $rx-border-radius-zero: 0 !default;
  * Background
  */
 // background color
-$rx-background-color-base: $rx-color-gray-4;
-$rx-background-color-dark: $rx-color-black !default;
-$rx-background-color-light: $rx-color-white !default;
+$rx-background-color-base: $rx-color-gray-0;
+$rx-background-color-light: $rx-color-gray-2 !default;
+$rx-background-color-dark: $rx-color-gray-3 !default;
 
 /**
  * Typography
@@ -212,13 +212,13 @@ $rx-font-size-extra-large: 20px !default;
 $rx-font-weight-primary: 500 !default;
 $rx-font-weight-secondary: 100 !default;
 
-$rx-font-color-disabled-base: $rx-color-gray-4 !default;
+$rx-font-color-disabled-base: $rx-color-gray-5 !default;
 
 /**
  * Disabled base
  */
-$rx-disabled-fill-base: $rx-background-color-base !default;
-$rx-disabled-color-base: $rx-text-color-placeholder !default;
+$rx-disabled-fill-base: $rx-background-color-dark !default;
+$rx-disabled-color-base: $rx-color-gray-5 !default;
 $rx-disabled-border-base: $rx-border-color-light !default;
 
 /**
@@ -233,7 +233,6 @@ $rx-font-line-height-secondary: 1.3 !default;
  */
 // box shadow
 $rx-box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
-// $rx-box-shadow-base: 0 1px 3px rgba(0, 0, 0, 0.08) !default;
 $rx-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0, 0, 6px rgba(0, 0, 0, 0.12) !default;
 $rx-box-shadow-light: 0 2px 12px rgba(0, 0, 0, 0.1) !default;
 
@@ -257,6 +256,7 @@ $rx-button-font-weight: $rx-font-weight-primary !default;
 $rx-button-border-radius: $rx-border-radius-base !default;
 $rx-button-padding-vertical: 10px !default;
 $rx-button-padding-horizontal: 10px !default;
+$rx-button-background-color: $rx-background-color-base !default;
 $rx-button-box-shadow: $rx-box-shadow-base !default;
 
 // large size
@@ -284,12 +284,12 @@ $rx-button-extra-small-padding-horizontal: 14px !default;
 
 // default
 $rx-button-default-font-color: $rx-text-color-regular !default;
-$rx-button-default-background-color: $rx-background-color-light !default;
+$rx-button-default-background-color: $rx-background-color-base !default;
 $rx-button-default-border-color: $rx-border-color-base !default;
 
-$rx-button-disabled-font-color: $rx-text-color-placeholder !default;
-$rx-button-disabled-background-color: $rx-color-white !default;
-$rx-button-disabled-border-color: $rx-border-color-lighter !default;
+$rx-button-disabled-font-color: $rx-disabled-color-base !default;
+$rx-button-disabled-background-color: $rx-disabled-fill-base !default;
+$rx-button-disabled-border-color: $rx-disabled-border-base !default;
 
 $rx-button-primary-border-color: $rx-primary !default;
 $rx-button-primary-font-color: $rx-color-white !default;
@@ -311,7 +311,7 @@ $rx-button-info-border-color: $rx-info !default;
 $rx-button-info-font-color: $rx-color-white !default;
 $rx-button-info-background-color: $rx-info !default;
 
-$rx-button-hover-background-color: $rx-background-color-base !default;
+$rx-button-hover-background-color: $rx-background-color-light !default;
 $rx-button-hover-tint-percent: 25% !default;
 $rx-button-active-shade-percent: 10% !default;
 
