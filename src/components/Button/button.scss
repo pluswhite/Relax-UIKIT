@@ -225,6 +225,7 @@
   @include mod(link) {
     color: $rx-link;
     text-decoration: none;
+    background-color: transparent;
     border: none;
     box-shadow: none;
 
@@ -238,11 +239,19 @@
     &:active {
       color: mix($rx-white, $rx-link, $rx-button-active-shade-percent);
       text-decoration: underline;
+      background-color: transparent;
     }
 
     &.is-disabled {
       color: $rx-button-disabled-font-color;
       cursor: not-allowed;
+      background-color: transparent;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+      }
     }
   }
 
