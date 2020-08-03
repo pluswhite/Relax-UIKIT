@@ -1,7 +1,7 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { linkTo } from '@storybook/addon-links';
 
-import ColorBlock from '../templates/ColorBlock';
+import ColorBlock, { ColorDegree } from '../templates/ColorBlock';
 
 <Meta title="02 - Colors 色彩" component={ColorBlock} />
 
@@ -9,118 +9,59 @@ import ColorBlock from '../templates/ColorBlock';
 
 ## Primary Colors 主色
 
-<ColorBlock type="primary" degree="light">
-  <h3>Light Blue</h3>
-  <p>#4A154B</p>
-</ColorBlock>
 <ColorBlock type="primary">
-  <h3>Blue</h3>
-  <p>#300E34</p>
+  <ColorDegree degree="4">#50B2EB</ColorDegree>
+  <ColorDegree degree="6">#0479D2</ColorDegree>
+  <ColorDegree degree="8">#004285</ColorDegree>
 </ColorBlock>
-<ColorBlock type="primary" degree="dark">
-  <h3>Dark Blue</h3>
-  <p>#674868</p>
-</ColorBlock>
-
-## Brand Colors 品牌色
-
-<div>
-  <ColorBlock type="brand" degree="blue">
-    <h3>Blue</h3>
-    <p>#36C5F0</p>
-  </ColorBlock>
-  <ColorBlock type="brand" degree="yellow">
-    <h3>Yellow</h3>
-    <p>#ECB22D</p>
-  </ColorBlock>
-  <ColorBlock type="brand" degree="green">
-    <h3>Green</h3>
-    <p>#2EB67D</p>
-  </ColorBlock>
-  <ColorBlock type="brand" degree="pink">
-    <h3>Pink</h3>
-    <p>#E01E5A</p>
-  </ColorBlock>
-</div>
 
 ## Functional Color 功能色
 
 <div>
-  <ColorBlock type="functional" degree="success">
-    <h3>Success</h3>
-    <p>#16A9A1</p>
+  <ColorBlock type="secondary">
+    <ColorDegree degree="5">#2895D1</ColorDegree>
+    <ColorDegree degree="7">#005BAB</ColorDegree>
+    <ColorDegree degree="9">#002C5E</ColorDegree>
   </ColorBlock>
-  <ColorBlock type="functional" degree="info">
-    <h3>Link</h3>
-    <p>#3A88FD</p>
+  <ColorBlock type="success">
+    <ColorDegree degree="4">#46DB75</ColorDegree>
+    <ColorDegree degree="6">#00C249</ColorDegree>
+    <ColorDegree degree="8">#007535</ColorDegree>
   </ColorBlock>
-  <ColorBlock type="functional" degree="warning">
-    <h3>Warning</h3>
-    <p>#EAB73D</p>
+  <ColorBlock type="info">
+    <ColorDegree degree="4">#6CFCF6</ColorDegree>
+    <ColorDegree degree="6">#1DD1D7</ColorDegree>
+    <ColorDegree degree="8">#047C8A</ColorDegree>
   </ColorBlock>
-  <ColorBlock type="functional" degree="danger">
-    <h3>Danger</h3>
-    <p>#E24F4F</p>
+  <ColorBlock type="warning">
+    <ColorDegree degree="4">#FFVA52</ColorDegree>
+    <ColorDegree degree="6">#FF8600</ColorDegree>
+    <ColorDegree degree="8">#D96C00</ColorDegree>
+  </ColorBlock>
+  <ColorBlock type="danger">
+    <ColorDegree degree="4">#FF8952</ColorDegree>
+    <ColorDegree degree="6">#F03C00</ColorDegree>
+    <ColorDegree degree="8">#A31E00</ColorDegree>
   </ColorBlock>
 </div>
 
 ## Neutral Colors 中性色
 
 <div>
-  <ColorBlock type="neutral" degree="white">
-    <h3>White</h3>
-    <p>#FFFFFF</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-1">
-    <h3>Grey1</h3>
-    <p>#FAFAFA</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-2">
-    <h3>Grey2</h3>
-    <p>#F5F5F5</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-3">
-    <h3>Grey3</h3>
-    <p>#F0F0F0</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-4">
-    <h3>Grey4</h3>
-    <p>#D9D9D9</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-5">
-    <h3>Grey5</h3>
-    <p>#BFBFBF</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-6">
-    <h3>Grey6</h3>
-    <p>#8C8C8C</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-7">
-    <h3>Grey7</h3>
-    <p>#828282</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-8">
-    <h3>Grey8</h3>
-    <p>#5C5C5C</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-9">
-    <h3>Grey9</h3>
-    <p>#595959</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-10">
-    <h3>Grey10</h3>
-    <p>#262626</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-11">
-    <h3>Grey11</h3>
-    <p>#1F1F1F</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="gray-12">
-    <h3>Grey12</h3>
-    <p>#141414</p>
-  </ColorBlock>
-  <ColorBlock type="neutral" degree="black">
-    <h3>Black</h3>
-    <p>#000000</p>
+  <ColorBlock type="neutral">
+    <ColorDegree degree="0">#FFFFFF</ColorDegree>
+    <ColorDegree degree="1">#FAFAFA</ColorDegree>
+    <ColorDegree degree="2">#F5F5F5</ColorDegree>
+    <ColorDegree degree="3">#F0F0F0</ColorDegree>
+    <ColorDegree degree="4">#D9D9D9</ColorDegree>
+    <ColorDegree degree="5">#BFBFBF</ColorDegree>
+    <ColorDegree degree="6">#8C8C8C</ColorDegree>
+    <ColorDegree degree="7">#828282</ColorDegree>
+    <ColorDegree degree="8">#5C5C5C</ColorDegree>
+    <ColorDegree degree="9">#595959</ColorDegree>
+    <ColorDegree degree="10">#262626</ColorDegree>
+    <ColorDegree degree="11">#1F1F1F</ColorDegree>
+    <ColorDegree degree="12">#141414</ColorDegree>
+    <ColorDegree degree="13">#000000</ColorDegree>
   </ColorBlock>
 </div>

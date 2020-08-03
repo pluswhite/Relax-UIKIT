@@ -1,3 +1,4 @@
-import ColorBlock from './color-block';
+import ColorBlock, { ColorDegree } from './color-block';
 
+export { ColorDegree };
 export default ColorBlock;
