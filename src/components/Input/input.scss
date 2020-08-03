@@ -38,6 +38,7 @@
     &:active {
       border-color: $rx-input-focus-border;
       outline: none;
+      box-shadow: $rx-input-focus-box-shadow;
     }
 
     // disable default clear on IE
@@ -101,6 +102,12 @@
 
       &::placeholder {
         color: $rx-input-disabled-placeholder-color;
+      }
+
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: none;
       }
     }
   }
