@@ -19,3 +19,19 @@
 .demo-tag {
   margin: 15px;
 }
+
+.demo-row {
+  margin-bottom: 15px;
+  background-color: $rx-color-blue-4;
+
+  :nth-child(2n + 1) {
+    background-color: $rx-color-blue-6;
+  }
+
+  :nth-child(n) {
+    min-height: 30px;
+    padding: 15px 0;
+    color: $rx-white;
+    text-align: center;
+  }
+}
