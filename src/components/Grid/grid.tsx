@@ -4,14 +4,24 @@ import classnames from 'classnames';
 import './grid.scss';
 
 export interface IRowProps {
-  field?: string;
+  gutter?: number;
+  justify?: 'start' | 'end' | 'center' | 'space-around' | 'space-between';
+  align?: 'top' | 'middle' | 'bottom';
   className?: string;
   children: ReactChildren | ReactElement;
 }
 
 export const Row: FC<IRowProps> = (props: IRowProps) => {
-  const { className, children, ...restProps } = props;
-  const classes = classnames('rx-row', className);
+  const { gutter, justify, align, className, children, ...restProps } = props;
+  const classes = classnames(
+    'rx-row',
+    {
+      'rx-row--flex': justify || align,
+      [`is-justify-${justify}`]: justify,
+      [`is-align-${align}`]: align,
+    },
+    className,
+  );
 
   return (
     <div className={classes} {...restProps}>

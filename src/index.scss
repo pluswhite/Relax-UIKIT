@@ -22,10 +22,14 @@
 
 .demo-row {
   margin-bottom: 15px;
-  background-color: $rx-color-blue-4;
+  background-color: $rx-color-gray-2;
 
   :nth-child(2n + 1) {
     background-color: $rx-color-blue-6;
+  }
+
+  :nth-child(2n) {
+    background-color: $rx-color-blue-4;
   }
 
   :nth-child(n) {

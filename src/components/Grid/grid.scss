@@ -47,7 +47,7 @@
       align-items: flex-start;
     }
 
-    @include when(align-center) {
+    @include when(align-middle) {
       align-items: center;
     }
 
