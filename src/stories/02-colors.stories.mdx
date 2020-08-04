@@ -2,6 +2,7 @@ import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { linkTo } from '@storybook/addon-links';
 
 import ColorBlock, { ColorDegree } from '../templates/ColorBlock';
+import ControlState from '../templates/ControlState';
 
 <Meta title="02 - Colors 色彩" component={ColorBlock} />
 
@@ -65,3 +66,67 @@ import ColorBlock, { ColorDegree } from '../templates/ColorBlock';
     <ColorDegree degree="13">#000000</ColorDegree>
   </ColorBlock>
 </div>
+
+## Borders colors 边框
+
+<ControlState type="bordered" degree="gray">
+  border/gray
+</ControlState>
+<ControlState type="bordered" degree="dark-gray">
+  border/dark gray
+</ControlState>
+<ControlState type="bordered" degree="black">
+  border/black
+</ControlState>
+
+<ControlState type="bordered" degree="white">
+  border/white
+</ControlState>
+
+<ControlState type="focused">border/hover</ControlState>
+
+<ControlState type="bordered" degree="light-blue">
+  border/blue
+</ControlState>
+
+<ControlState type="bordered" degree="green">
+  border/green
+</ControlState>
+
+<ControlState type="bordered" degree="yellow">
+  border/yellow
+</ControlState>
+
+<ControlState type="bordered" degree="pink">
+  border/pink
+</ControlState>
+
+<ControlState type="bordered" degree="dark-green" round>
+  button/border/rounded
+</ControlState>
+
+<ControlState type="bordered" degree="dark-green">
+  button/border/angle
+</ControlState>
+
+## Control State 状态控制
+
+<ControlState type="hover">control states/hover/grey</ControlState>
+<ControlState type="hover" degree="gray" round>
+  control states/hover/grey round
+</ControlState>
+<ControlState type="hover" round>
+  control states/hover/round
+</ControlState>
+
+<ControlState type="pressed" degree="blue">
+  control states/pressed
+</ControlState>
+
+<ControlState type="focused">control states/focused</ControlState>
+
+<ControlState type="disabled" degree="danger">
+  control states/disabled
+</ControlState>
+
+## Shadows 阴影 - TODO
