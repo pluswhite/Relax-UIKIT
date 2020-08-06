@@ -19,10 +19,10 @@ export interface IDropdownProps {
 }
 
 type DropdownContextType = {
-  setVisible: (visible: boolean) => void;
+  setVisible?: (visible: boolean) => void;
 };
 
-export const DropdownContext = createContext<DropdownContextType | undefined>(undefined);
+export const DropdownContext = createContext<DropdownContextType>({});
 
 const Dropdown: FC<IDropdownProps> = (props: IDropdownProps) => {
   const { menus, className, children, trigger = 'hover', visible, ...restProps } = props;

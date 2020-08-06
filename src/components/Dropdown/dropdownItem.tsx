@@ -13,13 +13,11 @@ export interface IDropdownItemProps {
 const DropdownItem: FC<IDropdownItemProps> = (props: IDropdownItemProps) => {
   const { className, children, onClick, ...restProps } = props;
   const classes = classnames('rx-dropdown-menu__item', className);
-  // type error: `setVisible: any`, why?
-  // const { setVisible } = useContext(DropdownContext);
-  const value = useContext(DropdownContext);
+  const { setVisible } = useContext(DropdownContext);
 
   const handleClick = (evt: React.MouseEvent<HTMLLIElement>) => {
     onClick && onClick(evt);
-    value?.setVisible(false);
+    setVisible && setVisible(false);
   };
 
   return (
