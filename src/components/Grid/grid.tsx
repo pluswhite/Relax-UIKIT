@@ -1,4 +1,11 @@
-import React, { FC, ReactChildren, ReactElement } from 'react';
+import React, {
+  FC,
+  ReactChildren,
+  ReactElement,
+  CSSProperties,
+  createContext,
+  useContext,
+} from 'react';
 import classnames from 'classnames';
 
 import './grid.scss';
@@ -8,11 +15,17 @@ export interface IRowProps {
   justify?: 'start' | 'end' | 'center' | 'space-around' | 'space-between';
   align?: 'top' | 'middle' | 'bottom';
   className?: string;
+  style?: CSSProperties;
   children: ReactChildren | ReactElement;
 }
 
+export interface RowContextType {
+  gutter: number;
+}
+export const RowContext = createContext<RowContextType>({ gutter: 0 });
+
 export const Row: FC<IRowProps> = (props: IRowProps) => {
-  const { gutter, justify, align, className, children, ...restProps } = props;
+  const { gutter = 8, justify, align, className, style, children, ...restProps } = props;
   const classes = classnames(
     'rx-row',
     {
@@ -22,26 +35,50 @@ export const Row: FC<IRowProps> = (props: IRowProps) => {
     },
     className,
   );
+  const rowStyle = {
+    ...(gutter > 0
+      ? {
+          marginLeft: gutter / -2,
+          marginRight: gutter / -2,
+        }
+      : {}),
+    ...style,
+  };
+
+  console.log(rowStyle);
 
   return (
-    <div className={classes} {...restProps}>
-      {children}
-    </div>
+    <RowContext.Provider value={{ gutter }}>
+      <div className={classes} style={rowStyle} {...restProps}>
+        {children}
+      </div>
+    </RowContext.Provider>
   );
 };
 
 export interface IColProps {
   span?: number;
   className?: string;
+  style?: CSSProperties;
   children: ReactChildren | ReactElement;
 }
 
 export const Col: FC<IColProps> = (props: IColProps) => {
-  const { span, className, children, ...restProps } = props;
+  const { span, className, style, children, ...restProps } = props;
   const classes = classnames('rx-col', `rx-col-${span}`, className);
+  const { gutter } = useContext(RowContext);
+  const colStyle = {
+    ...(gutter > 0
+      ? {
+          paddingLeft: gutter / 2,
+          paddingRight: gutter / 2,
+          // marginRight: style?.marginLeft,
+        }
+      : style),
+  };
 
   return (
-    <div className={classes} {...restProps}>
+    <div className={classes} style={colStyle} {...restProps}>
       {children}
     </div>
   );

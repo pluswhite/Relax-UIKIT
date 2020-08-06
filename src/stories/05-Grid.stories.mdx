@@ -10,120 +10,299 @@ import { Row, Col } from '../components/Grid';
 ## Basic usage
 
 <Row className="demo-row">
-  <Col span={24}>col-24</Col>
-  <Col span={0}>col-0</Col>
+  <Col span={24}>
+    <div className="demo-row--item">col-24</div>
+  </Col>
 </Row>
 
 <Row className="demo-row">
-  <Col span={16}>col-16</Col>
-  <Col span={8}>col-8</Col>
+  <Col span={16}>
+    <div className="demo-row--item">col-16</div>
+  </Col>
+  <Col span={8}>
+    <div className="demo-row--item">col-16</div>
+  </Col>
 </Row>
 
 <Row className="demo-row">
-  <Col span={12}>col-12</Col>
-  <Col span={12}>col-12</Col>
+  <Col span={12}>
+    <div className="demo-row--item">col-12</div>
+  </Col>
+  <Col span={12}>
+    <div className="demo-row--item">col-12</div>
+  </Col>
 </Row>
 
 <Row className="demo-row">
-  <Col span={8}>col-8</Col>
-  <Col span={8}>col-8</Col>
-  <Col span={8}>col-8</Col>
+  <Col span={8}>
+    <div className="demo-row--item">col-8</div>
+  </Col>
+  <Col span={8}>
+    <div className="demo-row--item">col-8</div>
+  </Col>
+  <Col span={8}>
+    <div className="demo-row--item">col-8</div>
+  </Col>
 </Row>
 
 <Row className="demo-row">
-  <Col span={6}>col-6</Col>
-  <Col span={6}>col-6</Col>
-  <Col span={6}>col-6</Col>
-  <Col span={6}>col-6</Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
 </Row>
 
 <Row className="demo-row">
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
 </Row>
 
 ## Flex layout
 
+### `justify="start"`
+
 <Row className="demo-row" justify="start">
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
 </Row>
+
+### `justify="center"`
 
 <Row className="demo-row" justify="center">
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
 </Row>
+
+### `justify="end"`
 
 <Row className="demo-row" justify="end">
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
 </Row>
+
+### `justify="space-around"`
 
 <Row className="demo-row" justify="space-around">
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
 </Row>
+
+### `justify="space-between"`
 
 <Row className="demo-row" justify="space-between">
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
-  <Col span={4}>col-4</Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
+  <Col span={4}>
+    <div className="demo-row--item">col-4</div>
+  </Col>
 </Row>
+
+### `align="top"`
 
 <Row className="demo-row" justify="center" align="top">
-  <Col span={4} style={{ height: 100 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 100 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 80 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 80 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 150 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 150 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 120 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 120 }}>
+      col-4
+    </div>
   </Col>
 </Row>
+
+### `align="middle"`
 
 <Row className="demo-row" justify="space-around" align="middle">
-  <Col span={4} style={{ height: 100 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 100 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 80 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 80 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 150 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 150 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 120 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 120 }}>
+      col-4
+    </div>
   </Col>
 </Row>
 
+### `align="bottom"`
+
 <Row className="demo-row" justify="space-between" align="bottom">
-  <Col span={4} style={{ height: 100 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 100 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 80 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 80 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 150 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 150 }}>
+      col-4
+    </div>
   </Col>
-  <Col span={4} style={{ height: 120 }}>
-    col-4
+  <Col span={4}>
+    <div className="demo-row--item" style={{ height: 120 }}>
+      col-4
+    </div>
+  </Col>
+</Row>
+
+## Gutter 间距
+
+### `gutter=0`
+
+<Row className="demo-row" gutter={0}>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+</Row>
+
+### `gutter=4`
+
+<Row className="demo-row" gutter={4}>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+</Row>
+
+### `gutter=16`
+
+<Row className="demo-row" gutter={16}>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+</Row>
+
+### `gutter=32`
+
+<Row className="demo-row" gutter={32}>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
+  </Col>
+  <Col span={6}>
+    <div className="demo-row--item">col-6</div>
   </Col>
 </Row>
