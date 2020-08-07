@@ -1,6 +1,7 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
+import { Row } from '../../components/Grid';
 import Radio from '../../components/Radio/radio';
 
 <Meta title="Components 基础组件/02 - Radio 单选框" component={Radio} />
@@ -9,26 +10,33 @@ import Radio from '../../components/Radio/radio';
 
 ## Basic usage 基础用法
 
-<p>
-  <Radio name="rx-radio-demo1" className="rx-radio-demo1" checked>
-    Radio 1
-  </Radio>
-  <Radio name="rx-radio-demo1" className="rx-radio-demo1">
-    Radio 2
-  </Radio>
-</p>
-<p>
-  <Radio name="rx-radio-demo2" className="rx-radio-demo2" checked></Radio>
-  <Radio name="rx-radio-demo2" className="rx-radio-demo2"></Radio>
-</p>
+<Preview>
+  <Row>
+    <Radio name="rx-radio-demo1" className="rx-radio-demo1" checked>
+      Radio 1
+    </Radio>
+    <Radio name="rx-radio-demo1" className="rx-radio-demo1">
+      Radio 2
+    </Radio>
+  </Row>
+</Preview>
+
+<Preview>
+  <Row>
+    <Radio name="rx-radio-demo2" className="rx-radio-demo2" checked />
+    <Radio name="rx-radio-demo2" className="rx-radio-demo2" />
+  </Row>
+</Preview>
 
 ## Disabled status 禁用状态
 
-<p>
-  <Radio name="rx-radio-demo3" className="rx-radio-demo3" disabled>
-    Disabled
-  </Radio>
-  <Radio name="rx-radio-demo3" className="rx-radio-demo3" disabled checked>
-    Disabled
-  </Radio>
-</p>
+<Preview>
+  <Row>
+    <Radio name="rx-radio-demo3" className="rx-radio-demo3" disabled>
+      Disabled
+    </Radio>
+    <Radio name="rx-radio-demo3" className="rx-radio-demo3" disabled checked>
+      Disabled
+    </Radio>
+  </Row>
+</Preview>

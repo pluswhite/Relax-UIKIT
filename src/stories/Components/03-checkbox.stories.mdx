@@ -1,6 +1,7 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
+import { Row } from '../../components/Grid';
 import Checkbox from '../../components/Checkbox/checkbox';
 
 <Meta title="Components 基础组件/03 - Checkbox 多选框" component={Checkbox} />
@@ -9,32 +10,39 @@ import Checkbox from '../../components/Checkbox/checkbox';
 
 ## Basic usage 基本用法
 
-<p>
-  <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1" checked>
-    Checkbox 1
-  </Checkbox>
-  <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1">
-    Checkbox 2
-  </Checkbox>
-  <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1">
-    Checkbox 3
-  </Checkbox>
-</p>
-<p>
-  <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo2" checked></Checkbox>
-  <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo2"></Checkbox>
-</p>
+<Preview>
+  <Row>
+    <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1" checked>
+      Checkbox 1
+    </Checkbox>
+    <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1">
+      Checkbox 2
+    </Checkbox>
+    <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1">
+      Checkbox 3
+    </Checkbox>
+  </Row>
+</Preview>
+
+<Preview>
+  <Row>
+    <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo2" checked></Checkbox>
+    <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo2"></Checkbox>
+  </Row>
+</Preview>
 
 ## Disabled status 禁用状态
 
-<p>
-  <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo3" disabled>
-    Default
-  </Checkbox>
-  <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo3" disabled>
-    Disabled
-  </Checkbox>
-  <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo4" disabled checked>
-    Disabled
-  </Checkbox>
-</p>
+<Preview>
+  <Row>
+    <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo3" disabled>
+      Default
+    </Checkbox>
+    <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo3" disabled>
+      Disabled
+    </Checkbox>
+    <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo4" disabled checked>
+      Disabled
+    </Checkbox>
+  </Row>
+</Preview>

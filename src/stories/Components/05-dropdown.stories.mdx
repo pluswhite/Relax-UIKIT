@@ -1,6 +1,7 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
+import { Row } from '../../components/Grid';
 import Dropdown from '../../components/Dropdown';
 import Button from '../../components/Button/button';
 import Icon from '../../components/Icon';
@@ -11,22 +12,26 @@ import Icon from '../../components/Icon';
 
 ## Basic usage 基础用法
 
-<Dropdown
-  menus={
-    <Dropdown.Menu>
-      <Dropdown.Item>Action 1</Dropdown.Item>
-      <Dropdown.Item>Action 2</Dropdown.Item>
-      <Dropdown.Item>Action 3</Dropdown.Item>
-      <Dropdown.Item disabled>Action 4</Dropdown.Item>
-      <Dropdown.Item divided>Action 5</Dropdown.Item>
-    </Dropdown.Menu>
-  }
->
-  <Button btnType="default" round>
-    Dropdown &nbsp;
-    <Icon icon="chevron-down" />
-  </Button>
-</Dropdown>
+<Preview>
+  <Row>
+    <Dropdown
+      menus={
+        <Dropdown.Menu>
+          <Dropdown.Item>Action 1</Dropdown.Item>
+          <Dropdown.Item>Action 2</Dropdown.Item>
+          <Dropdown.Item>Action 3</Dropdown.Item>
+          <Dropdown.Item disabled>Action 4</Dropdown.Item>
+          <Dropdown.Item divided>Action 5</Dropdown.Item>
+        </Dropdown.Menu>
+      }
+    >
+      <Button btnType="default" round>
+        Dropdown &nbsp;
+        <Icon icon="chevron-down" />
+      </Button>
+    </Dropdown>
+  </Row>
+</Preview>
 
 <Dropdown
   menus={

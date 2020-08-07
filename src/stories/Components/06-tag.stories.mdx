@@ -1,6 +1,7 @@
 import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
+import { Row } from '../../components/Grid';
 import Tag from '../../components/Tag/tag';
 
 <Meta title="Components 基础组件/06 - Tag 标签" component={Tag} />
@@ -9,34 +10,42 @@ import Tag from '../../components/Tag/tag';
 
 ## Basic Usage 基础用法
 
-<Tag className="demo-tag">Default</Tag>
-<Tag className="demo-tag">Tag 1</Tag>
-<Tag className="demo-tag">Tag 2</Tag>
-<Tag className="demo-tag" closable>
-  Tag 3
-</Tag>
+<Preview>
+  <Row>
+    <Tag className="demo-tag">Default</Tag>
+    <Tag className="demo-tag">Tag 1</Tag>
+    <Tag className="demo-tag">Tag 2</Tag>
+    <Tag className="demo-tag" closable>
+      Tag 3
+    </Tag>
+  </Row>
+</Preview>
 
 ## Color Indication 不同颜色
 
-<Tag className="demo-tag">Default</Tag>
-<Tag className="demo-tag" color="primary">
-  Primary
-</Tag>
-<Tag className="demo-tag" color="secondary">
-  secondary
-</Tag>
-<Tag className="demo-tag" color="warning">
-  Warning
-</Tag>
-<Tag className="demo-tag" color="info">
-  Information
-</Tag>
-<Tag className="demo-tag" color="danger">
-  Danger
-</Tag>
-<Tag className="demo-tag" color="#6209f1">
-  #6209f1
-</Tag>
-<Tag className="demo-tag" color="#e01e5a" closable>
-  e01e5a
-</Tag>
+<Preview>
+  <Row>
+    <Tag className="demo-tag">Default</Tag>
+    <Tag className="demo-tag" color="primary">
+      Primary
+    </Tag>
+    <Tag className="demo-tag" color="secondary">
+      secondary
+    </Tag>
+    <Tag className="demo-tag" color="warning">
+      Warning
+    </Tag>
+    <Tag className="demo-tag" color="info">
+      Information
+    </Tag>
+    <Tag className="demo-tag" color="danger">
+      Danger
+    </Tag>
+    <Tag className="demo-tag" color="#6209f1">
+      #6209f1
+    </Tag>
+    <Tag className="demo-tag" color="#e01e5a" closable>
+      e01e5a
+    </Tag>
+  </Row>
+</Preview>

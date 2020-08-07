@@ -1,6 +1,7 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
+import { Row } from '../../components/Grid';
 import Input, { TextArea } from '../../components/Input/input';
 
 <Meta title="Components 基础组件/04 - Input 输入框" component={Input} />
@@ -10,23 +11,23 @@ import Input, { TextArea } from '../../components/Input/input';
 ## Basic usage 基础用法
 
 <Preview>
-  <div>
+  <Row>
     <Input name="rx-Input-demo1" placeholder="Basic usage" size="default" />
-  </div>
+  </Row>
 </Preview>
 
 ## Disabled 禁用状态
 
 <Preview>
-  <div>
+  <Row>
     <Input name="rx-Input-demo2" placeholder="Disabled" disabled />
-  </div>
+  </Row>
 </Preview>
 
 ## Sizes 不同尺寸
 
 <Preview>
-  <div>
+  <Row>
     <Input name="rx-Input-demo3" placeholder="Large" size="lg" wide />
     <br />
     <br />
@@ -40,16 +41,16 @@ import Input, { TextArea } from '../../components/Input/input';
     <br />
     <br />
     <Input name="rx-Input-demo3" placeholder="Extra small" size="xs" wide />
-  </div>
+  </Row>
 </Preview>
 
 ## TextArea 文本框
 
 <Preview>
-  <div>
+  <Row>
     <TextArea placeholder="Textarea" />
     <br />
     <br />
     <TextArea placeholder="Textarea" value="Text Text Text..."></TextArea>
-  </div>
+  </Row>
 </Preview>

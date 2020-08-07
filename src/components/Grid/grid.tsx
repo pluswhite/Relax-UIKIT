@@ -70,8 +70,8 @@ export const Col: FC<IColProps> = (props: IColProps) => {
   const { span, offset, push, pull, className, style, children, ...restProps } = props;
   const classes = classnames(
     'rx-col',
-    `rx-col-${span}`,
     {
+      [`rx-col-${span}`]: span,
       [`rx-col-offset-${offset}`]: offset,
       [`rx-col-push-${push}`]: push,
       [`rx-col-pull-${pull}`]: pull,
