@@ -63,6 +63,7 @@
 }
 
 @include bem(col) {
+  // column width
   @for $index from 0 through 24 {
     &-#{$index} {
       @if $index == 0 {
@@ -70,6 +71,10 @@
       }
 
       width: (1 / 24 * $index * 100) * 1%;
+    }
+
+    &-offset-#{$index} {
+      margin-left: (1 / 24 * $index * 100) * 1%;
     }
   }
 }

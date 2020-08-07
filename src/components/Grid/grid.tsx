@@ -58,14 +58,22 @@ export const Row: FC<IRowProps> = (props: IRowProps) => {
 
 export interface IColProps {
   span?: number;
+  offset?: number;
   className?: string;
   style?: CSSProperties;
   children: ReactChildren | ReactElement;
 }
 
 export const Col: FC<IColProps> = (props: IColProps) => {
-  const { span, className, style, children, ...restProps } = props;
-  const classes = classnames('rx-col', `rx-col-${span}`, className);
+  const { span, offset = 0, className, style, children, ...restProps } = props;
+  const classes = classnames(
+    'rx-col',
+    `rx-col-${span}`,
+    {
+      [`rx-col-offset-${offset}`]: offset > 0,
+    },
+    className,
+  );
   const { gutter } = useContext(RowContext);
   const colStyle = {
     ...(gutter > 0
