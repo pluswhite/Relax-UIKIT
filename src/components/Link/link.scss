@@ -1,0 +1,9 @@
+/**
+ * Link component
+ */
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(link) {
+  display: inline-block;
+}

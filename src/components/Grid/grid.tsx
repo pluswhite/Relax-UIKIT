@@ -45,8 +45,6 @@ export const Row: FC<IRowProps> = (props: IRowProps) => {
     ...style,
   };
 
-  console.log(rowStyle);
-
   return (
     <RowContext.Provider value={{ gutter }}>
       <div className={classes} style={rowStyle} {...restProps}>
