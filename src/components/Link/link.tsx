@@ -6,17 +6,19 @@ import './link.scss';
 export interface ILinkProps {
   type?: ThemeType;
   disabled?: boolean;
+  underline?: boolean;
   className?: string;
   children: ReactChildren | ReactElement;
 }
 
 const Link: FC<ILinkProps> = (props: ILinkProps) => {
-  const { type, disabled, className, children, ...restProps } = props;
+  const { type, disabled, underline, className, children, ...restProps } = props;
   const classes = classnames(
     'rx-link',
     {
       [`rx-link--${type}`]: type,
       [`is-disabled`]: disabled,
+      [`is-underline`]: underline,
     },
     className,
   );

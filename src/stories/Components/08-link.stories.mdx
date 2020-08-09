@@ -7,7 +7,7 @@ import Icon from '../../components/Icon';
 
 <Meta title="Components 基础组件/08 - Link 文字链接" component={Link} />
 
-# Link 按钮
+# Link 链接
 
 ## Basic Usage 基础用法
 
@@ -37,21 +37,46 @@ import Icon from '../../components/Icon';
 <Preview>
   <Row>
     <Link className="demo-link" disabled>
-      Default &nbsp;
+      Default
     </Link>
-    <Link className="demo-link" disabled type="primary">
+    <Link className="demo-link" type="primary" disabled>
       Primary &nbsp;
     </Link>
-    <Link className="demo-link" disabled type="success">
+    <Link className="demo-link" type="success" disabled>
       Success &nbsp;
     </Link>
-    <Link className="demo-link" disabled type="warning">
+    <Link className="demo-link" type="warning" disabled>
       Warning &nbsp;
     </Link>
     <Link className="demo-link" type="danger" disabled>
       Danger &nbsp;
     </Link>
     <Link className="demo-link" type="info" disabled>
+      Link
+    </Link>
+  </Row>
+</Preview>
+
+## Underline 下划线
+
+<Preview>
+  <Row>
+    <Link className="demo-link" underline>
+      Default &nbsp;
+    </Link>
+    <Link className="demo-link" type="primary" underline>
+      Primary &nbsp;
+    </Link>
+    <Link className="demo-link" type="success" underline>
+      Success &nbsp;
+    </Link>
+    <Link className="demo-link" type="warning" underline>
+      Warning &nbsp;
+    </Link>
+    <Link className="demo-link" type="danger" underline>
+      Danger &nbsp;
+    </Link>
+    <Link className="demo-link" type="info" underline>
       Link
     </Link>
   </Row>

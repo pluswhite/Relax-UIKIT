@@ -27,6 +27,7 @@
     &:focus,
     &:active {
       color: mix($disabled-color, $rx-white);
+      text-decoration: none;
     }
   }
 }
@@ -50,6 +51,14 @@
   @include when(disabled) {
     color: $rx-link-disabled-text-color;
     cursor: not-allowed;
+  }
+
+  @include when(underline) {
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
   }
 
   @include mod(primary) {
