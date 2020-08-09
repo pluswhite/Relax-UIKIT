@@ -130,6 +130,8 @@ $rx-primary-light-60: mix($rx-color-white, $rx-primary, 60%) !default;
 $rx-primary-light-70: mix($rx-color-white, $rx-primary, 70%) !default;
 $rx-primary-light-80: mix($rx-color-white, $rx-primary, 80%) !default;
 $rx-primary-light-90: mix($rx-color-white, $rx-primary, 90%) !default;
+$rx-primary-light: $rx-color-blue-5 !default;
+$rx-primary-lighter: $rx-color-blue-3 !default;
 
 // success gradient
 $rx-success-light: $rx-color-green-5 !default;
@@ -519,3 +521,30 @@ $rx-select-dropdown-empty-color: $rx-color-gray !default;
 $rx-select-dropdown-padding: 6px 0 !default;
 $rx-select-dropdown-empty-padding: 10px 0 !default;
 $rx-select-dropdown-border: 1px solid $rx-border-color-light !default;
+
+/**
+ * Link
+ */
+$rx-link-font-size: $rx-font-size-base !default;
+$rx-link-text-color: $rx-text-color-base !default;
+$rx-link-default-active-text-color: $rx-primary !default;
+
+$rx-link-disabled-text-color: $rx-disabled-color-base !default;
+
+$rx-link-primary-text-color: $rx-primary !default;
+$rx-link-primary-active-text-color: $rx-primary-lighter !default;
+$rx-link-primary-disabled-text-color: $rx-primary !default;
+$rx-link-success-text-color: $rx-success !default;
+$rx-link-success-active-text-color: $rx-success-lighter !default;
+$rx-link-success-disabled-text-color: $rx-success !default;
+$rx-link-warning-text-color: $rx-warning !default;
+$rx-link-warning-active-text-color: $rx-warning-lighter !default;
+$rx-link-warning-disabled-text-color: $rx-warning !default;
+$rx-link-danger-text-color: $rx-danger !default;
+$rx-link-danger-active-text-color: $rx-danger-lighter !default;
+$rx-link-danger-disabled-text-color: $rx-danger !default;
+$rx-link-info-text-color: $rx-info !default;
+$rx-link-info-active-text-color: $rx-info-lighter !default;
+$rx-link-info-disabled-text-color: $rx-info !default;
+
+$rx-link-disabled-text-color: $rx-disabled-color-base !default;

@@ -4,6 +4,81 @@
 @import '../../styles/common/variables';
 @import '../../styles/mixins/mixins';
 
+@mixin link-variant($color, $disabled-color) {
+  color: $color;
+
+  &:hover,
+  &:focus {
+    color: $color;
+  }
+
+  &:active {
+    color: $color;
+    outline: none;
+  }
+
+  &.is-active {
+    color: $color;
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: mix($disabled-color, $rx-white);
+    }
+  }
+}
+
 @include bem(link) {
   display: inline-block;
+  font-size: $rx-link-font-size;
+  color: $rx-link-text-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $rx-link-default-active-text-color;
+  }
+
+  &:active {
+    color: $rx-link-default-active-text-color;
+    outline: none;
+  }
+
+  @include when(disabled) {
+    color: $rx-link-disabled-text-color;
+    cursor: not-allowed;
+  }
+
+  @include mod(primary) {
+    @include link-variant($rx-link-primary-active-text-color, $rx-link-primary-disabled-text-color);
+
+    color: $rx-link-primary-text-color;
+  }
+
+  @include mod(success) {
+    @include link-variant($rx-link-success-active-text-color, $rx-link-success-disabled-text-color);
+
+    color: $rx-link-success-text-color;
+  }
+
+  @include mod(warning) {
+    @include link-variant($rx-link-warning-active-text-color, $rx-link-warning-disabled-text-color);
+
+    color: $rx-link-warning-text-color;
+  }
+
+  @include mod(danger) {
+    @include link-variant($rx-link-danger-active-text-color, $rx-link-danger-disabled-text-color);
+
+    color: $rx-link-danger-text-color;
+  }
+
+  @include mod(info) {
+    @include link-variant($rx-link-info-active-text-color, $rx-link-info-disabled-text-color);
+
+    color: $rx-link-info-text-color;
+  }
 }
