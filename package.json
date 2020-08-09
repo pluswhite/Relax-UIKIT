@@ -98,6 +98,7 @@
     "lint-staged": "^10.2.11",
     "npm": "^6.14.6",
     "prettier": "^2.0.5",
+    "react-docgen-typescript-loader": "^3.7.2",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "style-loader": "^1.2.1",
