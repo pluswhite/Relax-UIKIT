@@ -1,0 +1,117 @@
+import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
+
+import { Row } from '../../components/Grid';
+import Alert from '../../components/Alert';
+
+<Meta title="Components 基础组件/(WIP) 09 - Alert 警告" component={Alert} />
+
+# Alert 警告提示
+
+## Basic Usage 基础用法
+
+<Preview>
+  <Row>
+    <Alert className="demo-alert" type="primary" message="Here is the information~"></Alert>
+    <Alert className="demo-alert" type="success" message="Here is the information~"></Alert>
+    <Alert className="demo-alert" type="warning" message="Here is the information~"></Alert>
+    <Alert className="demo-alert" type="danger" message="Here is the information~"></Alert>
+    <Alert className="demo-alert" type="info" message="Here is the information~"></Alert>
+  </Row>
+</Preview>
+
+## Closable 可关闭的警告提示
+
+<Preview>
+  <Row>
+    <Alert
+      className="demo-alert"
+      type="primary"
+      message="Here is the information~"
+      closable
+    ></Alert>
+  </Row>
+</Preview>
+
+## ShowIcon 显示警告类别的 Icon
+
+<Preview>
+  <Row>
+    <Alert
+      className="demo-alert"
+      type="primary"
+      message="Here is the information~"
+      showIcon
+    ></Alert>
+  </Row>
+</Preview>
+
+## Description 描述内容
+
+<Preview>
+  <Row>
+    <Alert
+      message="Title of Success"
+      description="Here is the information"
+      type="success"
+      closable
+    ></Alert>
+    <Alert
+      message="Title of Error"
+      description="Here is the information"
+      type="error"
+      closable
+    ></Alert>
+    <Alert
+      message="Title of Warning"
+      description="Here is the information"
+      type="warning"
+      closable
+    ></Alert>
+    <Alert
+      message="Title of Info"
+      description="Here is the information"
+      type="info"
+      closable
+    ></Alert>
+  </Row>
+</Preview>
+
+## Iocn and Description 带图标和描述内容
+
+<Preview>
+  <Row>
+    <Alert
+      message="Title of Success"
+      description="Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~"
+      type="success"
+      showIcon
+      closable
+    ></Alert>
+    <Alert
+      message="Title of Error"
+      description="Here is the information"
+      type="error"
+      showIcon
+      closable
+    ></Alert>
+    <Alert
+      message="Title of Warning"
+      description="Here is the information"
+      type="warning"
+      showIcon
+      closable
+    ></Alert>
+    <Alert
+      message="Title of Info"
+      description="Here is the information"
+      type="info"
+      showIcon
+      closable
+    ></Alert>
+  </Row>
+</Preview>
+
+## API
+
+<Props of={Alert} />

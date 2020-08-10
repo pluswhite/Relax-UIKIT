@@ -4,6 +4,8 @@
 @import '../../styles/common/variables';
 @import '../../styles/mixins/mixins';
 
-@include bem(demo) {
+@include bem(alert) {
+  position: relative;
   width: 100%;
+  padding: 8px;
 }
