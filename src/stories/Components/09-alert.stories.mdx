@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { Row } from '../../components/Grid';
 import Alert from '../../components/Alert';
 
-<Meta title="Components 基础组件/(WIP) 09 - Alert 警告" component={Alert} />
+<Meta title="Components 基础组件/09 - Alert 警告" component={Alert} />
 
 # Alert 警告提示
 
@@ -12,11 +12,10 @@ import Alert from '../../components/Alert';
 
 <Preview>
   <Row>
-    <Alert className="demo-alert" type="primary" message="Here is the information~"></Alert>
-    <Alert className="demo-alert" type="success" message="Here is the information~"></Alert>
-    <Alert className="demo-alert" type="warning" message="Here is the information~"></Alert>
-    <Alert className="demo-alert" type="danger" message="Here is the information~"></Alert>
-    <Alert className="demo-alert" type="info" message="Here is the information~"></Alert>
+    <Alert className="demo-alert" type="success" message="Here is the information~" />
+    <Alert className="demo-alert" type="warning" message="Here is the information~" />
+    <Alert className="demo-alert" type="danger" message="Here is the information~" />
+    <Alert className="demo-alert" type="info" message="Here is the information~" />
   </Row>
 </Preview>
 
@@ -24,12 +23,7 @@ import Alert from '../../components/Alert';
 
 <Preview>
   <Row>
-    <Alert
-      className="demo-alert"
-      type="primary"
-      message="Here is the information~"
-      closable
-    ></Alert>
+    <Alert className="demo-alert" type="info" message="Here is the information~" closable />
   </Row>
 </Preview>
 
@@ -37,12 +31,7 @@ import Alert from '../../components/Alert';
 
 <Preview>
   <Row>
-    <Alert
-      className="demo-alert"
-      type="primary"
-      message="Here is the information~"
-      showIcon
-    ></Alert>
+    <Alert className="demo-alert" type="info" message="Here is the information~" showIcon />
   </Row>
 </Preview>
 
@@ -51,29 +40,33 @@ import Alert from '../../components/Alert';
 <Preview>
   <Row>
     <Alert
+      className="demo-alert"
       message="Title of Success"
       description="Here is the information"
       type="success"
       closable
-    ></Alert>
+    />
     <Alert
+      className="demo-alert"
       message="Title of Error"
       description="Here is the information"
-      type="error"
+      type="danger"
       closable
-    ></Alert>
+    />
     <Alert
+      className="demo-alert"
       message="Title of Warning"
       description="Here is the information"
       type="warning"
       closable
-    ></Alert>
+    />
     <Alert
+      className="demo-alert"
       message="Title of Info"
       description="Here is the information"
       type="info"
       closable
-    ></Alert>
+    />
   </Row>
 </Preview>
 
@@ -82,33 +75,37 @@ import Alert from '../../components/Alert';
 <Preview>
   <Row>
     <Alert
+      className="demo-alert"
       message="Title of Success"
       description="Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~Here is the information~"
       type="success"
       showIcon
       closable
-    ></Alert>
+    />
     <Alert
+      className="demo-alert"
       message="Title of Error"
       description="Here is the information"
-      type="error"
+      type="danger"
       showIcon
       closable
-    ></Alert>
+    />
     <Alert
+      className="demo-alert"
       message="Title of Warning"
       description="Here is the information"
       type="warning"
       showIcon
       closable
-    ></Alert>
+    />
     <Alert
+      className="demo-alert"
       message="Title of Info"
       description="Here is the information"
       type="info"
       showIcon
       closable
-    ></Alert>
+    />
   </Row>
 </Preview>
 

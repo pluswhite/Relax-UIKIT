@@ -6,6 +6,57 @@
 
 @include bem(alert) {
   position: relative;
+  box-sizing: border-box;
+  display: flex;
   width: 100%;
-  padding: 8px;
+  padding: $rx-alert-padding;
+  overflow: hidden;
+  border-radius: $rx-alert-border-radius;
+
+  &__content {
+    flex: 1;
+    padding-right: 8px;
+  }
+
+  &__message {
+    font-size: $rx-alert-message-font-size;
+
+    @include when(bold) {
+      font-weight: $rx-alert-message-font-weight;
+    }
+  }
+
+  &__description {
+    margin-top: 5px;
+    font-size: $rx-alert-description-font-size;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    font-size: $rx-alert-icon-size;
+
+    @include when(big) {
+      font-size: $rx-alert-icon-large-size;
+    }
+  }
+
+  @include mod(success) {
+    color: $rx-alert-success-text-color;
+    background-color: mix($rx-alert-success-background-color, $rx-white);
+  }
+
+  @include mod(warning) {
+    color: $rx-alert-warning-text-color;
+    background-color: mix($rx-alert-warning-background-color, $rx-white);
+  }
+
+  @include mod(danger) {
+    color: $rx-alert-danger-text-color;
+    background-color: mix($rx-alert-danger-background-color, $rx-white);
+  }
+
+  @include mod(info) {
+    color: $rx-alert-info-text-color;
+    background-color: mix($rx-alert-info-background-color, $rx-white);
+  }
 }

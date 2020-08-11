@@ -1,12 +1,13 @@
-import React, { FC, ReactChildren, ReactElement, ReactNode, MouseEvent } from 'react';
+import React, { FC, ReactNode, MouseEvent } from 'react';
 import classnames from 'classnames';
 
 import Icon from '../Icon';
 
 import './alert.scss';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export interface IAlertProps {
-  type?: ThemeType;
+  type?: 'success' | 'warning' | 'info' | 'danger';
   message?: string | ReactNode;
   description?: string | ReactNode;
   closable?: boolean;
@@ -14,6 +15,13 @@ export interface IAlertProps {
   onClose?: (e: MouseEvent) => void;
   className?: string;
 }
+
+const ALERT_TYPE_MAP: { [type: string]: IconProp } = {
+  success: 'check-circle',
+  warning: 'exclamation-circle',
+  danger: 'times-circle',
+  info: 'info-circle',
+};
 
 const Alert: FC<IAlertProps> = (props: IAlertProps) => {
   const {
@@ -26,7 +34,7 @@ const Alert: FC<IAlertProps> = (props: IAlertProps) => {
     className,
     ...restProps
   } = props;
-  const classes = classnames(
+  const alertClasses = classnames(
     'rx-alert',
     {
       [`rx-alert--${type}`]: type,
@@ -34,18 +42,27 @@ const Alert: FC<IAlertProps> = (props: IAlertProps) => {
     className,
   );
 
+  const iconClasses = classnames('rx-alert__icon', {
+    [`rx-alert__icon--${type}`]: type,
+    [`is-big`]: description,
+  });
+
+  const messageClasses = classnames('rx-alert__message', {
+    [`is-bold`]: description,
+  });
+
   const handleClose = (evt: MouseEvent) => {
     onClose && onClose(evt);
   };
 
   return (
-    <div className={classes} {...restProps}>
-      {showIcon && <Icon icon="check-circle" />}
+    <div className={alertClasses} {...restProps}>
+      {showIcon && type && <Icon className={iconClasses} icon={ALERT_TYPE_MAP[type]} />}
       <div className="rx-alert__content">
-        <p className="rx-alert__message">{message}</p>
+        <p className={messageClasses}>{message}</p>
         {description && <div className="rx-alert__description">{description}</div>}
       </div>
-      {closable && <Icon icon="times" onClick={handleClose} />}
+      {closable && <Icon className="rx-alert__close-icon" icon="times" onClick={handleClose} />}
     </div>
   );
 };
