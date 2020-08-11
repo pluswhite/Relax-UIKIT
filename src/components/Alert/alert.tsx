@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, MouseEvent } from 'react';
+import React, { FC, ReactNode, MouseEvent, useState, CSSProperties } from 'react';
 import classnames from 'classnames';
 
 import Icon from '../Icon';
@@ -34,10 +34,14 @@ const Alert: FC<IAlertProps> = (props: IAlertProps) => {
     className,
     ...restProps
   } = props;
+
+  const [visible, setVisible] = useState(true);
+
   const alertClasses = classnames(
     'rx-alert',
     {
       [`rx-alert--${type}`]: type,
+      [`is-hide`]: !visible,
     },
     className,
   );
@@ -53,6 +57,7 @@ const Alert: FC<IAlertProps> = (props: IAlertProps) => {
 
   const handleClose = (evt: MouseEvent) => {
     onClose && onClose(evt);
+    setVisible(false);
   };
 
   return (

@@ -40,6 +40,10 @@
     }
   }
 
+  &__close-icon {
+    cursor: pointer;
+  }
+
   @include mod(success) {
     color: $rx-alert-success-text-color;
     background-color: mix($rx-alert-success-background-color, $rx-white);
@@ -58,5 +62,9 @@
   @include mod(info) {
     color: $rx-alert-info-text-color;
     background-color: mix($rx-alert-info-background-color, $rx-white);
+  }
+
+  @include when(hide) {
+    display: none;
   }
 }

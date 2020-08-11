@@ -23,11 +23,17 @@ import Alert from '../../components/Alert';
 
 <Preview>
   <Row>
-    <Alert className="demo-alert" type="info" message="Here is the information~" closable />
+    <Alert
+      className="demo-alert"
+      type="info"
+      message="Here is the information~"
+      closable
+      onClose={() => alert('Alert will be close!')}
+    />
   </Row>
 </Preview>
 
-## ShowIcon 显示警告类别的 Icon
+## Show Icon 显示警告类别的 Icon
 
 <Preview>
   <Row>
