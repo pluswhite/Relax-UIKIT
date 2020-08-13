@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -10,23 +10,23 @@ import Input, { TextArea } from '../../components/Input/input';
 
 ## Basic usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Input name="rx-Input-demo1" placeholder="Basic usage" size="default" />
   </Row>
-</Preview>
+</Canvas>
 
 ## Disabled 禁用状态
 
-<Preview>
+<Canvas>
   <Row>
     <Input name="rx-Input-demo2" placeholder="Disabled" disabled />
   </Row>
-</Preview>
+</Canvas>
 
 ## Sizes 不同尺寸
 
-<Preview>
+<Canvas>
   <Row>
     <Input name="rx-Input-demo3" placeholder="Large" size="lg" wide />
     <br />
@@ -42,19 +42,19 @@ import Input, { TextArea } from '../../components/Input/input';
     <br />
     <Input name="rx-Input-demo3" placeholder="Extra small" size="xs" wide />
   </Row>
-</Preview>
+</Canvas>
 
 ## TextArea 文本框
 
-<Preview>
+<Canvas>
   <Row>
     <TextArea placeholder="Textarea" />
     <br />
     <br />
     <TextArea placeholder="Textarea" value="Text Text Text..."></TextArea>
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Input} />
+<ArgsTable of={Input} />

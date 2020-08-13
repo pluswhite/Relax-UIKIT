@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -12,7 +12,7 @@ import Icon from '../../components/Icon';
 
 ## Basic usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Dropdown
       menus={
@@ -31,7 +31,7 @@ import Icon from '../../components/Icon';
       </Button>
     </Dropdown>
   </Row>
-</Preview>
+</Canvas>
 
 <Dropdown
   menus={
@@ -87,4 +87,4 @@ import Icon from '../../components/Icon';
 
 ## API
 
-<Props of={Dropdown} />
+<ArgsTable of={Dropdown} />

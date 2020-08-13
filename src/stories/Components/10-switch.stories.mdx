@@ -1,4 +1,4 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -10,12 +10,12 @@ import { Row } from '../../components/Grid';
 
 ## Basic Usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Switch className="demo-switch" />
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Switch} />
+<ArgsTable of={Switch} />

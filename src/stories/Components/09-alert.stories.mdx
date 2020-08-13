@@ -1,4 +1,4 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -10,18 +10,18 @@ import Alert from '../../components/Alert';
 
 ## Basic Usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Alert className="demo-alert" type="success" message="Here is the information~" />
     <Alert className="demo-alert" type="warning" message="Here is the information~" />
     <Alert className="demo-alert" type="danger" message="Here is the information~" />
     <Alert className="demo-alert" type="info" message="Here is the information~" />
   </Row>
-</Preview>
+</Canvas>
 
 ## Closable 可关闭的警告提示
 
-<Preview>
+<Canvas>
   <Row>
     <Alert
       className="demo-alert"
@@ -31,19 +31,19 @@ import Alert from '../../components/Alert';
       onClose={() => alert('Alert will be close!')}
     />
   </Row>
-</Preview>
+</Canvas>
 
 ## Show Icon 显示警告类别的 Icon
 
-<Preview>
+<Canvas>
   <Row>
     <Alert className="demo-alert" type="info" message="Here is the information~" showIcon />
   </Row>
-</Preview>
+</Canvas>
 
 ## Description 描述内容
 
-<Preview>
+<Canvas>
   <Row>
     <Alert
       className="demo-alert"
@@ -74,11 +74,11 @@ import Alert from '../../components/Alert';
       closable
     />
   </Row>
-</Preview>
+</Canvas>
 
 ## Iocn and Description 带图标和描述内容
 
-<Preview>
+<Canvas>
   <Row>
     <Alert
       className="demo-alert"
@@ -113,8 +113,8 @@ import Alert from '../../components/Alert';
       closable
     />
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Alert} />
+<ArgsTable of={Alert} />

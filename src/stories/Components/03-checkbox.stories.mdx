@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -10,7 +10,7 @@ import Checkbox from '../../components/Checkbox';
 
 ## Basic usage 基本用法
 
-<Preview>
+<Canvas>
   <Row>
     <Checkbox name="rx-checkbox-demo1" className="rx-checkbox-demo1" checked>
       Checkbox 1
@@ -22,18 +22,18 @@ import Checkbox from '../../components/Checkbox';
       Checkbox 3
     </Checkbox>
   </Row>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Row>
     <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo2" checked></Checkbox>
     <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo2"></Checkbox>
   </Row>
-</Preview>
+</Canvas>
 
 ## Disabled status 禁用状态
 
-<Preview>
+<Canvas>
   <Row>
     <Checkbox name="rx-checkbox-demo3" className="rx-checkbox-demo3" disabled>
       Default
@@ -45,8 +45,8 @@ import Checkbox from '../../components/Checkbox';
       Disabled
     </Checkbox>
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Checkbox} />
+<ArgsTable of={Checkbox} />

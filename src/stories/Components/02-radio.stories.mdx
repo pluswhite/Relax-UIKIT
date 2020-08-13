@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -10,7 +10,7 @@ import Radio from '../../components/Radio';
 
 ## Basic usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Radio name="rx-radio-demo1" className="rx-radio-demo1" checked>
       Radio 1
@@ -19,18 +19,18 @@ import Radio from '../../components/Radio';
       Radio 2
     </Radio>
   </Row>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
   <Row>
     <Radio name="rx-radio-demo2" className="rx-radio-demo2" checked />
     <Radio name="rx-radio-demo2" className="rx-radio-demo2" />
   </Row>
-</Preview>
+</Canvas>
 
 ## Disabled status 禁用状态
 
-<Preview>
+<Canvas>
   <Row>
     <Radio name="rx-radio-demo3" className="rx-radio-demo3" disabled>
       Disabled
@@ -39,8 +39,8 @@ import Radio from '../../components/Radio';
       Disabled
     </Radio>
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Radio} />
+<ArgsTable of={Radio} />

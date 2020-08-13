@@ -1,4 +1,4 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -11,7 +11,7 @@ import Icon from '../../components/Icon';
 
 ## Basic Usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Link className="demo-link">Default &nbsp;</Link>
     <Link className="demo-link" type="primary">
@@ -30,11 +30,11 @@ import Icon from '../../components/Icon';
       Link
     </Link>
   </Row>
-</Preview>
+</Canvas>
 
 ## Disabled State 禁用状态
 
-<Preview>
+<Canvas>
   <Row>
     <Link className="demo-link" disabled>
       Default &nbsp;
@@ -55,11 +55,11 @@ import Icon from '../../components/Icon';
       Link
     </Link>
   </Row>
-</Preview>
+</Canvas>
 
 ## Underline 下划线
 
-<Preview>
+<Canvas>
   <Row>
     <Link className="demo-link" underline>
       Default &nbsp;
@@ -80,8 +80,8 @@ import Icon from '../../components/Icon';
       Link
     </Link>
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Link} />
+<ArgsTable of={Link} />

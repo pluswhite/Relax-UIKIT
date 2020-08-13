@@ -1,4 +1,4 @@
-import { Meta, Props, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
@@ -11,7 +11,7 @@ import Icon from '../../components/Icon';
 
 ## Basic Usage 基础用法
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button">Default</Button>
     <Button className="demo-button" btnType="primary">
@@ -21,11 +21,11 @@ import Icon from '../../components/Icon';
       Link
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ## Disabled Button
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button" disabled>
       Default
@@ -40,11 +40,11 @@ import Icon from '../../components/Icon';
       Disabled Link
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ## Color Indication
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button">Default</Button>
     <Button className="demo-button" btnType="primary">
@@ -63,13 +63,13 @@ import Icon from '../../components/Icon';
       Danger
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ## Shape
 
 ### Round Button
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button" round>
       Default
@@ -78,11 +78,11 @@ import Icon from '../../components/Icon';
       Primary
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ### Outline Button
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button" plain>
       Default
@@ -91,11 +91,11 @@ import Icon from '../../components/Icon';
       Primary
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ### Circle Button
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button" circle>
       <Icon icon="search" />
@@ -116,11 +116,11 @@ import Icon from '../../components/Icon';
       <Icon icon="trash" />
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ## Sizes
 
-<Preview>
+<Canvas>
   <Row>
     <Button className="demo-button" btnType="primary" size="xs">
       Mini Button
@@ -138,11 +138,11 @@ import Icon from '../../components/Icon';
       Large Button
     </Button>
   </Row>
-</Preview>
+</Canvas>
 
 ## Button Group
 
-<Preview>
+<Canvas>
   <Row>
     <ButtonGroup>
       <Button btnType="primary">Left</Button>
@@ -150,10 +150,10 @@ import Icon from '../../components/Icon';
       <Button btnType="primary">Right</Button>
     </ButtonGroup>
   </Row>
-</Preview>
+</Canvas>
 
 ## API
 
-<Props of={Button} />
+<ArgsTable of={Button} />
 
-<Props of={ButtonGroup} />
+<ArgsTable of={ButtonGroup} />
