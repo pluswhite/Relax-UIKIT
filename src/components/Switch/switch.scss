@@ -1,0 +1,9 @@
+/**
+ * Switch component
+ */
+@import '../../styles/common/variables';
+@import '../../styles/mixins/mixins';
+
+@include bem(switch) {
+  width: 100%;
+}
