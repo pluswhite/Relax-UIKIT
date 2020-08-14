@@ -2,9 +2,9 @@ import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
-// import Switch from '../../components/Switch';
+import Switcher from '../../components/Switch';
 
-<Meta title="Components 基础组件/10 - Switch 开关" component={Switch} />
+<Meta title="Components 基础组件/10 - Switch 开关" component={Switcher} />
 
 # Switch 开关
 
@@ -12,10 +12,11 @@ import { Row } from '../../components/Grid';
 
 <Canvas>
   <Row>
-    <Switch className="demo-switch" />
+    <Switcher className="demo-switch" checked />
+    <Switcher className="demo-switch" />
   </Row>
 </Canvas>
 
 ## API
 
-<ArgsTable of={Switch} />
+<ArgsTable of={Switcher} />
