@@ -28,15 +28,15 @@ const Switcher: FC<ISwitcherProps> = (props: ISwitcherProps) => {
     onClick,
     ...restProps
   } = props;
+  const [switchState, setSwitchState] = useState(checked);
   const classes = classnames(
     'rx-switch',
     {
       'is-disabled': disabled,
-      'is-checked': checked,
+      'is-checked': switchState,
     },
     className,
   );
-  const [switchState, setSwitchState] = useState(checked);
 
   const handleSwitch = (evt: MouseEvent<HTMLInputElement>) => {
     setSwitchState(!switchState);
@@ -60,7 +60,9 @@ const Switcher: FC<ISwitcherProps> = (props: ISwitcherProps) => {
         onClick={handleSwitch}
         {...restProps}
       />
-      <span className="rx-switch__text">{switchState ? checkedNode : uncheckedNode}</span>
+      <span className="rx-switch__inner">
+        <span className="rx-switch__text">{switchState ? checkedNode : uncheckedNode}</span>
+      </span>
     </label>
   );
 };

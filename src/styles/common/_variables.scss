@@ -573,3 +573,14 @@ $rx-alert-info-background-color: $rx-info-lighter !default;
 
 $rx-alert-icon-size: $rx-font-size-medium !default;
 $rx-alert-icon-large-size: 28px !default;
+
+/**
+ * Switch
+ */
+$rx-switch-on-color: $rx-primary !default;
+$rx-switch-off-color: $rx-color-gray-6 !default;
+$rx-switch-font-size: $rx-font-size-extra-small !default;
+$rx-switch-border-radius: 10px !default;
+$rx-switch-width: 44px !default;
+$rx-switch-height: 20px !default;
+$rx-switch-inner-size: 16px !default;

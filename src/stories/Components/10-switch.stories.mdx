@@ -2,6 +2,7 @@ import { Meta, ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { action } from '@storybook/addon-actions';
 
 import { Row } from '../../components/Grid';
+import Icon from '../../components/Icon';
 import Switcher from '../../components/Switch';
 
 <Meta title="Components 基础组件/10 - Switch 开关" component={Switcher} />
@@ -13,7 +14,13 @@ import Switcher from '../../components/Switch';
 <Canvas>
   <Row>
     <Switcher className="demo-switch" checked />
-    <Switcher className="demo-switch" />
+    <Switcher className="demo-switch" checkedNode="ON" uncheckedNode="OFF" checked />
+    <Switcher className="demo-switch" checkedNode="ON" uncheckedNode="OFF" />
+    <Switcher
+      className="demo-switch"
+      checkedNode={<Icon icon="check" />}
+      uncheckedNode={<Icon icon="times" />}
+    />
   </Row>
 </Canvas>
 
