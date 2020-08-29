@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, MouseEvent, useState, CSSProperties } from 'react';
+import React, { FC, MouseEvent, useState, ReactChild } from 'react';
 import classnames from 'classnames';
 
 import Icon from '../Icon';
@@ -8,8 +8,8 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export interface IAlertProps {
   type?: 'success' | 'warning' | 'info' | 'danger';
-  message?: string | ReactNode;
-  description?: string | ReactNode;
+  message?: ReactChild;
+  description?: ReactChild;
   closable?: boolean;
   showIcon?: boolean;
   onClose?: (e: MouseEvent) => void;

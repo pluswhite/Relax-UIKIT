@@ -1,4 +1,4 @@
-import React, { FC, ReactChildren, ReactElement, ReactChild } from 'react';
+import React, { FC, ReactChildren, ReactChild } from 'react';
 import classnames from 'classnames';
 
 import './link.scss';
@@ -8,7 +8,7 @@ export interface ILinkProps {
   disabled?: boolean;
   underline?: boolean;
   className?: string;
-  children: ReactChildren | ReactChild | ReactElement;
+  children: ReactChildren | ReactChild;
 }
 
 const Link: FC<ILinkProps> = (props: ILinkProps) => {

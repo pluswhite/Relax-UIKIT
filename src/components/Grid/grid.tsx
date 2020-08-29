@@ -1,7 +1,7 @@
 import React, {
   FC,
   ReactChildren,
-  ReactElement,
+  ReactChild,
   CSSProperties,
   createContext,
   useContext,
@@ -16,7 +16,7 @@ export interface IRowProps {
   align?: 'top' | 'middle' | 'bottom';
   className?: string;
   style?: CSSProperties;
-  children: ReactChildren | ReactElement;
+  children: ReactChildren | ReactChild;
 }
 
 export interface RowContextType {
@@ -61,7 +61,7 @@ export interface IColProps {
   pull?: number;
   className?: string;
   style?: CSSProperties;
-  children: ReactChildren | ReactElement;
+  children: ReactChildren | ReactChild;
 }
 
 export const Col: FC<IColProps> = (props: IColProps) => {

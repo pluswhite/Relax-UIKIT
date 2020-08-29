@@ -1,4 +1,4 @@
-import React, { FC, ReactChildren, ReactElement } from 'react';
+import React, { FC, ReactChildren, ReactElement, ReactChild } from 'react';
 import classnames from 'classnames';
 
 import Icon from '../Icon';
@@ -22,7 +22,7 @@ export interface ITagProps {
   closable?: boolean;
   onClose?: () => void;
   style?: React.CSSProperties;
-  children: ReactChildren | ReactElement;
+  children: ReactChildren | ReactElement | ReactChild;
 }
 
 const PresetColorRegex = new RegExp(`^${PresetColorTypes.join('|')}`);
@@ -46,14 +46,14 @@ const Tag: FC<ITagProps> = (props: ITagProps) => {
   );
 
   const styles = {
-    backgroundColor: color && !isPresetColor() ? color : undefined,
     ...style,
+    backgroundColor: color && !isPresetColor() ? `${color}` : undefined,
   };
 
   return (
     <span className={classes} {...restProps} style={styles}>
       {children}
-      {closable && <Icon icon="times" onClick={onClose} />}
+      {closable && <Icon className="rx-tag__close" icon="times" onClick={onClose} />}
     </span>
   );
 };

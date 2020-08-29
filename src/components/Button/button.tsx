@@ -1,4 +1,10 @@
-import React, { FC, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
+import React, {
+  FC,
+  ButtonHTMLAttributes,
+  AnchorHTMLAttributes,
+  ReactChildren,
+  ReactChild,
+} from 'react';
 import classnames from 'classnames';
 
 import './button.scss';
@@ -20,7 +26,7 @@ interface IBaseButtonProps {
   round?: boolean;
   circle?: boolean;
   href?: string;
-  children?: React.ReactNode;
+  children: ReactChildren | ReactChild;
   onClick?: (e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>) => void;
 }
 
@@ -86,7 +92,7 @@ export const Button: FC<ButtonProps> = (props: ButtonProps) => {
 };
 
 interface ButtonGroupProps {
-  children: React.ReactChild;
+  children: ReactChildren | ReactChild;
 }
 
 export const ButtonGroup: FC<ButtonGroupProps> = ({ children }: ButtonGroupProps) => {

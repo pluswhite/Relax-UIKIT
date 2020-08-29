@@ -1,4 +1,4 @@
-import React, { FC, ReactChild, InputHTMLAttributes, useState } from 'react';
+import React, { FC, ReactChild, InputHTMLAttributes, useState, ReactChildren } from 'react';
 import classnames from 'classnames';
 
 import './checkbox.scss';
@@ -9,7 +9,7 @@ interface IBaseCheckboxProps {
   checked?: boolean;
   value?: InputValue;
   disabled?: boolean;
-  children?: ReactChild;
+  children?: ReactChild | ReactChildren;
   onChange?: (value: boolean, e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 

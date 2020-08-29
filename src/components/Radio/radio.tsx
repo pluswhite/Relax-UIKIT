@@ -1,4 +1,4 @@
-import React, { FC, InputHTMLAttributes, useState } from 'react';
+import React, { FC, InputHTMLAttributes, useState, ReactChildren, ReactChild } from 'react';
 import classnames from 'classnames';
 
 import './radio.scss';
@@ -9,7 +9,7 @@ interface IBaseRadioProps {
   checked?: boolean;
   value?: InputValue;
   disabled?: boolean;
-  children?: React.ReactChild;
+  children?: ReactChild | ReactChildren;
   onChange?: (value: boolean, e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 

@@ -20,7 +20,6 @@ interface IBaseInputProps {
   disabled?: boolean;
   prefix?: string | ReactNode;
   suffix?: string | ReactNode;
-  children?: React.ReactChild;
   onChange?: (value: InputValue, e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -36,7 +35,6 @@ export const Input: FC<InputProps> = (props: InputProps) => {
     wide,
     prefix,
     suffix,
-    children,
     onChange,
     ...restProps
   } = props;
